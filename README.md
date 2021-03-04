@@ -1,7 +1,7 @@
 # Introducción
 
-**Configuración de Neovim, viene con autocompletar de JavaScript - sh - bash - zsh - html - css![CapturaDePantalla](https://user-images.githubusercontent.com/59105868/109899362-81c2a600-7c74-11eb-8daf-244c08422163.png)
- , Arbol de archivos, Buscador, temas, syntax de color, iconos.**
+**Configuración de Neovim, viene con autocompletar de JavaScript - sh - bash - zsh - html - css , Arbol de archivos, Buscador, temas, syntax de color, iconos.**
+
 **Para funcionar correctamente se requiere neovim nightly 0.5.0**
 
 ## Previsualización
