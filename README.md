@@ -46,11 +46,10 @@ nvim
 ```vim
 :PlugInstall
 ```
-**Con eso se instalarán los plugins**
+**Con eso se instalarán los plugins y neovim quedaría configurado**
 
 ## Atajos de teclados:
 | F2| F3| F4| F5| F6|
 | ----- | ---- | ---- | ---- | ---- |
 | Abrir Arbol de Archivos | Moverse para la ventana izqueirda (archivo abierto por arbol de archivo) | Moverse para la ventana derecha (archivo abierto por arbol de archivo) | Cerrar vetana (archivo abierto por arbol de archivo) | Abrir buscador |
 
-**Con eso neovim quedaría configurado.**
