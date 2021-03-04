@@ -46,6 +46,10 @@ nvim
 ```vim
 :PlugInstall
 ```
+**Algunos paquetes adicionales:**
+```
+bat - ripgrep
+```
 **Con eso se instalarán los plugins y neovim quedaría configurado**
 
 ## Atajos de teclados:
