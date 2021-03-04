@@ -46,7 +46,7 @@ nvim
 ```vim
 :PlugInstall
 ```
-**Algunos paquetes adicionales:**
+**Algunos paquetes adicionales que pueden instalar:**
 ```
 bat - ripgrep
 ```
