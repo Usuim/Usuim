@@ -33,3 +33,8 @@
 #### Telescope
 
 ![Telescope](https://user-images.githubusercontent.com/59105868/132420948-999d925a-31fd-42e0-aa15-3d84d1a9002a.png)
+
+## Additional
+
+#### you can use a rust version of NeoVim for better handling and visual improvement
+https://github.com/vhakulinen/gnvim
