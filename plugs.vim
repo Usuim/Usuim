@@ -37,6 +37,5 @@ Plug 'jiangmiao/auto-pairs'
 "LANG-SYNTAX
 Plug 'cespare/vim-toml'
 "CRATES
-Plug 'nvim-lua/plenary.nvim'
 Plug 'saecki/crates.nvim'
 call plug#end()
