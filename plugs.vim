@@ -39,10 +39,4 @@ Plug 'cespare/vim-toml'
 "CRATES
 Plug 'nvim-lua/plenary.nvim'
 Plug 'saecki/crates.nvim'
-"CMP
-"Plug 'hrsh7th/nvim-cmp'
-"Plug 'hrsh7th/vim-vsnip'
-"Plug 'hrsh7th/cmp-buffer'
-"DEBUGGER
-
 call plug#end()
