@@ -40,9 +40,9 @@
 
 ## Keyboard shortcuts
 
-| F2| F3| F4| F6| Ctrlr + W | Ctrl + T | Tab |
-| ----- | ---- | ---- | ---- | ---- | ---- | ---- |
-| Open NERDTree | Move to the left window | Move to the right window | Open Telescope | Close window | Open Terminal | to change the element in the code completion |
+| F2| F3| F4| F6| Ctrlr + W | Ctrl + T | Ctrl + K | Ctrl + J | Tab |
+| ----- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
+| Open NERDTree | Move to the left window | Move to the right window | Open Telescope | Close window | Open Terminal | switch from terminal to code | switch from code to terminal | to change the element in the code completion |
 
 ## Additional
 
