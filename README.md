@@ -38,7 +38,7 @@
 
 ![Terminal](https://user-images.githubusercontent.com/59105868/132428373-8b5e2b98-8fd9-42f6-bafb-1f93e7bb53f9.png)
 
-## keyboard shortcuts
+## Keyboard shortcuts
 
 | F2| F3| F4| F6| Ctrlr + W | Ctrl + T | Tab |
 | ----- | ---- | ---- | ---- | ---- | ---- | ---- |
