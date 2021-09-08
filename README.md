@@ -34,6 +34,16 @@
 
 ![Telescope](https://user-images.githubusercontent.com/59105868/132420948-999d925a-31fd-42e0-aa15-3d84d1a9002a.png)
 
+## Terminal
+
+![Terminal](https://user-images.githubusercontent.com/59105868/132428373-8b5e2b98-8fd9-42f6-bafb-1f93e7bb53f9.png)
+
+## keyboard shortcuts
+
+| F2| F3| F4| F6| Ctrlr + W | Ctrl + T | Tab |
+| ----- | ---- | ---- | ---- | ---- |
+| Open NERDTree | Move to the left window | Move to the right window | Open Telescope | Close window | Open Terminal | to change the element in the code completion |
+
 ## Additional
 
 #### you can use a rust version of NeoVim for better handling and visual improvement
