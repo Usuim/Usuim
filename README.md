@@ -1,6 +1,9 @@
 # Introduction
 ### Complete NeoVim setup for programming in Rust, Python, and C/C++
-
+# Dependencies
+```
+pyright - clangd - rust_analyzer
+```
 # Preview
 ## Theme
 #### Paletnight theme
