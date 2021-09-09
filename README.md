@@ -41,6 +41,17 @@ pyright - clangd - rust_analyzer
 
 ![Terminal](https://user-images.githubusercontent.com/59105868/132428373-8b5e2b98-8fd9-42f6-bafb-1f93e7bb53f9.png)
 
+## improved syntax
+
+#### Before
+
+![Terminal](https://user-images.githubusercontent.com/59105868/132729704-5d0f5661-b0c3-4005-b9f4-34643a087128.png)
+
+#### After
+
+![syntax](https://user-images.githubusercontent.com/59105868/132729734-49d45129-1c6e-4a86-a091-1516555efadd.png)
+
+
 ## Keyboard shortcuts
 
 | F2| F3| F4| F6| Ctrlr + W | Ctrl + T | Ctrl + K | Ctrl + J | Tab |
