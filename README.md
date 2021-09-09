@@ -45,7 +45,7 @@ pyright - clangd - rust_analyzer
 
 #### Before
 
-![Terminal](https://user-images.githubusercontent.com/59105868/132729704-5d0f5661-b0c3-4005-b9f4-34643a087128.png)
+![beforesyntax](https://user-images.githubusercontent.com/59105868/132730236-f5b17c12-a8bb-4c1c-be14-a59900340535.png)
 
 #### After
 
