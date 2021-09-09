@@ -6,7 +6,7 @@ pyright - clangd - rust_analyzer
 ```
 # Preview
 ## Theme
-#### Paletnight theme
+#### Palenight theme
 
 ![Theme](https://user-images.githubusercontent.com/59105868/132420119-bab0618c-dbe6-4ef2-b75e-7ba4ffeef6b1.png)
 
