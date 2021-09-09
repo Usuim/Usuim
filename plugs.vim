@@ -36,6 +36,9 @@ Plug 'nvim-lua/plenary.nvim'
 Plug 'jiangmiao/auto-pairs'
 "LANG-SYNTAX
 Plug 'cespare/vim-toml'
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 "CRATES
+Plug 'nvim-lua/plenary.nvim'
 Plug 'saecki/crates.nvim'
+
 call plug#end()

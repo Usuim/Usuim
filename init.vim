@@ -4,6 +4,7 @@ runtime plugs.vim
 runtime mappings.vim
 runtime lsp.vim
 runtime vimspector.vim
+runtime treesitter.vim
 
 
 " Set Configuration
