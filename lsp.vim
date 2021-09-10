@@ -17,6 +17,8 @@ local rust_lsp = require'lspconfig'
 local python_lsp = require'lspconfig'
 -- C/Cpp
 local clangd_lsp = require'lspconfig'
+-- JS/TSS
+local tss_lsp = require'lspconfig'
 
 -- function to attach completion when setting up lsp
 local on_attach = function(client)
@@ -31,6 +33,9 @@ rust_lsp.rust_analyzer.setup({ on_attach=on_attach })
 python_lsp.pyright.setup({on_attach=on_attach})
 -- Start Clangd
 clangd_lsp.clangd.setup({on_attach=on_attach})
+-- Start tsserver
+tss_lsp.tsserver.setup({on_attach=on_attach})
+
 
 -- Enable diagnostics
 vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
@@ -40,4 +45,5 @@ vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
     update_in_insert = true,
   }
 )
+
 EOF
