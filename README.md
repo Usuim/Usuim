@@ -2,7 +2,7 @@
 ### Complete NeoVim setup for programming in Rust, Python, and C/C++
 # Dependencies
 ```
-pyright - clangd - rust_analyzer - tsserver
+pyright - clangd - rust_analyzer - tsserver - vscode-langservers-extracted
 ```
 # Preview
 ## Theme
@@ -26,6 +26,15 @@ pyright - clangd - rust_analyzer - tsserver
 #### Javascript / Typescript
 
 ![image](https://user-images.githubusercontent.com/59105868/132786849-45080f72-fa6c-4607-bb12-f81b432666d0.png)
+
+#### Html
+
+![image](https://user-images.githubusercontent.com/59105868/132789883-8fc37104-a0ad-4fa3-8f5b-4e70cd728dca.png)
+
+#### Css/Sass
+
+![image](https://user-images.githubusercontent.com/59105868/132790022-e2b2a9fa-230c-4952-8049-62406c9bf8de.png)
+
 
 ## Crates
 
