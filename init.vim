@@ -1,16 +1,13 @@
-" Import Config
-
 runtime plugs.vim
-runtime mappings.vim
+runtime mapping.vim
+runtime config.vim
 runtime lsp.vim
-runtime vimspector.vim
-runtime treesitter.vim
-
 
 " Set Configuration
-
+"filetype plugin on
 set encoding=UTF-8
 set number
+set clipboard+=unnamedplus
 syntax enable
 set noswapfile
 set scrolloff
@@ -21,23 +18,15 @@ set expandtab
 set autoindent
 set fileformat=unix
 set splitbelow
+set relativenumber
+set termguicolors
 set guifont=Fira\ Code:h11
+set mouse=a
 
-" Mapleader
+" Themes
+colorscheme onedark
+let g:airline_theme='onedark'
 
-let mapleader = ','
+" NERDTree
+autocmd vimenter * if !argc() | NERDTree | endif
 
-" Colorschemes
-
-colorscheme palenight
-let g:airline_theme='palenight'
-
-" Termguicolors
-
-if (has("termguicolors"))
-	set termguicolors
-endif
-
-" Colorizer
-
-lua require 'colorizer'.setup()

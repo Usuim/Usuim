@@ -9,36 +9,69 @@ endif
 " Install Plugs
 
 call plug#begin()
+
+" Syntax
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'} 
+
+" Themes
+Plug 'navarasu/onedark.nvim'
+
+" Airline
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+
+"Icons
+Plug 'kyazdani42/nvim-web-devicons'
+Plug 'ryanoasis/vim-devicons'
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+
+" Navbar
+Plug 'romgrk/barbar.nvim'
+
+" Tree
+Plug 'scrooloose/nerdtree'
+Plug 'scrooloose/nerdtree-project-plugin'
+
+" Typing
+Plug 'jiangmiao/auto-pairs'
+Plug 'alvan/vim-closetag'
+Plug 'tpope/vim-surround'
+
+"Tmux
+Plug 'benmills/vimux'
+Plug 'christoomey/vim-tmux-navigator'
+
 " LSP
 Plug 'neovim/nvim-lspconfig'
 Plug 'nvim-lua/lsp_extensions.nvim'
 " LSP-AUTOCOMPLETION
-Plug 'nvim-lua/completion-nvim'
-" THEME
-Plug 'drewtempelmeyer/palenight.vim'
-"NERDTREE
-Plug 'scrooloose/nerdtree'
-Plug 'preservim/nerdcommenter'
-"COLORS
-Plug 'norcalli/nvim-colorizer.lua'
-"AIRLINE-ICONS
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-Plug 'ryanoasis/vim-devicons'
-"TERMINAL
+Plug 'SrWither/completion-nvim'
+
+"Terminal
 Plug 'akinsho/nvim-toggleterm.lua'
-"AUTOPAIRS
-Plug 'jiangmiao/auto-pairs'
-"TELESCOPE
-Plug 'nvim-telescope/telescope.nvim'
+
+" Test
+Plug 'tyewang/vimux-jest-test'
+Plug 'janko-m/vim-test'
+
+"IDE
+Plug 'editorconfig/editorconfig-vim'
+Plug 'terryma/vim-multiple-cursors'
+Plug 'mhinz/vim-signify'
+Plug 'yggdroot/indentline'
+Plug 'preservim/nerdcommenter'
+
+" git
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-repeat'
+
+" Telescope
 Plug 'nvim-lua/plenary.nvim'
-"AUTOPAIRS
-Plug 'jiangmiao/auto-pairs'
-"LANG-SYNTAX
-Plug 'cespare/vim-toml'
-Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'nvim-telescope/telescope.nvim'
+
 "CRATES
 Plug 'nvim-lua/plenary.nvim'
 Plug 'saecki/crates.nvim'
+Plug 'cespare/vim-toml'
 
 call plug#end()
