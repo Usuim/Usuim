@@ -48,6 +48,10 @@ pyright - clangd - rust_analyzer - tsserver - vscode-langservers-extracted
 
 ![image](https://user-images.githubusercontent.com/59105868/139555110-1f393d39-7128-4f40-b8c7-5158ca4a813a.png)
 
+## Mouse Interaction
+
+![MouseInteraction](https://user-images.githubusercontent.com/59105868/139555650-3da8ed13-99f4-4d86-bb01-252f226afff4.gif)
+
 ## Keyboard shortcuts
 
 | F2| Ctrl + S| Ctrlr + F | Ctrl + T | Tab |
