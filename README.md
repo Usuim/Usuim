@@ -52,7 +52,7 @@ pyright - clangd - rust_analyzer - tsserver - vscode-langservers-extracted
 
 | F2| Ctrl + S| Ctrlr + F | Ctrl + T | Tab |
 | ----- | ---- | ---- | ---- | ---- | 
-| Toggle NERDTree | Save File | Search word in the project | Open Terminal | to change the element in the code completion |
+| Toggle NERDTree | Save File | Search words in the project | Open Terminal | to change the element in the code completion |
 
 ## Additional
 
