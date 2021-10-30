@@ -1,12 +1,12 @@
 # Introduction
-### Complete NeoVim setup for programming in Rust, Python, and C/C++
+### Complete NeoVim setup for programming in Rust, Python, C/C++, Javascript and Web
 # Dependencies
 ```
 pyright - clangd - rust_analyzer - tsserver - vscode-langservers-extracted
 ```
 # Preview
 ## Theme
-#### Palenight theme
+#### One Dark
 
 ![Theme](https://user-images.githubusercontent.com/59105868/132420119-bab0618c-dbe6-4ef2-b75e-7ba4ffeef6b1.png)
 
