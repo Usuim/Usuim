@@ -44,7 +44,7 @@ pyright - clangd - rust_analyzer - tsserver - vscode-langservers-extracted
 
 ![image](https://user-images.githubusercontent.com/59105868/139555061-7ccd1b34-12c8-4f6b-8e25-5f8649552288.png)
 
-## Search Files
+## Search for words
 
 ![image](https://user-images.githubusercontent.com/59105868/139555110-1f393d39-7128-4f40-b8c7-5158ca4a813a.png)
 
