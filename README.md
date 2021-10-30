@@ -50,7 +50,7 @@ pyright - clangd - rust_analyzer - tsserver - vscode-langservers-extracted
 
 ## Mouse Interaction
 
-![MouseInteraction](https://user-images.githubusercontent.com/59105868/139555650-3da8ed13-99f4-4d86-bb01-252f226afff4.gif)
+![MouseInteraction](https://user-images.githubusercontent.com/59105868/139555696-c9162701-a004-4e21-ac9c-531a5eecd053.gif)
 
 ## Keyboard shortcuts
 
