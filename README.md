@@ -24,51 +24,35 @@ pyright - clangd - rust_analyzer - tsserver - vscode-langservers-extracted
 
 #### Javascript / Typescript
 
-![image](https://user-images.githubusercontent.com/59105868/132786849-45080f72-fa6c-4607-bb12-f81b432666d0.png)
+![image](https://user-images.githubusercontent.com/59105868/139554858-2ef8de1b-4981-4444-9cb3-9df42ffaa348.png)
 
 #### Html
 
-![image](https://user-images.githubusercontent.com/59105868/132789883-8fc37104-a0ad-4fa3-8f5b-4e70cd728dca.png)
+![image](https://user-images.githubusercontent.com/59105868/139554899-0b4ff064-2afa-477a-bbaa-b199adcb67ff.png)
 
 #### Css/Sass
 
-![image](https://user-images.githubusercontent.com/59105868/132790022-e2b2a9fa-230c-4952-8049-62406c9bf8de.png)
-
+![image](https://user-images.githubusercontent.com/59105868/139554949-bf113d3e-f85a-4b22-9d9f-589d202657d6.png)
 
 ## Crates
 
-![crates](https://user-images.githubusercontent.com/59105868/132420771-f1be7c60-9019-43ae-99ef-18c46e239b33.png)
+![image](https://user-images.githubusercontent.com/59105868/139554993-13ea595d-2020-4b42-abfa-ee2ec192248b.png)
 
-## TreeFile
+## TreeFile And Terminal
 
-#### NerdTree
+#### NerdTree - ToggleTerm
 
-![NerdTree](https://user-images.githubusercontent.com/59105868/132420936-407d70ac-0c39-4fde-a433-534baa2748d2.png)
+![image](https://user-images.githubusercontent.com/59105868/139555061-7ccd1b34-12c8-4f6b-8e25-5f8649552288.png)
 
-#### Telescope
+## Search Files
 
-![Telescope](https://user-images.githubusercontent.com/59105868/132420948-999d925a-31fd-42e0-aa15-3d84d1a9002a.png)
-
-## Terminal
-
-![Terminal](https://user-images.githubusercontent.com/59105868/132428373-8b5e2b98-8fd9-42f6-bafb-1f93e7bb53f9.png)
-
-## improved syntax
-
-#### Before
-
-![beforesyntax](https://user-images.githubusercontent.com/59105868/132730236-f5b17c12-a8bb-4c1c-be14-a59900340535.png)
-
-#### After
-
-![syntax](https://user-images.githubusercontent.com/59105868/132729734-49d45129-1c6e-4a86-a091-1516555efadd.png)
-
+![image](https://user-images.githubusercontent.com/59105868/139555110-1f393d39-7128-4f40-b8c7-5158ca4a813a.png)
 
 ## Keyboard shortcuts
 
-| F2| F3| F4| F6| Ctrlr + W | Ctrl + T | Ctrl + K | Ctrl + J | Tab |
-| ----- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
-| Open NERDTree | Move to the left window | Move to the right window | Open Telescope | Close window | Open Terminal | switch from terminal to code | switch from code to terminal | to change the element in the code completion |
+| F2| Ctrl + S| Ctrlr + F | Ctrl + T | Tab |
+| ----- | ---- | ---- | ---- | ---- | 
+| Toggle NERDTree | Save File | Search word in the project | Open Terminal | to change the element in the code completion |
 
 ## Additional
 
