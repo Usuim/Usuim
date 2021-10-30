@@ -8,20 +8,19 @@ pyright - clangd - rust_analyzer - tsserver - vscode-langservers-extracted
 ## Theme
 #### One Dark
 
-![Theme](https://user-images.githubusercontent.com/59105868/132420119-bab0618c-dbe6-4ef2-b75e-7ba4ffeef6b1.png)
+![image](https://user-images.githubusercontent.com/59105868/139554329-8b6abf25-6d51-49ae-9f63-ddf20dd6ba02.png)
 
 ## Code Completion
 #### Python
 
-![Python](https://user-images.githubusercontent.com/59105868/132420555-d1663ad1-607e-43d6-b989-7abf1b878ef7.png)
+![image](https://user-images.githubusercontent.com/59105868/139554350-43cc3023-4d8b-4726-baf2-8dcb0d9f3258.png)
 
 #### C/C++
 
-![Cpp](https://user-images.githubusercontent.com/59105868/132420595-ecfab4b6-765c-46d8-ab75-48de97a6154d.png)
+![image](https://user-images.githubusercontent.com/59105868/139554520-b517eae8-7a58-47a8-a981-555664a62add.png)
 
 #### Rust
-
-![Rust](https://user-images.githubusercontent.com/59105868/132420715-a8f938c0-cd3d-46ad-9c66-9c5a6360a331.png)
+![image](https://user-images.githubusercontent.com/59105868/139554779-a5e89801-b785-47b5-8bdf-caf1bb4cb8be.png)
 
 #### Javascript / Typescript
 
