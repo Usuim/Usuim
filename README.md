@@ -15,6 +15,15 @@ pyright - clangd - rust_analyzer - tsserver - vscode-langservers-extracted
 
 ![image](https://user-images.githubusercontent.com/59105868/139554350-43cc3023-4d8b-4726-baf2-8dcb0d9f3258.png)
 
+#### Python Virtualenv
+
+![image](https://user-images.githubusercontent.com/59105868/139590020-91996d48-64c8-47f7-8e71-817d4a3b0c7d.png)
+
+```sh
+export VIRTUAL_ENV=$(pwd)/venv/
+source venv/bin/activate
+nvim .
+```
 #### C/C++
 
 ![image](https://user-images.githubusercontent.com/59105868/139554520-b517eae8-7a58-47a8-a981-555664a62add.png)
