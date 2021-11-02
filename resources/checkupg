@@ -38,6 +38,7 @@ checkInternet || exit 1
 UltimaVersion=$(httpGet https://api.github.com/repos/SrWither/VsVim/tags | grep -Eo '"name":.*?[^\\]",'| head -1 | grep -Eo "[0-9.]+" )
 
 if [[ "$UltimaVersion" != "$VersionActual" ]]; then
-	echo "VsVim: Version '$UltimaVersion' Disponible, Actualizalo con 'vsvupg'"
+	echo "VsVim '$UltimaVersion' Disponible, Actualizalo con 'vsvupg'"
+	# ~/.local/bin/vsvupg # Actualizar neovim al abrir la terminal
 fi
 
