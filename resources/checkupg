@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-VersionActual='1.0.2'
+VersionActual='1.0.1'
 
 getConfiguredClient()
 {
@@ -27,26 +27,6 @@ httpGet()
   esac
 }
 
-check() {
-	echo -n "Nueva version de VsVim: $UltimaVersion ¿Quieres actualizarlo? [Y/n]: "
-    	read -r answer
-	if [[ "$answer" == "Y" || "$answer" == "y" ]]; then
-		~/.local/bin/vsvupg
-		if [[ "$OSTYPE" == "linux-gnu"* ]]; then
-            		sed -i "2s/.*/VersionActual='$UltimaVersion'/" ~/.local/bin/checkupg
-      		elif [[ "$OSTYPE" == "freebsd"* ]]; then
-            		gsed -i "2s/.*/VersionActual='$UltimaVersion'/" ~/.local/bin/checkupg
-      		else
-            		sed -i "2s/.*/VersionActual='$UltimaVersion'/" ~/.local/bin/checkupg
-      		fi
-	elif [[ "$answer" == "N" || "$answer" == "N" ]]; then
-		:
-	else
-		:
-	fi
-
-}
-
 checkInternet()
 {
   httpGet google.com > /dev/null 2>&1 || { echo "Error: No hay conexion a internet" >&2; return 1; } # query google with a get request
@@ -58,6 +38,6 @@ checkInternet || exit 1
 UltimaVersion=$(httpGet https://api.github.com/repos/SrWither/VsVim/tags | grep -Eo '"name":.*?[^\\]",'| head -1 | grep -Eo "[0-9.]+" )
 
 if [[ "$UltimaVersion" != "$VersionActual" ]]; then
-	check
+	~/.local/bin/vsvupg
 fi
 

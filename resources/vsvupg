@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-VersionActual='1.0.2'
+VersionActual='1.0.1'
 repositorio="VsVim"
 usuario="SrWither"
 scripts="install.sh"
@@ -56,10 +56,13 @@ else
       
       if [[ "$OSTYPE" == "linux-gnu"* ]]; then
             sed -i "2s/.*/VersionActual='$UltimaVersion'/" ~/.local/bin/vsvupg
+            sed -i "2s/.*/VersionActual='$UltimaVersion'/" ~/.local/bin/checkupg
       elif [[ "$OSTYPE" == "freebsd"* ]]; then
             gsed -i "2s/.*/VersionActual='$UltimaVersion'/" ~/.local/bin/vsvupg
+            gsed -i "2s/.*/VersionActual='$UltimaVersion'/" ~/.local/bin/checkupg
       else
-            sed -i "2s/.*/VersionActual='$UltimaVersion'/" ~/.local/bin/vsvupg    
+            sed -i "2s/.*/VersionActual='$UltimaVersion'/" ~/.local/bin/vsvupg
+            sed -i "2s/.*/VersionActual='$UltimaVersion'/" ~/.local/bin/checkupg
       fi
 
       rm -r -f $repositorio || { echo "Error: Actualizacion correcta pero no se pudo eliminar los archivos temporales: ~/$repositorio"; return 1; }
