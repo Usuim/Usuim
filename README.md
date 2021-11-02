@@ -1,9 +1,25 @@
 # Introduction
 ### Complete NeoVim setup look like Visual Studio Code for programming in Rust, Python, C/C++, Javascript and Web
-# Dependencies
+## Dependencies
 ```
 pyright - clangd - rust_analyzer - tsserver - vscode-langservers-extracted
 ```
+## FreeBSD Dependencies
+```
+gsed
+```
+# Instalation
+```sh
+git clone https://github.com/SrWither/VsVim
+cd VsVim
+./install.sh
+```
+## Update VsVim
+```sh
+vsvupg
+```
+#### this command automatically downloads and applies the update
+
 # Preview
 ## Theme
 #### One Dark
