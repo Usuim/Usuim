@@ -20,6 +20,6 @@ g.dashboard_custom_section = {
     g = {description = {"  Exit                      leader q  "}, command = "exit"}
 }
 
-g.dashboard_custom_footer = {'type  :help<Enter>  or  <F1>  for on-line help'}
+g.dashboard_custom_footer = {'VsVim 1.0.1'}
 
 EOF
