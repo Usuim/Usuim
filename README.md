@@ -22,7 +22,7 @@ vsvupg
 #### This command automatically downloads and applies the update
 ### If you want VsVim to update only every time you open terminal
 #### you must go to ~/.local/bin, edit the checkupg file and uncomment this line
-![image](https://user-images.githubusercontent.com/59105868/139930718-13997581-6592-48c1-94aa-3017e4031e6d.png)
+![image](https://user-images.githubusercontent.com/59105868/139931592-ae47b8b7-3d32-48a5-88de-050e77d748b2.png)
 #### and comment the line above
 ### If TreeSitter does not install the syntax, open neovim and enter the following command
 ```
