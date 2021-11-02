@@ -76,7 +76,7 @@ Plug 'cespare/vim-toml'
 
 " Dashboard
 Plug 'glepnir/dashboard-nvim'
-Plug 'liuchengxu/vim-clap', { 'do': ':Clap install-binary' }
+Plug 'liuchengxu/vim-clap'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 
 

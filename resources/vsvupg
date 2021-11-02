@@ -1,0 +1,84 @@
+#!/usr/bin/env bash
+VersionActual='1.0.0'
+repositorio="VsVim"
+usuario="SrWither"
+scripts="install.sh"
+
+
+getConfiguredClient()
+{
+  if  command -v curl &>/dev/null; then
+    configuredClient="curl"
+  elif command -v wget &>/dev/null; then
+    configuredClient="wget"
+  elif command -v http &>/dev/null; then
+    configuredClient="httpie"
+  elif command -v fetch &>/dev/null; then
+    configuredClient="fetch"
+  else
+    echo "Error: Necesitas curl, wget, httpie o fetch instalado\." >&2
+    return 1
+  fi
+}
+
+httpGet()
+{
+  case "$configuredClient" in
+    curl)  curl -A curl -s "$@" ;;
+    wget)  wget -qO- "$@" ;;
+    httpie) http -b GET "$@" ;;
+    fetch) fetch -q "$@" ;;
+  esac
+}
+
+update()
+{
+if [[ $VersionActual == "" || $repositorio == "" || $usuario == "" || $scripts == ""  || $UltimaVersion == "" ]];then
+  echo "Error: No se configuro correctamente." >&2
+  return 1
+else
+  if [[ "$UltimaVersion" != "$VersionActual" ]]; then
+    echo "Version $UltimaVersion disponible"
+    echo -n "¿Quieres actualizar $repositorio? [Y/n]: "
+    read -r answer
+    if [[ "$answer" == "Y" || "$answer" == "y" ]] ;then
+      cd  ~ || { echo 'Actualizacion fallida' ; return 1 ; }
+      if [[ -d  ~/$repositorio ]]; then rm -r -f $repositorio  || { echo "Error: Permiso denegado, intenta ejecutarlo con sudo o doas" ; return 1 ; }; fi
+      git clone "https://github.com/$usuario/$repositorio" || { echo "No se pudo descargar la ultima version" ; return 1; }
+      cd $repositorio ||  { echo 'Update Failed' ; return 1 ;}
+      git checkout "v$UltimaVersion" 2> /dev/null || git checkout "$UltimaVersion" 2> /dev/null || echo "No se pudo ejecutar  git checkout para la version estable, actualizando con el ultimo commit!."
+
+      chmod +x $scripts
+      "./$scripts" || return 1
+      cd ..
+      
+      # Sed en diferentes S.O
+      
+      if [[ "$OSTYPE" == "linux-gnu"* ]]; then
+            sed -i "2s/.*/VersionActual='$UltimaVersion'/" ~/test/autoupdater/updater.sh
+      elif [[ "$OSTYPE" == "freebsd"* ]]; then
+            gsed -i "2s/.*/VersionActual='$UltimaVersion'/" ~/test/autoupdater/updater.sh
+      else
+            sed -i "2s/.*/VersionActual='$UltimaVersion'/" ~/test/autoupdater/updater.sh      
+      fi
+
+      rm -r -f $repositorio || { echo "Error: Actualizacion correcta pero no se pudo eliminar los archivos temporales: ~/$repositorio"; return 1; }
+    else
+      return 1
+    fi
+  else
+    echo "$repositorio es la ultima version instalada"
+  fi
+fi
+}
+
+checkInternet()
+{
+  httpGet google.com > /dev/null 2>&1 || { echo "Error: No hay conexion a internet" >&2; return 1; } # query google with a get request
+}
+
+
+getConfiguredClient || exit 1
+checkInternet || exit 1
+UltimaVersion=$(httpGet https://api.github.com/repos/$usuario/$repositorio/tags | grep -Eo '"name":.*?[^\\]",'| head -1 | grep -Eo "[0-9.]+" ) 
+update || exit 1
