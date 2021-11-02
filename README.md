@@ -67,9 +67,9 @@ nvim .
 
 ## Keyboard shortcuts
 
-| F2| Ctrl + S| Ctrlr + F | Ctrl + T | Tab |
-| ----- | ---- | ---- | ---- | ---- | 
-| Toggle NERDTree | Save File | Search words in the project | Open Terminal | to change the element in the code completion |
+| F2| F3|Ctrl + S| Ctrlr + F | Ctrl + T | Tab |
+| ----- | ----- | ---- | ---- | ---- | ---- | 
+| Toggle NERDTree | Open Dashboard | Save File | Search words in the project | Open Terminal | to change the element in the code completion |
 
 ## Additional
 
