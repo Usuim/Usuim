@@ -10,6 +10,10 @@ pyright - clangd - rust_analyzer - tsserver - vscode-langservers-extracted
 
 ![image](https://user-images.githubusercontent.com/59105868/139554329-8b6abf25-6d51-49ae-9f63-ddf20dd6ba02.png)
 
+## Dashboard
+
+![image](https://user-images.githubusercontent.com/59105868/139777726-08429870-dd89-4a05-9c6d-11ace2939c1d.png)
+
 ## Code Completion
 #### Python
 
