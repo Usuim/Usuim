@@ -18,7 +18,6 @@ install_vsvim() {
 	chmod +x resources/*
 	cp resources/* ~/.local/bin
 	nvim -c ":PlugInstall | :qa!"
-	nvim -c ":TSInstall all"
 }
 
 CheckExistConfig() {
