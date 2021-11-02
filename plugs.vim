@@ -74,4 +74,10 @@ Plug 'nvim-lua/plenary.nvim'
 Plug 'saecki/crates.nvim'
 Plug 'cespare/vim-toml'
 
+" Dashboard
+Plug 'glepnir/dashboard-nvim'
+Plug 'liuchengxu/vim-clap', { 'do': ':Clap install-binary' }
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+
+
 call plug#end()

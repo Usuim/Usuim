@@ -2,9 +2,11 @@ runtime plugs.vim
 runtime mapping.vim
 runtime config.vim
 runtime lsp.vim
+runtime dashboard.vim
 
 " Set Configuration
-"filetype plugin on
+
+filetype plugin on
 set encoding=UTF-8
 set number
 set clipboard+=unnamedplus
@@ -28,5 +30,5 @@ colorscheme onedark
 let g:airline_theme='onedark'
 
 " NERDTree
-autocmd vimenter * if !argc() | NERDTree | endif
+"autocmd vimenter * if !argc() | NERDTree | endif
 
