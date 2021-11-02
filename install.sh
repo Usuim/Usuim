@@ -17,6 +17,10 @@ update(){
 
 install_vsvim() {
 	echo "Instalando configuracion..."
+	LCLDIR="$HOME/.local/bin"
+	if [[ ! -d $LCLDIR ]]; then
+		mkdir -p ~/.local/bin
+	fi
 	sleep 3
 	mkdir ~/.config/nvim
 	cp *.vim ~/.config/nvim
