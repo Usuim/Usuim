@@ -29,6 +29,6 @@ set mouse=a
 colorscheme onedark
 let g:airline_theme='onedark'
 
-" NERDTree
+" open NERDTree when neovim starts
 "autocmd vimenter * if !argc() | NERDTree | endif
 
