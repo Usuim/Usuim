@@ -15,6 +15,7 @@ install_vsvim() {
 	mkdir ~/.config/nvim
 	cp *.vim ~/.config/nvim
 	echo 'PATH=$PATH:~/.local/bin' >> ~/.profile
+	chmod +x resources/*
 	cp resources/* ~/.local/bin
 	nvim -c ":PlugInstall | :qa!"
 	nvim -c ":TSInstall all"
