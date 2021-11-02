@@ -12,6 +12,7 @@ gsed
 ```sh
 git clone https://github.com/SrWither/VsVim
 cd VsVim
+chmod +x install.sh
 ./install.sh
 ```
 ## Update VsVim
