@@ -19,8 +19,11 @@ chmod +x install.sh
 ```sh
 vsvupg
 ```
-#### this command automatically downloads and applies the update
-
+#### This command automatically downloads and applies the update
+#### If TreeSitter does not install the syntax, open neovim and enter the following command
+```
+:TSInstall all
+```
 # Preview
 ## Theme
 #### One Dark
