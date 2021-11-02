@@ -38,6 +38,6 @@ checkInternet || exit 1
 UltimaVersion=$(httpGet https://api.github.com/repos/SrWither/VsVim/tags | grep -Eo '"name":.*?[^\\]",'| head -1 | grep -Eo "[0-9.]+" )
 
 if [[ "$UltimaVersion" != "$VersionActual" ]]; then
-	echo "VsVim: Nueva version disponible '$UltimaVersion' Para actualizarte, ejecuta el siguiente comando: vsvupg"
+	echo "VsVim: Version '$UltimaVersion' Disponible, Actualizalo con 'vsvupg'"
 fi
 
