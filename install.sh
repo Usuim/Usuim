@@ -14,6 +14,7 @@ install_vsvim() {
 	echo "instalando configuracion!"
 	mkdir ~/.config/nvim
 	cp *.vim ~/.config/nvim
+	cp .IDVSVIM ~/.config/nvim
 	echo 'PATH=$PATH:~/.local/bin' >> ~/.profile
 	chmod +x resources/*
 	cp resources/* ~/.local/bin
