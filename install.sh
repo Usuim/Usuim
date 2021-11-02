@@ -28,6 +28,10 @@ install_vsvim() {
 	echo 'PATH=$PATH:~/.local/bin' >> ~/.profile
 	chmod +x resources/*
 	cp resources/* ~/.local/bin
+	echo "~/.local/bin/checkupg" >> .zshrc
+	echo "~/.local/bin/checkupg" >> .shrc
+	echo "~/.local/bin/checkupg" >> .bashrc
+	echo "~/.local/bin/checkupg" >> .cshrc
 	nvim -c ":PlugInstall | :qa!"
 	echo "instalación exitosa"
 }
