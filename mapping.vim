@@ -36,3 +36,6 @@ map <C-F7> <Plug>NERDCommenterToggle
 
 " Telescope
 nnoremap <C-f> <cmd>Telescope live_grep<cr>
+
+" Open dashboard
+nnoremap <F3> :Dashboard <CR>
