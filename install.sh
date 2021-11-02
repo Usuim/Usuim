@@ -1,17 +1,23 @@
 #!/usr/bin/env bash
 
 backup() {
+	echo "Haciendo backup..."
+	sleep 2
 	mv ~/.config/nvim ~/.config/NeovimBackupVS
+	echo "listo!"
 	install_vsvim
 }
 
 update(){
-	echo "Actualizando!"
+	echo "Actualizando..."
+	sleep 3
 	cp *.vim ~/.config/nvim
+	echo "Actualizacion exitosa"
 }
 
 install_vsvim() {
-	echo "instalando configuracion!"
+	echo "Instalando configuracion..."
+	sleep 3
 	mkdir ~/.config/nvim
 	cp *.vim ~/.config/nvim
 	cp .IDVSVIM ~/.config/nvim
@@ -19,6 +25,7 @@ install_vsvim() {
 	chmod +x resources/*
 	cp resources/* ~/.local/bin
 	nvim -c ":PlugInstall | :qa!"
+	echo "instalación exitosa"
 }
 
 CheckExistConfig() {
