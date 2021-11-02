@@ -36,7 +36,7 @@ vsvupg
 
 ## Dashboard
 
-![image](https://user-images.githubusercontent.com/59105868/139777726-08429870-dd89-4a05-9c6d-11ace2939c1d.png)
+![image](https://user-images.githubusercontent.com/59105868/139941484-9b51380e-0cab-4766-9c80-7d521d08d6a1.png)
 
 ## Code Completion
 #### Python
