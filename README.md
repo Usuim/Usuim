@@ -1,5 +1,5 @@
 # Introduction
-### Complete NeoVim setup for programming in Rust, Python, C/C++, Javascript and Web
+### Complete NeoVim setup look like Visual Studio Code for programming in Rust, Python, C/C++, Javascript and Web
 # Dependencies
 ```
 pyright - clangd - rust_analyzer - tsserver - vscode-langservers-extracted
