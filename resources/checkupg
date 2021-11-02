@@ -1,0 +1,63 @@
+#!/usr/bin/env bash
+VersionActual='1.0.1'
+
+getConfiguredClient()
+{
+  if  command -v curl &>/dev/null; then
+    configuredClient="curl"
+  elif command -v wget &>/dev/null; then
+    configuredClient="wget"
+  elif command -v http &>/dev/null; then
+    configuredClient="httpie"
+  elif command -v fetch &>/dev/null; then
+    configuredClient="fetch"
+  else
+    echo "Error: Necesitas curl, wget, httpie o fetch instalado\." >&2
+    return 1
+  fi
+}
+
+httpGet()
+{
+  case "$configuredClient" in
+    curl)  curl -A curl -s "$@" ;;
+    wget)  wget -qO- "$@" ;;
+    httpie) http -b GET "$@" ;;
+    fetch) fetch -q "$@" ;;
+  esac
+}
+
+check() {
+	echo -n "Nueva version de VsVim: $UltimaVersion ¿Quieres actualizarlo? [Y/n]: "
+    	read -r answer
+	if [[ "$answer" == "Y" || "$answer" == "y" ]]; then
+		~/.local/bin/vsvupg
+		if [[ "$OSTYPE" == "linux-gnu"* ]]; then
+            		sed -i "2s/.*/VersionActual='$UltimaVersion'/" ~/.local/bin/checkupg
+      		elif [[ "$OSTYPE" == "freebsd"* ]]; then
+            		gsed -i "2s/.*/VersionActual='$UltimaVersion'/" ~/.local/bin/checkupg
+      		else
+            		sed -i "2s/.*/VersionActual='$UltimaVersion'/" ~/.local/bin/checkupg
+      		fi
+	elif [[ "$answer" == "N" || "$answer" == "N" ]]; then
+		:
+	else
+		:
+	fi
+
+}
+
+checkInternet()
+{
+  httpGet google.com > /dev/null 2>&1 || { echo "Error: No hay conexion a internet" >&2; return 1; } # query google with a get request
+}
+
+getConfiguredClient || exit 1
+checkInternet || exit 1
+
+UltimaVersion=$(httpGet https://api.github.com/repos/SrWither/VsVim/tags | grep -Eo '"name":.*?[^\\]",'| head -1 | grep -Eo "[0-9.]+" )
+
+if [[ "$UltimaVersion" != "$VersionActual" ]]; then
+	check
+fi
+
