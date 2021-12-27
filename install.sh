@@ -12,6 +12,8 @@ update(){
 	echo "Actualizando..."
 	sleep 3
 	cp *.vim ~/.config/nvim
+	mkdir -p ~/.config/nvim/autoload
+	cp autoload/*.vim ~/.config/nvim/autoload
 	echo "Actualizacion exitosa"
 }
 
@@ -23,8 +25,10 @@ install_vsvim() {
 	fi
 	sleep 3
 	mkdir ~/.config/nvim
+	mkdir -p ~/.config/nvim/autoload
 	cp *.vim ~/.config/nvim
 	cp .IDVSVIM ~/.config/nvim
+	cp autoload/*.vim ~/.config/nvim/autoload
 	echo 'PATH=$PATH:~/.local/bin' >> ~/.profile
 	echo 'PATH=$PATH:~/.local/bin' >> ~/.zshrc
 	echo 'PATH=$PATH:~/.local/bin' >> ~/.bashrc
