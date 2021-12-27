@@ -15,6 +15,7 @@ Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
 " Themes
 Plug 'navarasu/onedark.nvim'
+Plug 'xiyaowong/nvim-transparent'
 
 " Airline
 Plug 'vim-airline/vim-airline'
@@ -79,5 +80,7 @@ Plug 'glepnir/dashboard-nvim'
 Plug 'liuchengxu/vim-clap'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 
+"Github Copilot
+Plug 'github/copilot.vim'
 
 call plug#end()

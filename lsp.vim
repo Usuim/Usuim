@@ -19,6 +19,8 @@ local python_lsp = require'lspconfig'
 local clangd_lsp = require'lspconfig'
 -- JS/TSS
 local tss_lsp = require'lspconfig'
+-- VUE
+local vue_lsp = require'lspconfig'
 
 -- function to attach completion when setting up lsp
 local on_attach = function(client)
@@ -35,7 +37,8 @@ python_lsp.pyright.setup({on_attach=on_attach})
 clangd_lsp.clangd.setup({on_attach=on_attach})
 -- Start tsserver
 tss_lsp.tsserver.setup({on_attach=on_attach})
-
+-- Start VLS
+vue_lsp.vuels.setup({on_attach=on_attach})
 
 -- Enable diagnostics
 vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(

@@ -20,7 +20,6 @@ set expandtab
 set autoindent
 set fileformat=unix
 set splitbelow
-set relativenumber
 set termguicolors
 set guifont=Fira\ Code:h11
 set mouse=a
