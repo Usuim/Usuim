@@ -47,8 +47,15 @@ vsvupg
 
 ![image](https://user-images.githubusercontent.com/59105868/139590020-91996d48-64c8-47f7-8e71-817d4a3b0c7d.png)
 
+###### Zsh - Bash - Sh
 ```sh
 export VIRTUAL_ENV=$(pwd)/venv/
+source venv/bin/activate
+nvim .
+```
+###### Csh
+```sh
+setenv VIRTUAL_ENV `pwd`/venv/
 source venv/bin/activate
 nvim .
 ```
