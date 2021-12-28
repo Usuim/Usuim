@@ -24,7 +24,7 @@ set termguicolors
 set guifont=Fira\ Code:h12
 set mouse=a
 set keymodel=startsel,stopsel
-autocmd BufRead,BufNewFile * start
+" autocmd BufRead,BufNewFile * start
 
 " Themes
 colorscheme onedark
