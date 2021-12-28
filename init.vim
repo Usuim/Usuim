@@ -3,6 +3,7 @@ runtime mapping.vim
 runtime config.vim
 runtime lsp.vim
 runtime dashboard.vim
+runtime tree.vim
 
 " Set Configuration
 
@@ -24,6 +25,8 @@ set termguicolors
 set guifont=Fira\ Code:h12
 set mouse=a
 set keymodel=startsel,stopsel
+
+" AutoInsert
 " autocmd BufRead,BufNewFile * start
 
 " Themes
@@ -31,6 +34,4 @@ colorscheme onedark
 let g:airline_theme='onedark'
 
 " NERDTree
-"autocmd vimenter * if !argc() | NERDTree | endif
-
-" Term insert mode
+" autocmd vimenter * if !argc() | NERDTree | endif

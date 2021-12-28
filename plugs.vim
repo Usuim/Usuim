@@ -32,6 +32,7 @@ Plug 'romgrk/barbar.nvim'
 " Tree
 Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/nerdtree-project-plugin'
+Plug 'kyazdani42/nvim-tree.lua'
 
 " Typing
 Plug 'jiangmiao/auto-pairs'
@@ -80,5 +81,12 @@ Plug 'glepnir/dashboard-nvim'
 Plug 'liuchengxu/vim-clap'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 
+"Github Copilot
+Plug 'github/copilot.vim'
+
+" popup
+Plug 'nvim-lua/plenary.nvim'
+
+Plug 'nvim-lua/popup.nvim'
 
 call plug#end()

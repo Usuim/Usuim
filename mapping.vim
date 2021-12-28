@@ -6,6 +6,7 @@ let mapleader=" "
 "tnoremap <esc> <c-\><c-n>
 "nnoremap <c-t> :split<CR>:ter<CR>:resize 12<CR>
 nnoremap <c-t> :ToggleTerm size=10<CR>
+inoremap <c-t> <c-o>:ToggleTerm size=10<CR>
 
 " Use <Tab> and <S-Tab> to navigate through popup menu
 inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
@@ -26,7 +27,8 @@ nnoremap <silent> <Leader><C-k> :TmuxNavigateUp<cr>
 nnoremap <silent> <Leader><C-l> :TmuxNavigateRight<cr>
 
 " Toggle NERDTree
-nnoremap <F2> :NERDTreeToggle<CR>
+imap <F2> <c-o>:NvimTreeToggle<CR>
+nnoremap <F2> :NvimTreeToggle<CR>
 
 " NerdCommenter
 map <C-F7> <Plug>NERDCommenterToggle
@@ -75,6 +77,5 @@ noremap <C-Q>       <C-V>
 nnoremap <c-z> :u<CR>
 inoremap <c-z> <c-o>:u<CR>
 
-nnoremap <c-y> <c-r><CR>
-inoremap <c-y> <c-o><c-r><CR>
-
+nnoremap <c-y> :redo<CR>
+inoremap <c-y> <c-o>:redo<CR>
