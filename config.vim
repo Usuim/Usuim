@@ -29,7 +29,7 @@ require'nvim-treesitter.configs'.setup {
 }
 
 require("transparent").setup({
-  enable = true, -- boolean: enable transparent
+  enable = false, -- boolean: enable transparent
   extra_groups = { -- table/string: additional groups that should be clear
     -- In particular, when you set it to 'all', that means all avaliable groups
 
