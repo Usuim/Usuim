@@ -80,7 +80,5 @@ Plug 'glepnir/dashboard-nvim'
 Plug 'liuchengxu/vim-clap'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 
-"Github Copilot
-Plug 'github/copilot.vim'
 
 call plug#end()
