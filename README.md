@@ -2,7 +2,7 @@
 ### Complete NeoVim setup look like Visual Studio Code for programming in Rust, Python, C/C++, Javascript and Web
 ## Dependencies
 ```
-pyright - clangd - rust_analyzer - tsserver - vscode-langservers-extracted
+pyright - clangd - rust_analyzer - tsserver - vscode-langservers-extracted - xclip - xsel
 ```
 ## FreeBSD Dependencies
 ```
@@ -91,9 +91,9 @@ nvim .
 
 ## Keyboard shortcuts
 
-| F2| F3|Ctrl + S| Ctrlr + F | Ctrl + T | Tab |
-| ----- | ----- | ---- | ---- | ---- | ---- | 
-| Toggle NERDTree | Open Dashboard | Save File | Search words in the project | Open Terminal | to change the element in the code completion |
+| F2| F3|Ctrl + S| Ctrl + F | Ctrl + T | Tab | Ctrl + C | Ctrl + X | Ctrl + V | Ctrl + Z | Ctrl + Y |
+| ----- | ----- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
+| Toggle NERDTree | Open Dashboard | Save File | Search words in the project | Open Terminal | to change the element in the code completion | Copy | Cut | Paste | Undo | Redo |
 
 ## Additional
 
