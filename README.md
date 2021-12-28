@@ -91,9 +91,9 @@ nvim .
 
 ## Keyboard shortcuts
 
-| F2| F3|Ctrl + S| Ctrl + F | Ctrl + T | Tab | Ctrl + C | Ctrl + X | Ctrl + V | Ctrl + Z | Ctrl + Y |
+| Ctrl + C | Ctrl + X | Ctrl + V | Ctrl + Z | Ctrl + Y | F2 | F3 | Ctrl + S | Ctrl + F | Ctrl + T | Tab |
 | ----- | ----- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
-| Toggle NERDTree | Open Dashboard | Save File | Search words in the project | Open Terminal | to change the element in the code completion | Copy | Cut | Paste | Undo | Redo |
+|  Copy | Cut | Paste | Undo | Redo | Toggle NERDTree | Open Dashboard | Save File | Search words in the project | Open Terminal | to change the element in the code completion |
 
 ## Additional
 
