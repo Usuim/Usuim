@@ -48,7 +48,7 @@ and comment the line above
 ## Code Completion
 #### Python
 
-![image](https://user-images.githubusercontent.com/59105868/139554350-43cc3023-4d8b-4726-baf2-8dcb0d9f3258.png)
+![image](https://user-images.githubusercontent.com/59105868/147699032-ddd47974-f8d0-4dea-a3db-8f2caf9e3fee.png)
 
 #### Python Virtualenv
 
@@ -67,26 +67,21 @@ source venv/bin/activate
 nvim .
 ```
 #### C/C++
-
-![image](https://user-images.githubusercontent.com/59105868/139554520-b517eae8-7a58-47a8-a981-555664a62add.png)
+![image](https://user-images.githubusercontent.com/59105868/147699084-a4da695a-6871-4b45-bebe-5c6a267fa58d.png)
 
 #### Rust
-![image](https://user-images.githubusercontent.com/59105868/139554779-a5e89801-b785-47b5-8bdf-caf1bb4cb8be.png)
+![image](https://user-images.githubusercontent.com/59105868/147699262-a6790a02-8aa1-409b-89a3-fc8142accc8c.png)
 
 #### Javascript / Typescript
-
 ![image](https://user-images.githubusercontent.com/59105868/139554858-2ef8de1b-4981-4444-9cb3-9df42ffaa348.png)
 
 #### Html
-
 ![image](https://user-images.githubusercontent.com/59105868/139554899-0b4ff064-2afa-477a-bbaa-b199adcb67ff.png)
 
 #### Css/Sass
-
 ![image](https://user-images.githubusercontent.com/59105868/139554949-bf113d3e-f85a-4b22-9d9f-589d202657d6.png)
 
 ## Crates
-
 ![image](https://user-images.githubusercontent.com/59105868/139554993-13ea595d-2020-4b42-abfa-ee2ec192248b.png)
 
 ## TreeFile And Terminal
