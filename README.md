@@ -43,7 +43,7 @@ and comment the line above
 
 ## Dashboard
 
-![image](https://user-images.githubusercontent.com/59105868/147698460-54aaeecc-ce81-460b-8573-5fe4c94d8ea6.png)
+![image](https://user-images.githubusercontent.com/59105868/147704242-a2386978-0036-44af-9d1c-b035b1719804.png)
 
 ## Code Completion
 #### Python
