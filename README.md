@@ -39,11 +39,11 @@ and comment the line above
 ## Theme
 #### One Dark
 
-![image](https://user-images.githubusercontent.com/59105868/139554329-8b6abf25-6d51-49ae-9f63-ddf20dd6ba02.png)
+![image](https://user-images.githubusercontent.com/59105868/147698509-2792b901-1d75-43da-b6c4-83420733a265.png)
 
 ## Dashboard
 
-![image](https://user-images.githubusercontent.com/59105868/139941484-9b51380e-0cab-4766-9c80-7d521d08d6a1.png)
+![image](https://user-images.githubusercontent.com/59105868/147698460-54aaeecc-ce81-460b-8573-5fe4c94d8ea6.png)
 
 ## Code Completion
 #### Python
