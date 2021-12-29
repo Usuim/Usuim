@@ -63,7 +63,7 @@ nvim .
 ###### Csh
 ```sh
 setenv VIRTUAL_ENV `pwd`/venv/
-source venv/bin/activate
+source venv/bin/activate.csh
 nvim .
 ```
 #### C/C++
