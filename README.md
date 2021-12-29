@@ -98,7 +98,7 @@ nvim .
 
 | Ctrl + C | Ctrl + X | Ctrl + V | Ctrl + Z | Ctrl + Y | Ctrl + L | F2 | F3 | Ctrl + S | Ctrl + F | Ctrl + T | Tab |
 | ----- | ----- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
-|  Copy | Cut | Paste | Undo | Redo | Format Code | Toggle NERDTree | Open Dashboard | Save File | Search words in the project | Open Terminal | to change the element in the code completion |
+|  Copy | Cut | Paste | Undo | Redo | Format Code | Toggle Nvim-Tree | Open Dashboard | Save File | Search words in the project | Open Terminal | to change the element in the code completion |
 
 ## Additional
 
