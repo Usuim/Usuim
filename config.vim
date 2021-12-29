@@ -6,6 +6,10 @@ let NERDTreeMinimalUI=1
 let NERDTreeMapOpenInTab='\t'
 let g:NERDTreeWinSize=30
 
+" Prettier
+let g:python3_host_prog="python3.8"
+au BufWrite * :Autoformat
+
 "NerdCommenter
 let g:NERDCreateDefaultMappings = 1
 let g:NERDSpaceDelims = 1
@@ -43,5 +47,5 @@ require("transparent").setup({
   },
   exclude = {}, -- table: groups you don't want to clear
 })
-EOF
 
+EOF

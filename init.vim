@@ -25,9 +25,13 @@ set termguicolors
 set guifont=Fira\ Code:h12
 set mouse=a
 set keymodel=startsel,stopsel
+set tabstop=2 shiftwidth=2 expandtab
+autocmd BufRead,BufNewFile,BufEnter * start
 
-" AutoInsert
-" autocmd BufRead,BufNewFile * start
+" AutoChangeMode
+autocmd BufEnter,BufNew NvimTree stopinsert
+autocmd BufEnter,BufNew Dashboard stopinsert
+
 
 " Themes
 colorscheme onedark

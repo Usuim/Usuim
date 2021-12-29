@@ -11,7 +11,9 @@ endif
 call plug#begin()
 
 " Syntax
-Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'} 
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'posva/vim-vue'
+Plug 'Chiel92/vim-autoformat'
 
 " Themes
 Plug 'navarasu/onedark.nvim'
@@ -20,18 +22,16 @@ Plug 'xiyaowong/nvim-transparent'
 " Airline
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'posva/vim-vue'
 
 "Icons
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'ryanoasis/vim-devicons'
-Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 
 " Navbar
 Plug 'romgrk/barbar.nvim'
 
 " Tree
-Plug 'scrooloose/nerdtree'
-Plug 'scrooloose/nerdtree-project-plugin'
 Plug 'kyazdani42/nvim-tree.lua'
 
 " Typing
@@ -77,7 +77,7 @@ Plug 'saecki/crates.nvim'
 Plug 'cespare/vim-toml'
 
 " Dashboard
-Plug 'glepnir/dashboard-nvim'
+Plug 'SrWither/dashboard-nvim'
 Plug 'liuchengxu/vim-clap'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 

@@ -17,8 +17,8 @@ imap <Tab> <Plug>(completion_smart_tab)
 imap <S-Tab> <Plug>(completion_smart_s_tab)
 
 " Save
-nnoremap <c-s> :w!<CR>
-inoremap <c-s> <c-o>:w!<cr>
+nnoremap <c-s> :retab \| :w!<CR>
+inoremap <c-s> <c-o>:retab \| :w!<cr>
 
 "Tmux
 nnoremap <silent> <Leader><C-h> :TmuxNavigateLeft<cr>
