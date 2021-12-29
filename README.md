@@ -1,4 +1,6 @@
-![image](https://user-images.githubusercontent.com/59105868/147696668-8b35cba4-f27e-4cad-b901-6757a93d1ba8.png)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/59105868/147696668-8b35cba4-f27e-4cad-b901-6757a93d1ba8.png" />
+</p>
 
 
 # Introduction
