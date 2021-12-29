@@ -16,7 +16,7 @@ getConfiguredClient()
   elif command -v fetch &>/dev/null; then
     configuredClient="fetch"
   else
-    echo "Error: Necesitas curl, wget, httpie o fetch instalado\." >&2
+    echo "Error: You need curl, wget, httpie o fetch installed\." >&2
     return 1
   fi
 }
@@ -34,25 +34,25 @@ httpGet()
 update()
 {
 if [[ $VersionActual == "" || $repositorio == "" || $usuario == "" || $scripts == ""  || $UltimaVersion == "" ]];then
-  echo "Error: No se configuro correctamente." >&2
+  echo "Error: Not configured correctly." >&2
   return 1
 else
   if [[ "$UltimaVersion" != "$VersionActual" ]]; then
-    echo "Version $UltimaVersion disponible"
-    echo -n "¿Quieres actualizar $repositorio? [Y/n]: "
+    echo "Version $UltimaVersion available"
+    echo -n "Do you want to update $repositorio? [Y/n]: "
     read -r answer
     if [[ "$answer" == "Y" || "$answer" == "y" ]] ;then
       cd  ~ || { echo 'Actualizacion fallida' ; return 1 ; }
-      if [[ -d  ~/$repositorio ]]; then rm -r -f $repositorio  || { echo "Error: Permiso denegado, intenta ejecutarlo con sudo o doas" ; return 1 ; }; fi
-      git clone "https://github.com/$usuario/$repositorio" || { echo "No se pudo descargar la ultima version" ; return 1; }
+      if [[ -d  ~/$repositorio ]]; then rm -r -f $repositorio  || { echo "Error: Permission denied, try to run with sudo or doas" ; return 1 ; }; fi
+      git clone "https://github.com/$usuario/$repositorio" || { echo "Couldn't download the latest version" ; return 1; }
       cd $repositorio ||  { echo 'Update Failed' ; return 1 ;}
-      git checkout "v$UltimaVersion" 2> /dev/null || git checkout "$UltimaVersion" 2> /dev/null || echo "No se pudo ejecutar  git checkout para la version estable, actualizando con el ultimo commit!."
+      git checkout "v$UltimaVersion" 2> /dev/null || git checkout "$UltimaVersion" 2> /dev/null || echo "Couldn't run git checkout for stable version, updating with last commit!."
 
       chmod +x $scripts
       "./$scripts" || return 1
       cd ..
       
-      # Sed en diferentes S.O
+      # Sed in diferent O.S
       
       if [[ "$OSTYPE" == "linux-gnu"* ]]; then
             sed -i "2s/.*/VersionActual='$UltimaVersion'/" ~/.local/bin/vsvupg
@@ -65,19 +65,19 @@ else
             sed -i "2s/.*/VersionActual='$UltimaVersion'/" ~/.local/bin/checkupg
       fi
 
-      rm -r -f $repositorio || { echo "Error: Actualizacion correcta pero no se pudo eliminar los archivos temporales: ~/$repositorio"; return 1; }
+      rm -r -f $repositorio || { echo "Error: Successful update but couldn't delete temporary files: ~/$repositorio"; return 1; }
     else
       return 1
     fi
   else
-    echo "$repositorio es la ultima version instalada"
+    echo "$repositorio is in its latest version "
   fi
 fi
 }
 
 checkInternet()
 {
-  httpGet google.com > /dev/null 2>&1 || { echo "Error: No hay conexion a internet" >&2; return 1; } # query google with a get request
+  httpGet google.com > /dev/null 2>&1 || { echo "Error: There isn't Internet connection" >&2; return 1; } # query google with a get request
 }
 
 
