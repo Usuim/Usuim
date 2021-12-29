@@ -8,7 +8,7 @@ let g:NERDTreeWinSize=30
 
 " Prettier
 let g:python3_host_prog="python3.8"
-au BufWrite * :Autoformat
+" au BufWrite * :Autoformat
 
 "NerdCommenter
 let g:NERDCreateDefaultMappings = 1

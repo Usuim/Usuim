@@ -20,6 +20,10 @@ imap <S-Tab> <Plug>(completion_smart_s_tab)
 nnoremap <c-s> :retab \| :w!<CR>
 inoremap <c-s> <c-o>:retab \| :w!<cr>
 
+" Format
+nnoremap <c-l> :Autoformat <cr>
+inoremap <c-l> <c-o>:Autoformat \| :start <cr>
+
 "Tmux
 nnoremap <silent> <Leader><C-h> :TmuxNavigateLeft<cr>
 nnoremap <silent> <Leader><C-j> :TmuxNavigateDown<cr>
