@@ -1,24 +1,24 @@
 #!/usr/bin/env bash
 
 backup() {
-	echo "Haciendo backup..."
+	echo "Making backup..."
 	sleep 2
 	mv ~/.config/nvim ~/.config/NeovimBackupVS
-	echo "listo!"
+	echo "Done!"
 	install_vsvim
 }
 
 update(){
-	echo "Actualizando..."
+	echo "Updating..."
 	sleep 3
 	cp *.vim ~/.config/nvim
 	mkdir -p ~/.config/nvim/autoload
 	cp autoload/*.vim ~/.config/nvim/autoload
-	echo "Actualizacion exitosa"
+	echo "Successful upgrade!"
 }
 
 install_vsvim() {
-	echo "Instalando configuracion..."
+	echo "Installing configuration..."
 	LCLDIR="$HOME/.local/bin"
 	if [[ ! -d $LCLDIR ]]; then
 		mkdir -p ~/.local/bin
@@ -53,8 +53,8 @@ CheckExistConfig() {
 		else
 
         		while true; do
-	    			echo "¿Quieres hacer un backup de tu configuracion actual? (Y/N)"
-	    			read -p "Opcion: " OPTION
+	    			echo "Do you want to make a backup of your current configuration? (Y/N)"
+	    			read -p "Option: " OPTION
 	    			case $OPTION in
 					y ) backup; break;;
 		    			Y ) backup; break;;
