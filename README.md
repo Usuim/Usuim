@@ -73,22 +73,19 @@ nvim .
 ![image](https://user-images.githubusercontent.com/59105868/147699262-a6790a02-8aa1-409b-89a3-fc8142accc8c.png)
 
 #### Javascript / Typescript
-![image](https://user-images.githubusercontent.com/59105868/139554858-2ef8de1b-4981-4444-9cb3-9df42ffaa348.png)
+![image](https://user-images.githubusercontent.com/59105868/147699596-c46b1574-d052-49ff-ab44-058df57890d7.png)
 
 #### Html
-![image](https://user-images.githubusercontent.com/59105868/139554899-0b4ff064-2afa-477a-bbaa-b199adcb67ff.png)
+![image](https://user-images.githubusercontent.com/59105868/147700714-0328879e-c449-4ff4-8388-c341fba429e3.png)
 
 #### Css/Sass
-![image](https://user-images.githubusercontent.com/59105868/139554949-bf113d3e-f85a-4b22-9d9f-589d202657d6.png)
-
-## Crates
-![image](https://user-images.githubusercontent.com/59105868/139554993-13ea595d-2020-4b42-abfa-ee2ec192248b.png)
+![image](https://user-images.githubusercontent.com/59105868/147700793-2d928886-40ce-415b-8608-7f7372beee5a.png)
 
 ## TreeFile And Terminal
 
-#### NerdTree - ToggleTerm
+#### Nvim-Tree.lua  - ToggleTerm
 
-![image](https://user-images.githubusercontent.com/59105868/139555061-7ccd1b34-12c8-4f6b-8e25-5f8649552288.png)
+![image](https://user-images.githubusercontent.com/59105868/147701232-104321bd-527b-4a57-aa1e-ceefaea1de7a.png)
 
 ## Search for words
 
