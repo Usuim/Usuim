@@ -27,7 +27,7 @@ nnoremap <silent> <Leader><C-k> :TmuxNavigateUp<cr>
 nnoremap <silent> <Leader><C-l> :TmuxNavigateRight<cr>
 
 " Toggle NERDTree
-imap <F2> <c-o>:NvimTreeToggle<CR>
+inoremap <F2> <c-o>:NvimTreeToggle<CR>
 nnoremap <F2> :NvimTreeToggle<CR>
 
 " NerdCommenter
@@ -35,6 +35,7 @@ map <C-F7> <Plug>NERDCommenterToggle
 
 " Telescope
 nnoremap <C-f> <cmd>Telescope live_grep<cr>
+inoremap <C-f> <cmd>Telescope live_grep<cr>
 
 " Open dashboard
 nnoremap <F3> :Dashboard <CR>

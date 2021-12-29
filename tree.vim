@@ -1,3 +1,5 @@
+let g:nvim_tree_disable_window_picker = 1
+
 lua << EOF
 require'nvim-tree'.setup {
   disable_netrw       = true,
