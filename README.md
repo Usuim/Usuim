@@ -88,8 +88,7 @@ nvim .
 ![image](https://user-images.githubusercontent.com/59105868/147701232-104321bd-527b-4a57-aa1e-ceefaea1de7a.png)
 
 ## Search for words
-
-![image](https://user-images.githubusercontent.com/59105868/139555110-1f393d39-7128-4f40-b8c7-5158ca4a813a.png)
+![image](https://user-images.githubusercontent.com/59105868/147702743-d432c4bb-68fa-4003-9c72-e65c65adb35f.png)
 
 ## Mouse Interaction
 
