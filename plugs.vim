@@ -81,9 +81,6 @@ Plug 'SrWither/dashboard-nvim'
 Plug 'liuchengxu/vim-clap'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 
-"Github Copilot
-Plug 'github/copilot.vim'
-
 " popup
 Plug 'nvim-lua/plenary.nvim'
 
