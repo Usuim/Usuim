@@ -24,9 +24,9 @@ vsvupg
 ```
 This command automatically downloads and applies the update
 
-If you want VsVim to update only every time you open terminal
+If you want **VsVim** to update only every time you open terminal
 
-you must go to ~/.local/bin, edit the checkupg file and uncomment this line
+you must go to `~/.local/bin`, edit the checkupg file and uncomment this line
 
 ![image](https://user-images.githubusercontent.com/59105868/139931592-ae47b8b7-3d32-48a5-88de-050e77d748b2.png)
 
