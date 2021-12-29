@@ -52,7 +52,7 @@ and comment the line above
 
 #### Python Virtualenv
 
-![image](https://user-images.githubusercontent.com/59105868/139590020-91996d48-64c8-47f7-8e71-817d4a3b0c7d.png)
+![image](https://user-images.githubusercontent.com/59105868/147698846-e9b9fb38-3063-4326-8640-2e2324d290e8.png)
 
 ###### Zsh - Bash - Sh
 ```sh
