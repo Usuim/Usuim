@@ -1,12 +1,4 @@
-"  NerdTREE
-let NERDTreeShowHidden=1
-let NERDTreeQuitOnOpen=0
-let NERDTreeAutoDeleteBuffer=1
-let NERDTreeMinimalUI=1
-let NERDTreeMapOpenInTab='\t'
-let g:NERDTreeWinSize=30
-
-" Prettier
+" Format
 let g:python3_host_prog="python3.8"
 " au BufWrite * :Autoformat
 

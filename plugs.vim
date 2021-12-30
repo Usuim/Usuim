@@ -50,7 +50,7 @@ Plug 'nvim-lua/lsp_extensions.nvim'
 Plug 'SrWither/completion-nvim'
 
 "Terminal
-Plug 'akinsho/nvim-toggleterm.lua'
+Plug 'SrWither/toggleterm.nvim'
 
 " Test
 Plug 'tyewang/vimux-jest-test'

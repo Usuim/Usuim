@@ -1,9 +1,11 @@
+" Import Config Files
 runtime plugs.vim
 runtime mapping.vim
 runtime config.vim
 runtime lsp.vim
 runtime dashboard.vim
 runtime tree.vim
+runtime functions.vim
 
 " Set Configuration
 
@@ -32,9 +34,7 @@ autocmd BufRead,BufNewFile,BufEnter * start
 colorscheme onedark
 let g:airline_theme='onedark'
 
-" NERDTree
-" autocmd vimenter * if !argc() | NERDTree | endif
-
 " AutoChangeMode
 autocmd BufEnter,BufNew,VimEnter NvimTree stopinsert
 autocmd BufEnter,BufNew Dashboard stopinsert
+autocmd BufEnter,BufNew,TermOpen Term :call Term()

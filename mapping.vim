@@ -1,18 +1,16 @@
+" Leader
 let mapleader=" "
 
 " Terminal
-"nnoremap <C-j> <c-w>j
-"nnoremap <C-k> <c-w>k
-"tnoremap <esc> <c-\><c-n>
-"nnoremap <c-t> :split<CR>:ter<CR>:resize 12<CR>
 nnoremap <c-t> :ToggleTerm size=10<CR>
 inoremap <c-t> <c-o>:ToggleTerm size=10<CR>
+tnoremap <Esc> <C-\><C-n>
 
-" Use <Tab> and <S-Tab> to navigate through popup menu
+" Tab and Shift+Tab in Autcomplete
 inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 
-" use <Tab> as trigger keys
+" Tab trigger keys
 imap <Tab> <Plug>(completion_smart_tab)
 imap <S-Tab> <Plug>(completion_smart_s_tab)
 
@@ -33,6 +31,7 @@ nnoremap <silent> <Leader><C-l> :TmuxNavigateRight<cr>
 " Toggle NERDTree
 inoremap <F2> <c-o>:NvimTreeToggle<CR>
 nnoremap <F2> :NvimTreeToggle<CR>
+tnoremap <F2> <C-\><C-n>:NvimTreeToggle<CR>
 
 " NerdCommenter
 map <C-F7> <Plug>NERDCommenterToggle
@@ -43,16 +42,6 @@ inoremap <C-f> <cmd>Telescope live_grep<cr>
 
 " Open dashboard
 nnoremap <F3> :Dashboard <CR>
-
-" Visual Mode Settings
-
-function! ClipboardYank()
-  call system('xclip -i -selection clipboard', @@)
-endfunction
-function! ClipboardPaste()
-  let @@ = system('xclip -o -selection clipboard')
-endfunction
-
 
 " Ctrl + X and Shift + Del for cut
 vnoremap <silent> <C-X> x:call ClipboardYank()<cr>
@@ -75,8 +64,9 @@ exe 'vnoremap <script> <C-V>' paste#paste_cmd['v']
 imap <S-Insert>     <C-V>
 vmap <S-Insert>     <C-V>
 
-" Ctrl + Q to enter Visual Mode
-noremap <C-Q>       <C-V>
+" Close Window
+nnoremap <C-Q> :close<cr>
+inoremap <C-Q> <c-o>:close<cr>
 
 " Ctrl Z and Ctrl Y
 nnoremap <c-z> :u<CR>
