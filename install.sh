@@ -14,7 +14,7 @@ update(){
 	cp *.vim ~/.config/nvim
 	mkdir -p ~/.config/nvim/autoload
 	cp autoload/*.vim ~/.config/nvim/autoload
-	nvim -c ":PlugUpgrade | PlugUpdate | :qa!"
+	nvim -c ":PlugUpgrade | :PlugClean | :PlugUpdate | :qa!"
 	echo "Successful upgrade!"
 }
 
