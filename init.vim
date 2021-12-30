@@ -28,14 +28,13 @@ set keymodel=startsel,stopsel
 set tabstop=2 shiftwidth=2 expandtab
 autocmd BufRead,BufNewFile,BufEnter * start
 
-" AutoChangeMode
-autocmd BufEnter,BufNew NvimTree stopinsert
-autocmd BufEnter,BufNew Dashboard stopinsert
-
-
 " Themes
 colorscheme onedark
 let g:airline_theme='onedark'
 
 " NERDTree
 " autocmd vimenter * if !argc() | NERDTree | endif
+
+" AutoChangeMode
+autocmd BufEnter,BufNew,VimEnter NvimTree stopinsert
+autocmd BufEnter,BufNew Dashboard stopinsert
