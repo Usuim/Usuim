@@ -83,5 +83,15 @@ checkInternet()
 
 getConfiguredClient || exit 1
 checkInternet || exit 1
-UltimaVersion=$(httpGet https://api.github.com/repos/$usuario/$repositorio/tags | grep -Eo '"name":.*?[^\\]",'| head -1 | grep -Eo "[0-9.]+" ) 
+
+if [[ "$OSTYPE" == "linux-gnu"* ]]; then
+    UltimaVersion=$(httpGet https://api.github.com/repos/$usuario/$repositorio/tags | grep -Eo '"name":.*?[^\\]",'| head -1 | grep -Eo "[0-9.]+" )
+elif [[ "$OSTYPE" == "freebsd"* ]]; then
+    UltimaVersion=$(httpGet https://api.github.com/repos/$usuario/$repositorio/tags | /usr/local/bin/grep -Eo '"name":.*?[^\\]",'| head -1 | /usr/local/bin/grep -Eo "[0-9.]+" )
+elif [[ "$OSTYPE" == "FreeBSD" ]]; then
+    UltimaVersion=$(httpGet https://api.github.com/repos/$usuario/$repositorio/tags | /usr/local/bin/grep -Eo '"name":.*?[^\\]",'| head -1 | /usr/local/bin/grep -Eo "[0-9.]+" )
+else
+    UltimaVersion=$(httpGet https://api.github.com/repos/$usuario/$repositorio/tags | grep -Eo '"name":.*?[^\\]",'| head -1 | grep -Eo "[0-9.]+" )
+fi 
+
 update || exit 1
