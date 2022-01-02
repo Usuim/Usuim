@@ -4,7 +4,7 @@ let mapleader=" "
 " Terminal
 nnoremap <c-t> :ToggleTerm size=10<CR>
 inoremap <c-t> <c-o>:ToggleTerm size=10<CR>
-tnoremap <Esc> <C-\><C-n>
+" tnoremap <Esc> <C-\><C-n>
 
 " Tab and Shift+Tab in Autcomplete
 inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
@@ -31,7 +31,7 @@ nnoremap <silent> <Leader><C-l> :TmuxNavigateRight<cr>
 " Toggle NERDTree
 inoremap <F2> <c-o>:NvimTreeToggle<CR>
 nnoremap <F2> :NvimTreeToggle<CR>
-tnoremap <F2> <C-\><C-n>:NvimTreeToggle<CR>
+" tnoremap <F2> <C-\><C-n>:NvimTreeToggle<CR>
 
 " NerdCommenter
 map <C-F7> <Plug>NERDCommenterToggle
