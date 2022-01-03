@@ -1,4 +1,14 @@
 let g:nvim_tree_disable_window_picker = 1
+let g:nvim_tree_window_picker_exclude = {
+    \   'filetype': [
+    \     'notify',
+    \     'packer',
+    \     'qf'
+    \   ],
+    \   'buftype': [
+    \     'terminal'
+    \   ]
+    \ }
 
 lua << EOF
 require'nvim-tree'.setup {

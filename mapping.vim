@@ -4,7 +4,7 @@ let mapleader=" "
 " Terminal
 nnoremap <c-t> :ToggleTerm size=10<CR>
 inoremap <c-t> <c-o>:ToggleTerm size=10<CR>
-" tnoremap <Esc> <C-\><C-n>
+"tnoremap <Esc> <C-\><C-n>
 
 " Tab and Shift+Tab in Autcomplete
 inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
@@ -28,7 +28,7 @@ nnoremap <silent> <Leader><C-j> :TmuxNavigateDown<cr>
 nnoremap <silent> <Leader><C-k> :TmuxNavigateUp<cr>
 nnoremap <silent> <Leader><C-l> :TmuxNavigateRight<cr>
 
-" Toggle NERDTree
+" Toggle NvimTree
 inoremap <F2> <c-o>:NvimTreeToggle<CR>
 nnoremap <F2> :NvimTreeToggle<CR>
 " tnoremap <F2> <C-\><C-n>:NvimTreeToggle<CR>
@@ -39,6 +39,8 @@ map <C-F7> <Plug>NERDCommenterToggle
 " Telescope
 nnoremap <C-f> <cmd>Telescope live_grep<cr>
 inoremap <C-f> <cmd>Telescope live_grep<cr>
+nnoremap <C-b> <cmd>lua require 'telescope'.extensions.file_browser.file_browser()<CR>
+inoremap <C-b> <cmd>lua require 'telescope'.extensions.file_browser.file_browser()<CR>
 
 " Open dashboard
 nnoremap <F3> :Dashboard <CR>
