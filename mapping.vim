@@ -39,8 +39,10 @@ map <C-F7> <Plug>NERDCommenterToggle
 " Telescope
 nnoremap <C-f> <cmd>Telescope live_grep<cr>
 inoremap <C-f> <cmd>Telescope live_grep<cr>
-nnoremap <C-b> <cmd>lua require 'telescope'.extensions.file_browser.file_browser()<CR>
-inoremap <C-b> <cmd>lua require 'telescope'.extensions.file_browser.file_browser()<CR>
+nnoremap <C-b> <cmd>Telescope find_files cwd=.<cr>
+inoremap <C-b> <cmd>Telescope find_files cwd=.<cr>
+" nnoremap <C-b> <cmd>lua require 'telescope'.extensions.file_browser.file_browser()<CR>
+" inoremap <C-b> <cmd>lua require 'telescope'.extensions.file_browser.file_browser()<CR>
 
 " Open dashboard
 nnoremap <F3> :Dashboard <CR>
