@@ -13,6 +13,12 @@ let g:NERDCommentEmptyLines = 1
 let g:NERDTrimTrailingWhitespace = 1
 let g:NERDToggleCheckAllLines = 1
 
+" Folding
+set foldmethod=expr
+set foldexpr=nvim_treesitter#foldexpr()
+set nofoldenable
+set foldlevelstart=99
+
 "TreeSitter
 lua <<EOF
 require'nvim-treesitter.configs'.setup {
