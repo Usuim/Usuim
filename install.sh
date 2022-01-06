@@ -1,6 +1,4 @@
 #!/usr/bin/env bash
-GREEN='\033[1;32m'
-NC='\033[0m'
 
 backup() {
 	echo "Making backup..."
