@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+GREEN='\033[1;32m'
+NC='\033[0m'
 
 backup() {
 	echo "Making backup..."
@@ -16,6 +18,8 @@ update(){
 	cp autoload/*.vim ~/.config/nvim/autoload
 	nvim -c ":PlugClean | :PlugUpdate | :qa!"
 	echo "Successful upgrade!"
+	echo $GREEN "Changelog:"
+	echo $GREEN "- Minimal bugs fixed" $NC
 }
 
 install_vsvim() {
