@@ -15,7 +15,7 @@ g.dashboard_custom_section = {
     b = {description = {"  Recents                   leader f h"}, command = "Telescope oldfiles"},
     c = {description = {"  Find File                 leader f f"}, command = "Telescope find_files"},
     d = {description = {"  Color Scheme              leader m  "}, command = "Telescope colorscheme"},
-    e = {description = {"  Update Plugins            leader u  "}, command = "PlugUpgrade | PlugClean | PlugUpdate"},
+    e = {description = {"  Update Plugins            leader u  "}, command = "PlugClean | PlugUpdate"},
     f = {description = {"  Settings                  leader e v"}, command = "edit $MYVIMRC"},
     g = {description = {"  Exit                      leader q  "}, command = "exit"}
 }

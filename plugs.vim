@@ -12,7 +12,6 @@ call plug#begin()
 
 " Syntax
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-Plug 'posva/vim-vue'
 Plug 'Chiel92/vim-autoformat'
 
 " Themes
@@ -22,7 +21,6 @@ Plug 'xiyaowong/nvim-transparent'
 " Airline
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'posva/vim-vue'
 
 "Icons
 Plug 'kyazdani42/nvim-web-devicons'
