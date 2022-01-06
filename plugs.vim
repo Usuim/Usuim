@@ -13,6 +13,7 @@ call plug#begin()
 " Syntax
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'Chiel92/vim-autoformat'
+Plug 'sbdchd/neoformat'
 
 " Themes
 Plug 'navarasu/onedark.nvim'
