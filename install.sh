@@ -41,7 +41,6 @@ install_vsvim() {
 	echo "~/.local/bin/checkupg" >> ~/.cshrc
 	nvim -c ":PlugInstall | :qa!"
 	cp *.vim ~/.config/nvim
-	nvim -c ":TSInstall all | :qa!"
 	echo "instalación exitosa"
 }
 
