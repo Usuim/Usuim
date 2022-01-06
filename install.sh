@@ -27,7 +27,7 @@ install_vsvim() {
 	sleep 3
 	mkdir ~/.config/nvim
 	mkdir -p ~/.config/nvim/autoload
-	cp *.vim ~/.config/nvim
+	cp plugs.vim ~/.config/nvim
 	cp .IDVSVIM ~/.config/nvim
 	cp autoload/*.vim ~/.config/nvim/autoload
 	echo 'PATH=$PATH:~/.local/bin' >> ~/.profile
@@ -40,6 +40,8 @@ install_vsvim() {
 	echo "~/.local/bin/checkupg" >> ~/.bashrc
 	echo "~/.local/bin/checkupg" >> ~/.cshrc
 	nvim -c ":PlugInstall | :qa!"
+	cp *.vim ~/.config/nvim
+	nvim -c ":TSInstall all | :qa!"
 	echo "instalación exitosa"
 }
 
