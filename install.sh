@@ -27,6 +27,7 @@ install_vsvim() {
 	sleep 3
 	mkdir ~/.config/nvim
 	mkdir -p ~/.config/nvim/autoload
+	cp init.vim ~/.config/nvim
 	cp plugs.vim ~/.config/nvim
 	cp .IDVSVIM ~/.config/nvim
 	cp autoload/*.vim ~/.config/nvim/autoload
