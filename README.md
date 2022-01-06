@@ -5,7 +5,7 @@
 
 ## Dependencies
 ```
-pyright - clangd - rust_analyzer - tsserver - vscode-langservers-extracted - xclip - xsel
+pyright - clangd - rust_analyzer - tsserver - vscode-langservers-extracted - xclip - xsel - python3.8
 ```
 ## FreeBSD Dependencies
 ```
