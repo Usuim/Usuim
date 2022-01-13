@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-VersionActual='1.2.7'
+VersionActual='1.2.8'
 
 getConfiguredClient()
 {
