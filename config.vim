@@ -1,6 +1,5 @@
-" Format
+" Python
 let g:python3_host_prog="python3.8"
-" au BufWrite * :Autoformat
 
 "NerdCommenter
 let g:NERDCreateDefaultMappings = 1
@@ -18,6 +17,9 @@ set foldmethod=expr
 set foldexpr=nvim_treesitter#foldexpr()
 set nofoldenable
 set foldlevelstart=99
+
+" AutoCloseTah
+
 
 "TreeSitter
 lua <<EOF
@@ -44,5 +46,7 @@ require("transparent").setup({
   },
   exclude = {}, -- table: groups you don't want to clear
 })
+
+require('nvim_comment').setup()
 
 EOF

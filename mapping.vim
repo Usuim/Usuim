@@ -19,8 +19,8 @@ nnoremap <c-s> :retab \| :w!<CR>
 inoremap <c-s> <c-o>:retab \| :w!<cr>
 
 " Format
-nnoremap <c-l> :Autoformat <cr>
-inoremap <c-l> <c-o>:Autoformat \| :start <cr>
+nnoremap <c-l> :Neoformat <cr>
+inoremap <c-l> <c-o>:Neoformat \| :start <cr>
 
 "Tmux
 nnoremap <silent> <Leader><C-h> :TmuxNavigateLeft<cr>
@@ -33,8 +33,11 @@ inoremap <F2> <c-o>:NvimTreeToggle<CR>
 nnoremap <F2> :NvimTreeToggle<CR>
 " tnoremap <F2> <C-\><C-n>:NvimTreeToggle<CR>
 
-" NerdCommenter
-map <C-F7> <Plug>NERDCommenterToggle
+" Commenter
+" map <C-F7> <Plug>NERDCommenterToggle
+inoremap <C-F7> <c-o>:CommentToggle<CR>
+nnoremap <C-F7> :CommentToggle<CR>
+vnoremap <C-F7> :'<,'>CommentToggle<CR>
 
 " Telescope
 nnoremap <C-f> <cmd>Telescope live_grep<cr>

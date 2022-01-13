@@ -12,8 +12,8 @@ call plug#begin()
 
 " Syntax
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-Plug 'Chiel92/vim-autoformat'
 Plug 'sbdchd/neoformat'
+Plug 'terrortylor/nvim-comment'
 
 " Themes
 Plug 'navarasu/onedark.nvim'
@@ -60,7 +60,6 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'mhinz/vim-signify'
 Plug 'yggdroot/indentline'
-Plug 'preservim/nerdcommenter'
 
 " git
 Plug 'tpope/vim-fugitive'
