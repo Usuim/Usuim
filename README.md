@@ -96,7 +96,7 @@ nvim .
 
 ## Keyboard shortcuts
 
-| Ctrl + C | Ctrl + X | Ctrl + V | Ctrl + Z | Ctrl + Y | Ctrl + L | Ctrl + Q | Ctrl + F7 | F2 | F3 | Ctrl + S | Ctrl + F | Ctrl + B | Ctrl + T | Tab |
+| Ctrl + C | Ctrl + X | Ctrl + V | Ctrl + Z | Ctrl + Y | Ctrl + L | Ctrl + Q | Ctrl + 7 | F2 | F3 | Ctrl + S | Ctrl + F | Ctrl + B | Ctrl + T | Tab |
 | ----- | ----- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
 |  Copy | Cut | Paste | Undo | Redo | Format Code | Close Windows | Comment code | Toggle Nvim-Tree | Open Dashboard | Save File | Search words in the project | Open file browser | Open Terminal | to change the element in the code completion |
 
