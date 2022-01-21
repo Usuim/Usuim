@@ -26,9 +26,9 @@ nnoremap <F2> :NvimTreeToggle<CR>
 " tnoremap <F2> <C-\><C-n>:NvimTreeToggle<CR>
 
 " Commenter
-inoremap <C-F7> <c-o>:CommentToggle<CR>
-nnoremap <C-F7> :CommentToggle<CR>
-vnoremap <C-F7> :'<,'>CommentToggle<CR>
+inoremap <C-_> <c-o>:CommentToggle<CR>
+nnoremap <C-_> :CommentToggle<CR>
+vnoremap <C-_> :'<,'>CommentToggle<CR>
 
 " Telescope
 nnoremap <C-f> <cmd>Telescope live_grep<cr>
