@@ -5,12 +5,42 @@
 
 ## Dependencies
 ```
-pyright - clangd - rust_analyzer - tsserver - vscode-langservers-extracted - xclip - xsel - python3.8
+ xclip - xsel - python3.8
 ```
 ## FreeBSD Dependencies
 ```
 gsed
 ```
+## Autocomplete
+#### Python
+```
+pyright
+```
+#### C/Cpp
+```
+clangd
+```
+#### Rust
+```
+rust_analyzer
+```
+#### Typescript/Javascript
+```
+tsserver
+```
+#### Html/Css
+```
+vscode-langservers-extracted
+```
+#### Golang
+```
+gopls
+```
+#### Vue.js
+```
+vue-language-server
+```
+
 # Instalation
 ```sh
 git clone https://github.com/SrWither/VsVim
