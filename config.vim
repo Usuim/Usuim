@@ -1,6 +1,9 @@
 " Python
 let g:python3_host_prog="python3.8"
 
+" Python Formatter
+let g:neoformat_enabled_python = ['autopep8', 'yapf', 'docformatter']
+
 "NerdCommenter
 let g:NERDCreateDefaultMappings = 1
 let g:NERDSpaceDelims = 1
