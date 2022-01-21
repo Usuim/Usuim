@@ -6,14 +6,6 @@ nnoremap <c-t> :ToggleTerm size=10<CR>
 inoremap <c-t> <c-o>:ToggleTerm size=10<CR>
 "tnoremap <Esc> <C-\><C-n>
 
-" Tab and Shift+Tab in Autcomplete
-inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
-inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
-
-" Tab trigger keys
-imap <Tab> <Plug>(completion_smart_tab)
-imap <S-Tab> <Plug>(completion_smart_s_tab)
-
 " Save
 nnoremap <c-s> :retab \| :w!<CR>
 inoremap <c-s> <c-o>:retab \| :w!<cr>
@@ -80,3 +72,7 @@ inoremap <c-z> <c-o>:u<CR>
 
 nnoremap <c-y> :redo<CR>
 inoremap <c-y> <c-o>:redo<CR>
+
+" Ctrl + A to select all
+map <silent> <C-A> :echo "Select All"<cr>ggVG
+inoremap <silent> <C-A> <c-o>gg<c-o>VG<cr>

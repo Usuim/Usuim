@@ -18,8 +18,13 @@ set foldexpr=nvim_treesitter#foldexpr()
 set nofoldenable
 set foldlevelstart=99
 
-" AutoCloseTah
+" Termguicolors
+set termguicolors
 
+" CloseTag
+
+let g:closetag_filenames = '*.html,*.xhtml,*.phtml,*.vue'
+let g:closetag_filetypes = 'html,xhtml,phtml,vue'
 
 "TreeSitter
 lua <<EOF
@@ -48,5 +53,9 @@ require("transparent").setup({
 })
 
 require('nvim_comment').setup()
+
+require 'colorizer'.setup {
+  css = { css = true; };
+}
 
 EOF
