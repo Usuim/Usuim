@@ -14,6 +14,7 @@ call plug#begin()
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'sbdchd/neoformat'
 Plug 'terrortylor/nvim-comment'
+Plug 'JoosepAlviste/nvim-ts-context-commentstring'
 Plug 'norcalli/nvim-colorizer.lua'
 
 " Themes

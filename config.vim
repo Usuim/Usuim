@@ -37,7 +37,17 @@ require'nvim-treesitter.configs'.setup {
     enable = true,
     additional_vim_regex_highlighting = false,
   },
+  context_commentstring = {
+    enable = true,
+    enable_autocmd = false,
+  }
 }
+
+require("nvim_comment").setup({
+  hook = function()
+    require("ts_context_commentstring.internal").update_commentstring()
+  end,
+})
 
 require("transparent").setup({
   enable = false, -- boolean: enable transparent
