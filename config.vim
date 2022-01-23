@@ -4,17 +4,6 @@ let g:python3_host_prog="python3.8"
 " Python Formatter
 let g:neoformat_enabled_python = ['autopep8', 'yapf', 'docformatter']
 
-"NerdCommenter
-let g:NERDCreateDefaultMappings = 1
-let g:NERDSpaceDelims = 1
-let g:NERDCompactSexyComs = 1
-let g:NERDDefaultAlign = 'left'
-let g:NERDAltDelims_java = 1
-let g:NERDCustomDelimiters = { 'c': { 'left': '/**','right': '*/' } }
-let g:NERDCommentEmptyLines = 1
-let g:NERDTrimTrailingWhitespace = 1
-let g:NERDToggleCheckAllLines = 1
-
 " Folding
 set foldmethod=expr
 set foldexpr=nvim_treesitter#foldexpr()
@@ -29,8 +18,9 @@ set termguicolors
 let g:closetag_filenames = '*.html,*.xhtml,*.phtml,*.vue'
 let g:closetag_filetypes = 'html,xhtml,phtml,vue'
 
-"TreeSitter
+" Lua config
 lua <<EOF
+-- Treesitter
 require'nvim-treesitter.configs'.setup {
   ensure_installed = "maintained",
   highlight = {
@@ -43,12 +33,14 @@ require'nvim-treesitter.configs'.setup {
   }
 }
 
+-- NvimComment-Treesitter
 require("nvim_comment").setup({
   hook = function()
     require("ts_context_commentstring.internal").update_commentstring()
   end,
 })
 
+-- Transparent.nvim
 require("transparent").setup({
   enable = false, -- boolean: enable transparent
   extra_groups = { -- table/string: additional groups that should be clear
@@ -65,10 +57,81 @@ require("transparent").setup({
   exclude = {}, -- table: groups you don't want to clear
 })
 
+-- NvimComment Setup
 require('nvim_comment').setup()
 
+-- Colorizer
 require 'colorizer'.setup {
   css = { css = true; };
+}
+
+-- Bufferline
+function closeBuffer()
+  local treeView = require('nvim-tree.view')
+  local bufferline = require('bufferline')
+
+  local explorerWindow = treeView.get_winnr()
+  local wasExplorerOpen = vim.api.nvim_win_is_valid(explorerWindow)
+
+  local bufferToDelete = vim.api.nvim_get_current_buf()
+ 
+  if (wasExplorerOpen) then
+    bufferline.cycle(-1)
+  end
+
+  vim.cmd('bdelete! ' .. bufferToDelete)
+end
+
+require('bufferline').setup {
+  options = {
+    close_command = "lua closeBuffer()",
+    right_mouse_command = "lua closeBuffer()",
+    left_mouse_command = "buffer %d",
+    middle_mouse_command = nil,
+    indicator_icon = '▎',
+    buffer_close_icon = '',
+    modified_icon = '●',
+    close_icon = '',
+    left_trunc_marker = '',
+    right_trunc_marker = '',
+    name_formatter = function(buf)  
+      if buf.name:match('%.md') then
+        return vim.fn.fnamemodify(buf.name, ':t:r')
+      end
+    end,
+    max_name_length = 18,
+    max_prefix_length = 15,
+    tab_size = 18,
+    diagnostics = "nvim_lsp",
+    diagnostics_update_in_insert = true,
+    diagnostics_indicator = function(count, level, diagnostics_dict, context)
+      local s = " "
+      for e, n in pairs(diagnostics_dict) do
+        local sym = e == "error" and " "
+          or (e == "warning" and " " or " " )
+        s = s .. n .. sym
+      end
+      return s
+    end,
+    offsets = {
+      {
+        filetype = "NvimTree", 
+        text = function()
+          return vim.fn.fnamemodify(vim.fn.getcwd(), ":t")
+        end, 
+        highlight = "Directory", 
+        text_align = "center"
+      }
+    },
+    show_buffer_icons = true ,
+    show_buffer_close_icons = true ,
+    show_close_icon = true,
+    show_tab_indicators = true,
+    persist_buffer_sort = true, 
+    separator_style = "thin",
+    enforce_regular_tabs = true,
+    always_show_bufferline = true,
+  }
 }
 
 EOF

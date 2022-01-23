@@ -30,7 +30,7 @@ Plug 'kyazdani42/nvim-web-devicons'
 Plug 'ryanoasis/vim-devicons'
 
 " Navbar
-Plug 'romgrk/barbar.nvim'
+Plug 'akinsho/bufferline.nvim'
 
 " Tree
 Plug 'kyazdani42/nvim-tree.lua'

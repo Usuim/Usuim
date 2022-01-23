@@ -1,4 +1,5 @@
 let g:nvim_tree_disable_window_picker = 1
+let g:nvim_tree_root_folder_modifier = ':t'
 let g:nvim_tree_window_picker_exclude = {
     \   'filetype': [
     \     'notify',
@@ -54,7 +55,7 @@ require'nvim-tree'.setup {
   view = {
     width = 30,
     height = 30,
-    hide_root_folder = false,
+    hide_root_folder = true,
     side = 'left',
     auto_resize = true,
     mappings = {

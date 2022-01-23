@@ -132,10 +132,15 @@ local kind_icons = {
   }
   -- Tsserver
   require('lspconfig')['tsserver'].setup {
-    capabilities = capabilities
+    capabilities = capabilities,
+    single_file_support = true
   }
   -- Vue
   require('lspconfig')['vuels'].setup {
+    capabilities = capabilities
+  }
+  -- Emmet
+  require('lspconfig')['emmet_ls'].setup {
     capabilities = capabilities
   }
   -- Html

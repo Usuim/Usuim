@@ -46,7 +46,7 @@ vnoremap <silent> <C-X> x:call ClipboardYank()<cr>
 vnoremap <silent> <S-Del> x:call ClipboardYank()<cr>
 
 " Ctrl + C and Ctrl + Insert for Copy
-vnoremap <silent> <C-C> y:call ClipboardYank()<cr>
+vnoremap <silent> <C-C> y:call ClipboardYank()<cr>gv
 vnoremap <silent> <C-Insert> y:call ClipboardYank()<cr>
 
 " Ctrl + V and Shift + Insert for Paste
@@ -69,9 +69,11 @@ inoremap <C-Q> <c-o>:close<cr>
 " Ctrl Z and Ctrl Y
 nnoremap <c-z> :u<CR>
 inoremap <c-z> <c-o>:u<CR>
+vnoremap <c-z> <ESC> :u<CR>
 
 nnoremap <c-y> :redo<CR>
 inoremap <c-y> <c-o>:redo<CR>
+vnoremap <c-y> <ESC> :redo<CR>
 
 " Ctrl + A to select all
 map <silent> <C-A> :echo "Select All"<cr>ggVG
