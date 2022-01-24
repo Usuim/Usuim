@@ -69,12 +69,21 @@ require 'colorizer'.setup {
 function closeBuffer(bfname)
   local treeView = require('nvim-tree.view')
   local bufferline = require('bufferline')
+  local currentBuffer = vim.fn.expand('%')
 
   local explorerWindow = treeView.get_winnr()
   local wasExplorerOpen = vim.api.nvim_win_is_valid(explorerWindow)
+  
+  if currentBuffer == "Term" then
+    vim.cmd 'exe "normal \\<C-W>k"'
+  elseif currentBuffer == "NvimTree" then
+    vim.cmd 'exe "normal \\<C-W>l"'
+  else
+    print("a")
+  end
 
   local bufferToDelete = vim.api.nvim_get_current_buf()
- 
+   
   if (wasExplorerOpen) then
     if (bufferToDelete ~= bfname) then
       print("delete")
@@ -82,6 +91,7 @@ function closeBuffer(bfname)
       bufferline.cycle(-1)
     end
   end
+  
   vim.cmd('bdelete! ' .. bfname)  
 end
 
