@@ -82,15 +82,24 @@ function closeBuffer(bfname)
       bufferline.cycle(-1)
     end
   end
-  vim.cmd('bdelete! ' .. bfname)
-  
+  vim.cmd('bdelete! ' .. bfname)  
+end
+
+function openBuffer(bfname)
+  local currentBuffer = vim.fn.expand('%')
+  if currentBuffer == "Term" then
+    vim.cmd 'exe "normal \\<C-W>k"'
+    vim.cmd("buffer" .. bfname)
+  else
+    vim.cmd("buffer" .. bfname)
+  end
 end
 
 require('bufferline').setup {
   options = {
     close_command = "lua closeBuffer(%d)",
     right_mouse_command = "lua closeBuffer(%d)",
-    left_mouse_command = "buffer %d",
+    left_mouse_command = "lua openBuffer(%d)",
     middle_mouse_command = nil,
     indicator_icon = '▎',
     buffer_close_icon = '',

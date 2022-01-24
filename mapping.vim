@@ -2,8 +2,9 @@
 let mapleader=" "
 
 " Terminal
-nnoremap <c-t> :ToggleTerm size=10<CR>
-inoremap <c-t> <c-o>:ToggleTerm size=10<CR>
+nnoremap <c-t> :<C-u>silent! :ToggleTerm size=10<CR>
+inoremap <c-t> <c-o>:<C-u>silent! :ToggleTerm size=10<CR>
+
 "tnoremap <Esc> <C-\><C-n>
 
 " Save
