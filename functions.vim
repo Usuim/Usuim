@@ -21,11 +21,3 @@ function CloseWin(msg)
        :q!
     endif
 endfunction
-
-function OpenTerm()
-  if buffname() == "Term"
-    :ToggleTermToggleAll
-  else
-    :ToggleTerm size =10
-  endif
-endfunction
