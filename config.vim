@@ -66,7 +66,7 @@ require 'colorizer'.setup {
 }
 
 -- Bufferline
-function closeBuffer()
+function closeBuffer(bfname)
   local treeView = require('nvim-tree.view')
   local bufferline = require('bufferline')
 
@@ -76,15 +76,19 @@ function closeBuffer()
   local bufferToDelete = vim.api.nvim_get_current_buf()
  
   if (wasExplorerOpen) then
-    bufferline.cycle(-1)
+    if (bufferToDelete ~= bfname) then
+      print("delete")
+    else
+      bufferline.cycle(-1)
+    end
   end
-
-  vim.cmd('bdelete! ' .. bufferToDelete)
+  vim.cmd('bdelete! ' .. bfname)
+  
 end
 
 require('bufferline').setup {
   options = {
-    close_command = "lua closeBuffer()",
+    close_command = "lua closeBuffer(%d)",
     right_mouse_command = "lua closeBuffer()",
     left_mouse_command = "buffer %d",
     middle_mouse_command = nil,
