@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-VersionActual='1.3.5'
+VersionActual='1.3.6'
 repositorio="VsVim"
 usuario="SrWither"
 scripts="install.sh"
