@@ -89,7 +89,7 @@ end
 require('bufferline').setup {
   options = {
     close_command = "lua closeBuffer(%d)",
-    right_mouse_command = "lua closeBuffer()",
+    right_mouse_command = "lua closeBuffer(%d)",
     left_mouse_command = "buffer %d",
     middle_mouse_command = nil,
     indicator_icon = '▎',
