@@ -157,4 +157,7 @@ require('bufferline').setup {
   }
 }
 
+-- Autopairs
+require('nvim-autopairs').setup{}
+
 EOF

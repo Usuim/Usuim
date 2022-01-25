@@ -36,7 +36,7 @@ Plug 'akinsho/bufferline.nvim'
 Plug 'kyazdani42/nvim-tree.lua'
 
 " Typing
-Plug 'jiangmiao/auto-pairs'
+Plug 'windwp/nvim-autopairs'
 Plug 'alvan/vim-closetag'
 Plug 'tpope/vim-surround'
 
@@ -57,6 +57,7 @@ Plug 'onsails/lspkind-nvim'
 " CMP-SNIPPET
 Plug 'hrsh7th/cmp-vsnip'
 Plug 'hrsh7th/vim-vsnip'
+Plug 'hrsh7th/vim-vsnip-integ'
 
 "Terminal
 Plug 'SrWither/toggleterm.nvim'

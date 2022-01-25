@@ -16,6 +16,8 @@ end
 
 local cmp = require('cmp')
 local lspkind = require('lspkind')
+local lspconfig = require'lspconfig'
+local configs = require'lspconfig.configs'
 
 -- icons
 local kind_icons = {
@@ -139,10 +141,6 @@ local kind_icons = {
   require('lspconfig')['vuels'].setup {
     capabilities = capabilities
   }
-  -- Emmet
-  require('lspconfig')['emmet_ls'].setup {
-    capabilities = capabilities
-  }
   -- Html
   require('lspconfig')['html'].setup {
     capabilities = capabilities
@@ -158,4 +156,41 @@ local kind_icons = {
     root_dir = require("lspconfig").util.root_pattern{"*"},
   }
 
+  local capabilities = vim.lsp.protocol.make_client_capabilities()
+  capabilities.textDocument.completion.completionItem.snippetSupport = true
+
+  if not configs.ls_emmet then
+    configs.ls_emmet = {
+      default_config = {
+        cmd = { 'ls_emmet', '--stdio' };
+        filetypes = {
+          'html',
+          'css',
+          'scss',
+          'javascript',
+          'javascriptreact',
+          'typescript',
+          'typescriptreact',
+          'haml',
+          'xml',
+          'xsl',
+          'pug',
+          'slim',
+          'sass',
+          'stylus',
+          'less',
+          'sss',
+          'hbs',
+          'handlebars',
+        };
+        root_dir = function(fname)
+          return vim.loop.cwd()
+        end;
+        settings = {};
+      };
+    }
+  end
+
+  lspconfig.ls_emmet.setup { capabilities = capabilities }
+ 
 EOF

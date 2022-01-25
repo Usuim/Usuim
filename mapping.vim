@@ -77,7 +77,7 @@ inoremap <c-y> <c-o>:redo<CR>
 vnoremap <c-y> <ESC> :redo<CR>
 
 " Ctrl + A to select all
-map <silent> <C-A> :echo "Select All"<cr>ggVG
+nnoremap <silent> <C-A> :echo "Select All"<cr>ggVG
 inoremap <silent> <C-A> <c-o>gg<c-o>VG<cr>
 
 " Move lines
@@ -88,3 +88,13 @@ inoremap <C-Up> <Esc>:m .-2<CR>==gi
 vnoremap <C-Down> :m '>+1<CR>gv=gv
 vnoremap <C-Up> :m '<-2<CR>gv=gv
 
+" Tab selection
+vnoremap <Tab> >gv
+vnoremap <S-Tab> <gv
+
+" Ctrlr + Delete
+inoremap <C-BS> <C-w>
+inoremap <C-h> <C-w>
+
+" Delete in visual mode
+vnoremap <BS> d
