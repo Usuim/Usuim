@@ -100,6 +100,7 @@ local kind_icons = {
       { name = 'luasnip' }, 
     }, {
       { name = 'buffer' },
+      { name = "crates" },
     })
   })
 

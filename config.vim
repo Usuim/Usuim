@@ -160,4 +160,7 @@ require('bufferline').setup {
 -- Autopairs
 require('nvim-autopairs').setup{}
 
+-- Crates
+require('crates').setup()
+
 EOF
