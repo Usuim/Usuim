@@ -95,4 +95,7 @@ Plug 'nvim-lua/plenary.nvim'
 
 Plug 'nvim-lua/popup.nvim'
 
+" Refactoring
+Plug 'ThePrimeagen/refactoring.nvim'
+
 call plug#end()

@@ -136,8 +136,13 @@ local kind_icons = {
   }
   -- Tsserver
   require('lspconfig')['tsserver'].setup {
-    capabilities = capabilities,
-    single_file_support = true
+    cmd = { "typescript-language-server", "--stdio" },
+    filetypes = { "javascript", "javascriptreact", "javascript.jsx", "typescript", "typescriptreact", "typescript.tsx" },
+    init_options = {
+      hostInfo = "neovim"
+    },
+    root_dir = require("lspconfig").util.root_pattern("*")
+    -- root_dir = require("lspconfig").util.root_pattern("package.json", "tsconfig.json", "jsconfig.json", ".git")
   }
   -- Vue
   require('lspconfig')['vuels'].setup {
@@ -169,9 +174,7 @@ local kind_icons = {
           'html',
           'css',
           'scss',
-          'javascript',
           'javascriptreact',
-          'typescript',
           'typescriptreact',
           'haml',
           'xml',
