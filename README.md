@@ -42,19 +42,6 @@ This command automatically downloads and applies the update
   <img src="https://user-images.githubusercontent.com/59105868/151883719-d0099f3b-1e51-4de9-a5eb-ae4ebd1b918b.png">
 </kbd>
 
-###### Zsh - Bash - Sh
-```sh
-export VIRTUAL_ENV=$(pwd)/venv/
-source venv/bin/activate
-nvim .
-```
-###### Csh
-```sh
-setenv VIRTUAL_ENV `pwd`/venv/
-source venv/bin/activate.csh
-nvim .
-```
-
 ## Keyboard shortcuts
 
 | Ctrl + C | Ctrl + X | Ctrl + V | Ctrl + Z | Ctrl + Y | Ctrl + L | Ctrl + Q | Ctrl + 7 | F2 | F3 | Ctrl + S | Ctrl + F | Ctrl + B | Ctrl + T | Tab |
