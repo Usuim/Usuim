@@ -1,4 +1,4 @@
-<h1 align="center">Python Virtual Env</h1>
+<h1 align="center">Python VirtualEnv</h1>
 
 ### Zsh - Bash - Sh
 ```sh
