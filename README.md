@@ -23,7 +23,11 @@ This command automatically downloads and applies the update
 ```
 :TSInstall all
 ```
-# Preview
+# :camera: Preview
+
+<kbd>
+  <img src="https://user-images.githubusercontent.com/59105868/151883481-0b167c1d-2637-4b92-ad09-b96129d0c693.png">
+</kbd>
 
 ###### Zsh - Bash - Sh
 ```sh
