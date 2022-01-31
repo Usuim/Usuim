@@ -10,3 +10,4 @@
   - [HTML/CSS](https://github.com/SrWither/VsVim/blob/main/docs/dependencies.md#htmlcss)
   - [Vue.js](https://github.com/SrWither/VsVim/blob/main/docs/dependencies.md#vuejs)
   - [Go](https://github.com/SrWither/VsVim/blob/main/docs/dependencies.md#go)
+- [Python VirtualEnv](https://github.com/SrWither/VsVim/blob/main/docs/venv.md)
