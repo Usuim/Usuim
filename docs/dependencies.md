@@ -1,11 +1,11 @@
 <h1 align="center">Dependencies</h1>
 
-## General dependencies
+## General
 ```
  xclip - xsel - python3.8 - ripgrep
 ```
 
-## FreeBSD Dependencies
+## FreeBSD
 ```
 gnugrep - gsed
 ```
@@ -21,11 +21,11 @@ clangd - clang-format
 ```
 rust_analyzer - rustfmt
 ```
-## Typescript/Javascript
+## TypeScript/JavaScript
 ```
 tsserver - prettier
 ```
-## Html/Css
+## HTML/CSS
 ```
 vscode-langservers-extracted - prettier
 ```
@@ -33,6 +33,6 @@ vscode-langservers-extracted - prettier
 ```
 vls - prettier
 ```
-## Golang
+## Go
 ```
 gopls - gofmt
