@@ -30,7 +30,7 @@ This command automatically downloads and applies the update
   <img src="https://user-images.githubusercontent.com/59105868/151883952-b382c2a2-5518-472e-b26e-3d3ec93f55a0.png">
 </kbd>
 
-##### Code, Treefile and Terminal
+##### Code, Filetree and Terminal
 
 <kbd>
   <img src="https://user-images.githubusercontent.com/59105868/151883481-0b167c1d-2637-4b92-ad09-b96129d0c693.png">
