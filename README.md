@@ -13,7 +13,7 @@ cd VsVim
 chmod +x install.sh
 ./install.sh
 ```
-## :recycle: Update VsVim
+# :recycle: Update VsVim
 ```sh
 vsvupg
 ```
