@@ -4,6 +4,7 @@
 <h4 align="center">Neovim configured to look like Visual Studio Code</h1>
 
 # Instalation
+before installing check the [dependencies](https://github.com/SrWither/VsVim/blob/main/docs/dependencies.md#general-dependencies) in the documentation
 ```sh
 git clone https://github.com/SrWither/VsVim
 cd VsVim
