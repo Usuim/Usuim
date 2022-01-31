@@ -3,44 +3,6 @@
 </p>
 <h4 align="center">Neovim configured to look like Visual Studio Code</h1>
 
-## Dependencies
-```
- xclip - xsel - python3.8
-```
-## FreeBSD Dependencies
-```
-gsed
-```
-## Autocomplete
-#### Python
-```
-pyright
-```
-#### C/Cpp
-```
-clangd
-```
-#### Rust
-```
-rust_analyzer
-```
-#### Typescript/Javascript
-```
-tsserver
-```
-#### Html/Css
-```
-vscode-langservers-extracted
-```
-#### Golang
-```
-gopls
-```
-#### Vue.js
-```
-vue-language-server
-```
-
 # Instalation
 ```sh
 git clone https://github.com/SrWither/VsVim
