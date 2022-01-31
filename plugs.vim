@@ -40,10 +40,6 @@ Plug 'windwp/nvim-autopairs'
 Plug 'alvan/vim-closetag'
 Plug 'tpope/vim-surround'
 
-"Tmux
-Plug 'benmills/vimux'
-Plug 'christoomey/vim-tmux-navigator'
-
 " LSP
 Plug 'neovim/nvim-lspconfig'
 Plug 'nvim-lua/lsp_extensions.nvim'
@@ -97,5 +93,12 @@ Plug 'nvim-lua/popup.nvim'
 
 " Refactoring
 Plug 'ThePrimeagen/refactoring.nvim'
+
+" Search/Replace
+Plug 'MunifTanjim/nui.nvim'
+Plug 'SrWither/searchbox.nvim'
+
+" Todo-comment
+Plug 'folke/todo-comments.nvim'
 
 call plug#end()

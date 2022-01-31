@@ -6,6 +6,7 @@ runtime lsp.vim
 runtime dashboard.vim
 runtime tree.vim
 runtime functions.vim
+runtime todo.vim
 
 " Set Configuration
 

@@ -5,39 +5,32 @@ let mapleader=" "
 nnoremap <c-t> :<C-u>silent! :ToggleTerm size=10<CR>
 inoremap <c-t> <c-o>:<C-u>silent! :ToggleTerm size=10<CR>
 
-"tnoremap <Esc> <C-\><C-n>
-
 " Save
 nnoremap <c-s> :retab \| :w!<CR>
 inoremap <c-s> <c-o>:retab \| :w!<cr>
 
-" Format
-nnoremap <c-l> :Neoformat <cr>
-inoremap <c-l> <c-o>:Neoformat \| :start <cr>
-
-"Tmux
-nnoremap <silent> <Leader><C-h> :TmuxNavigateLeft<cr>
-nnoremap <silent> <Leader><C-j> :TmuxNavigateDown<cr>
-nnoremap <silent> <Leader><C-k> :TmuxNavigateUp<cr>
-nnoremap <silent> <Leader><C-l> :TmuxNavigateRight<cr>
-
 " Toggle NvimTree
 inoremap <F2> <c-o>:NvimTreeToggle<CR>
 nnoremap <F2> :NvimTreeToggle<CR>
-" tnoremap <F2> <C-\><C-n>:NvimTreeToggle<CR>
 
 " Commenter
 inoremap <C-_> <c-o>:CommentToggle<CR>
 nnoremap <C-_> :CommentToggle<CR>
 vnoremap <C-_> :'<,'>CommentToggle<CR>
 
+" Search
+inoremap <C-f> <cmd>:SearchBoxMatchAll title="Search"<cr>
+nnoremap <C-f> <cmd>:SearchBoxMatchAll title="Search"<cr>
+xnoremap <C-f> <cmd>:SearchBoxMatchAll title="Search" visual_mode=true <cr>
+
+" Replace
+inoremap <c-l> <c-o>:SearchBoxReplace confirm=native<CR>
+nnoremap <c-l> :SearchBoxReplace confirm=native<CR>
+vnoremap <c-l> :SearchBoxReplace confirm=native<CR>
+
 " Telescope
-nnoremap <C-f> <cmd>Telescope live_grep<cr>
-inoremap <C-f> <cmd>Telescope live_grep<cr>
 nnoremap <C-b> <cmd>Telescope find_files cwd=.<cr>
 inoremap <C-b> <cmd>Telescope find_files cwd=.<cr>
-" nnoremap <C-b> <cmd>lua require 'telescope'.extensions.file_browser.file_browser()<CR>
-" inoremap <C-b> <cmd>lua require 'telescope'.extensions.file_browser.file_browser()<CR>
 
 " Open dashboard
 nnoremap <F3> :Dashboard <CR>
