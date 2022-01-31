@@ -9,4 +9,4 @@
   - [TypeScript/JavaScript](https://github.com/SrWither/VsVim/blob/main/docs/dependencies.md#typescriptjavascript)
   - [HTML/CSS](https://github.com/SrWither/VsVim/blob/main/docs/dependencies.md#htmlcss)
   - [Vue.js](https://github.com/SrWither/VsVim/blob/main/docs/dependencies.md#vuejs)
-  - [Go](https://github.com/SrWither/VsVim/blob/main/docs/dependencies.md#golang)
+  - [Go](https://github.com/SrWither/VsVim/blob/main/docs/dependencies.md#go)
