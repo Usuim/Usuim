@@ -5,6 +5,7 @@
 
 # Instalation
 before installing check the [dependencies](https://github.com/SrWither/VsVim/blob/main/docs/dependencies.md#general) in the documentation
+
 if you use FreeBSD you must install the following [dependencies](https://github.com/SrWither/VsVim/blob/main/docs/dependencies.md#freebsd)
 ```sh
 git clone https://github.com/SrWither/VsVim
