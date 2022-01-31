@@ -3,7 +3,7 @@
 </p>
 <h4 align="center">Neovim configured to look like Visual Studio Code</h1>
 
-# [:clipboard:] Instalation
+# :clipboard: Instalation
 before installing check the [dependencies](https://github.com/SrWither/VsVim/blob/main/docs/dependencies.md#general) in the documentation
 
 if you use FreeBSD you must install the following [dependencies](https://github.com/SrWither/VsVim/blob/main/docs/dependencies.md#freebsd)
