@@ -65,8 +65,3 @@ nvim .
 | a | d | r | R |
 | ----- | ----- | ----- | ----- |
 | Create files or folders| Delete files or folders | Rename files or folders | Reload tree |
-
-## Additional
-
-#### you can use a rust version of NeoVim for better handling and visual improvement
-https://github.com/vhakulinen/gnvim
