@@ -1,8 +1,8 @@
 <h1 align="center">Index</h1>
 
 - [Dependencies](https://github.com/SrWither/VsVim/blob/main/docs/dependencies.md)
-  - [General](https://github.com/SrWither/VsVim/blob/main/docs/dependencies.md#general-dependencies)
-  - [FreeBSD](https://github.com/SrWither/VsVim/blob/main/docs/dependencies.md#freebsd-dependencies)
+  - [General](https://github.com/SrWither/VsVim/blob/main/docs/dependencies.md#general)
+  - [FreeBSD](https://github.com/SrWither/VsVim/blob/main/docs/dependencies.md#freebsd)
   - [Python](https://github.com/SrWither/VsVim/blob/main/docs/dependencies.md#python)
   - [C/C++](https://github.com/SrWither/VsVim/blob/main/docs/dependencies.md#ccpp)
   - [Rust](https://github.com/SrWither/VsVim/blob/main/docs/dependencies.md#rust)
