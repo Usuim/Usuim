@@ -24,14 +24,15 @@ This command automatically downloads and applies the update
 :TSInstall all
 ```
 # :camera: Preview
+###### Dashboard
 <kbd>
   <img src="https://user-images.githubusercontent.com/59105868/151883952-b382c2a2-5518-472e-b26e-3d3ec93f55a0.png">
 </kbd>
-<br>
+###### Code, Treefile and Terminal
 <kbd>
   <img src="https://user-images.githubusercontent.com/59105868/151883481-0b167c1d-2637-4b92-ad09-b96129d0c693.png">
 </kbd>
-<br>
+###### Autocomplete
 <kbd>
   <img src="https://user-images.githubusercontent.com/59105868/151883719-d0099f3b-1e51-4de9-a5eb-ae4ebd1b918b.png">
 </kbd>
