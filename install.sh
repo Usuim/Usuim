@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 backup() {
-	echo "Making backup..."
+	echo "Doing backup..."
 	sleep 2
 	mv ~/.config/nvim ~/.config/NeovimBackupVS
 	echo "Done!"
