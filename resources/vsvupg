@@ -70,7 +70,7 @@ else
       return 1
     fi
   else
-    echo "$repositorio is in its latest version "
+    echo "$repositorio is updated: Version $VersionActual"
   fi
 fi
 }
