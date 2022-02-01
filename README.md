@@ -43,5 +43,5 @@ This command automatically downloads and applies the update
 </kbd>
 
 <h4 align="center">
-  For more information read the <a href="https://github.com/SrWither/VsVim/tree/main/docs">Documentation</a>
+  For more information read the <a href="https://github.com/SrWither/VsVim/tree/main/docs#blue_book-index">Documentation</a>
 </h4>
