@@ -20,7 +20,7 @@ clangd - clang-format
 ## CMake
 ```
 cmake-language-server - cmakelang
-
+```
 ## Rust
 ```
 rust_analyzer - rustfmt
