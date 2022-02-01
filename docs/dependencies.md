@@ -10,9 +10,14 @@
 gnugrep - gsed
 ```
 ## Python
+##### Autocomplete
 ```
-pyright - autopep8/yapf/docformatter
+pyright
 ```
+##### Formatter
+```
+autopep8/yapf/docformatter
+
 ## C/Cpp
 ```
 clangd - clang-format
