@@ -17,6 +17,7 @@
 | Ctrl + Space | Open code completion |
 | F2 | Toggle Filetree |
 | F3 | Open Dashboard |
+| Ctrl + F12 | Go to definition |
 | Tab/Down | go down in the autocomplete |
 | Shift + Tab/Up | go up in the autocomplete |
 
@@ -41,3 +42,4 @@
 | `:TodoTelescope`| View all TODO lists|
 | `:Telescope live_grep` | Search in the project |
 |     `:noh`    | Deselect search|
+|   `:Rename`   | rename definitions |
