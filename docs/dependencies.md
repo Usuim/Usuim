@@ -17,7 +17,7 @@ pyright
 ##### Formatter
 ```
 autopep8/yapf/docformatter
-
+```
 ## C/Cpp
 ```
 clangd - clang-format
