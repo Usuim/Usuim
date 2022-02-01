@@ -19,6 +19,7 @@ pyright
 ```
 autopep8 / yapf / docformatter
 ```
+`pip install autpep8/yapf/docformatter` 
 ## C/Cpp
 ##### Autocomplete
 ```
