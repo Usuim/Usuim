@@ -24,9 +24,9 @@ nnoremap <C-f> <cmd>:SearchBoxMatchAll title="Search"<cr>
 xnoremap <C-f> <cmd>:SearchBoxMatchAll title="Search" visual_mode=true <cr>
 
 " Replace
-inoremap <c-l> <c-o>:SearchBoxReplace confirm=native<CR>
-nnoremap <c-l> :SearchBoxReplace confirm=native<CR>
-vnoremap <c-l> :SearchBoxReplace confirm=native<CR>
+inoremap <c-l> <c-o>:SearchBoxReplace confirm=menu<CR>
+nnoremap <c-l> :SearchBoxReplace confirm=menu<CR>
+vnoremap <c-l> :SearchBoxReplace confirm=menu<CR>
 
 " Telescope
 nnoremap <C-b> <cmd>Telescope find_files cwd=.<cr>
