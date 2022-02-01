@@ -41,14 +41,3 @@ This command automatically downloads and applies the update
 <kbd>
   <img src="https://user-images.githubusercontent.com/59105868/151883719-d0099f3b-1e51-4de9-a5eb-ae4ebd1b918b.png">
 </kbd>
-
-## Keyboard shortcuts
-
-| Ctrl + C | Ctrl + X | Ctrl + V | Ctrl + Z | Ctrl + Y | Ctrl + L | Ctrl + Q | Ctrl + 7 | F2 | F3 | Ctrl + S | Ctrl + F | Ctrl + B | Ctrl + T | Tab |
-| ----- | ----- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
-|  Copy | Cut | Paste | Undo | Redo | Format Code | Close Windows | Comment code | Toggle Nvim-Tree | Open Dashboard | Save File | Search words in the project | Open file browser | Open Terminal | to change the element in the code completion |
-
-### Shortcuts in NvimTree
-| a | d | r | R |
-| ----- | ----- | ----- | ----- |
-| Create files or folders| Delete files or folders | Rename files or folders | Reload tree |
