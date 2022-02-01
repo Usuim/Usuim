@@ -1,6 +1,6 @@
 <h1 align="center">Shortcuts and Commands</h1>
 
-## Standard shortcuts
+## :hash: Standar Shortcuts
 
 | Shortcuts  | Action |
 | ------------- | ------------- |
@@ -11,4 +11,24 @@
 | Ctrl + L  | Search and replace in file |
 | Ctrl + Backspace | Delete word |
 | Ctrl + S | Save file |
-| Ctrl + Q | Close file | 
+| Ctrl + T | Toggle Terminal |
+| Ctrl + 7 | Comment Code |
+| Ctrl + B | Search files |
+| Ctrl + Space | Open code completion |
+| F2 | Toggle Filetree |
+| F3 | Open Dashboard |
+| Tab/Down | go down in the autocomplete |
+| Shift + Tab/Up | go up in the autocomplete |
+
+## :evergreen_tree: Filetree Shortcuts
+| Shortcuts  | Action |
+| ------------- | ------------- |
+|       a       | Create files or folders |
+|       d       | Delete files or folders |
+|       r       | Rename files or folders |
+|   Shift + R   |    Reload filetree      |
+|       y       | Copy file or folder name|
+|       c       |   Copy file or folder   |
+|       x       |   Cut file or folder    |
+|       p       |   Paste file or folder  |
+|      TAB      |       Preview file      |
