@@ -14,34 +14,70 @@ gnugrep - gsed
 ```
 pyright
 ```
-##### Formatter
+##### Formatters
 ```
-autopep8 or yapf or docformatter
+autopep8 / yapf / docformatter
 ```
 ## C/Cpp
+##### Autocomplete
 ```
-clangd - clang-format
+clangd
+```
+##### Formatter
+```
+clang-format
 ```
 ## CMake
+###### Autocomplete
 ```
-cmake-language-server - cmakelang
+cmake-language-server
 ```
+##### Formatter
+```
+cmakelang
+```
+
 ## Rust
+##### Autocomplete
 ```
-rust_analyzer - rustfmt
+rust_analyzer
+```
+##### Formatter
+```
+rustfmt
 ```
 ## TypeScript/JavaScript
+##### Autocomplete
 ```
-tsserver - prettier
+tsserver
+```
+##### Formatter
+```
+prettier
 ```
 ## HTML/CSS
+##### Autocomplete
 ```
-vscode-langservers-extracted - prettier
+vscode-langservers-extracted
+```
+##### Formatter
+```
+prettier
 ```
 ## Vue.js
+##### Autocomplete
 ```
-vls - prettier
+vls
+```
+##### Formatter
+```
+prettier
 ```
 ## Go
+##### Autocomplete
 ```
-gopls - gofmt
+gopls
+```
+##### Formatter
+```
+gofmt
