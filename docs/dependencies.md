@@ -16,7 +16,7 @@ pyright
 ```
 ##### Formatter
 ```
-autopep8/yapf/docformatter
+autopep8 or yapf or docformatter
 ```
 ## C/Cpp
 ```
