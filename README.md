@@ -42,4 +42,6 @@ This command automatically downloads and applies the update
   <img src="https://user-images.githubusercontent.com/59105868/151883719-d0099f3b-1e51-4de9-a5eb-ae4ebd1b918b.png">
 </kbd>
 
-##### For more information read the [Documentation](https://github.com/SrWither/VsVim/tree/main/docs)
+<h3 align="center">
+  For more information read the [Documentation](https://github.com/SrWither/VsVim/tree/main/docs)
+</h3>
