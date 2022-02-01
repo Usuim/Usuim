@@ -10,4 +10,8 @@
   - [HTML/CSS](https://github.com/SrWither/VsVim/blob/main/docs/dependencies.md#htmlcss)
   - [Vue.js](https://github.com/SrWither/VsVim/blob/main/docs/dependencies.md#vuejs)
   - [Go](https://github.com/SrWither/VsVim/blob/main/docs/dependencies.md#go)
+- [Shortcuts/Commands](https://github.com/SrWither/VsVim/blob/main/docs/shortcuts.md)
+  -[Standar](https://github.com/SrWither/VsVim/blob/main/docs/shortcuts.md#hash-standar-shortcuts)
+  -[Filetree](https://github.com/SrWither/VsVim/blob/main/docs/shortcuts.md#evergreen_tree-filetree-shortcuts)
+  -[Commands](https://github.com/SrWither/VsVim/blob/main/docs/shortcuts.md#computer-commands)
 - [Python VirtualEnv](https://github.com/SrWither/VsVim/blob/main/docs/venv.md)
