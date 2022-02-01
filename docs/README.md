@@ -1,4 +1,4 @@
-<h1 align="center">Index</h1>
+<h1 align="center">:blue_book: Index</h1>
 
 - [Dependencies](https://github.com/SrWither/VsVim/blob/main/docs/dependencies.md)
   - [General](https://github.com/SrWither/VsVim/blob/main/docs/dependencies.md#general)
