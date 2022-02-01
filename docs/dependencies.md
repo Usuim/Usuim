@@ -28,7 +28,7 @@ clangd
 clang-format
 ```
 ## CMake
-###### Autocomplete
+##### Autocomplete
 ```
 cmake-language-server
 ```
