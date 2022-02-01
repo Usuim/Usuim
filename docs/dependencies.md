@@ -14,6 +14,7 @@ gnugrep - gsed
 ```
 pyright
 ```
+`npm i -g pyright`
 ##### Formatters
 ```
 autopep8 / yapf / docformatter
