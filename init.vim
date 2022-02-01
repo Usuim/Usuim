@@ -1,11 +1,12 @@
 " Import Config Files
 runtime plugs.vim
-runtime mapping.vim
 runtime config.vim
 runtime lsp.vim
-runtime dashboard.vim
-runtime tree.vim
 runtime functions.vim
+runtime commands.vim
+runtime mapping.vim
+runtime tree.vim
+runtime dashboard.vim
 runtime todo.vim
 
 " Set Configuration

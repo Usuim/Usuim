@@ -56,10 +56,6 @@ exe 'vnoremap <script> <C-V>' paste#paste_cmd['v']
 imap <S-Insert>     <C-V>
 vmap <S-Insert>     <C-V>
 
-" Close Window
-nnoremap <C-Q> :close<cr>
-inoremap <C-Q> <c-o>:close<cr>
-
 " Ctrl Z and Ctrl Y
 nnoremap <c-z> :u<CR>
 inoremap <c-z> <c-o>:u<CR>
@@ -91,3 +87,7 @@ inoremap <C-h> <C-w>
 
 " Delete in visual mode
 vnoremap <BS> d
+
+" Go to definition
+nnoremap <C-F12> :GoToDef<CR>
+inoremap <C-F12> <ESC>:GoToDef<CR>
