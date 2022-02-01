@@ -32,3 +32,12 @@
 |       x       |   Cut file or folder    |
 |       p       |   Paste file or folder  |
 |      TAB      |       Preview file      |
+
+## :computer: Commands
+
+|   Commands    |     Action    |
+| ------------- | ------------- |
+| `:Neoformat`  |  Format file  |
+| `:TodoTelescope`| View all TODO lists|
+| `:Telescope live_grep` | Search in the project |
+|     `:noh`    | Deselect search|
