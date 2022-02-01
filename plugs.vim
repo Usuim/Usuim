@@ -96,7 +96,7 @@ Plug 'ThePrimeagen/refactoring.nvim'
 
 " Search/Replace
 Plug 'MunifTanjim/nui.nvim'
-Plug 'VonHeikemen/searchbox.nvim'
+Plug 'SrWither/searchbox.nvim'
 
 " Todo-comment
 Plug 'folke/todo-comments.nvim'
