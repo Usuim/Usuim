@@ -5,6 +5,7 @@
   - [FreeBSD](https://github.com/SrWither/VsVim/blob/main/docs/dependencies.md#freebsd)
   - [Python](https://github.com/SrWither/VsVim/blob/main/docs/dependencies.md#python)
   - [C/C++](https://github.com/SrWither/VsVim/blob/main/docs/dependencies.md#ccpp)
+  - [CMake](https://github.com/SrWither/VsVim/blob/main/docs/dependencies.md#cmake)
   - [Rust](https://github.com/SrWither/VsVim/blob/main/docs/dependencies.md#rust)
   - [TypeScript/JavaScript](https://github.com/SrWither/VsVim/blob/main/docs/dependencies.md#typescriptjavascript)
   - [HTML/CSS](https://github.com/SrWither/VsVim/blob/main/docs/dependencies.md#htmlcss)
