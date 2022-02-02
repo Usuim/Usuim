@@ -32,7 +32,7 @@
 |       c       |   Copy file or folder   |
 |       x       |   Cut file or folder    |
 |       p       |   Paste file or folder  |
-|   Shift + I   |Toggle files and folders hidden by the `.gitignore` file|
+|   Shift + I   |Toggle files hidden by `.gitignore`|
 |   Shift + H   |   Toggle hidden files `.files` |
 |      TAB      |       Preview file      |
 
