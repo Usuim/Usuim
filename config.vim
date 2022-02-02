@@ -1,9 +1,6 @@
 " Python
 let g:python3_host_prog="python3.8"
 
-" Python Formatter
-let g:neoformat_enabled_python = ['autopep8', 'yapf', 'docformatter']
-
 " Folding
 set foldmethod=expr
 set foldexpr=nvim_treesitter#foldexpr()
@@ -30,7 +27,7 @@ require'nvim-treesitter.configs'.setup {
   context_commentstring = {
     enable = true,
     enable_autocmd = false,
-  }
+  },
 }
 
 -- NvimComment-Treesitter
@@ -63,6 +60,9 @@ require('nvim_comment').setup()
 -- Colorizer
 require 'colorizer'.setup {
   css = { css = true; };
+  html = {
+    mode = 'background';
+  }
 }
 
 -- Bufferline
@@ -172,5 +172,14 @@ vim.api.nvim_set_keymap(
   "<Esc><cmd>lua require('telescope').extensions.refactoring.refactors()<CR>",
   { noremap = true }
 )
-
+-- Trim
+require('trim').setup({
+  disable = {},
+  patterns = {
+    [[%s/\s\+$//e]],
+    [[%s/\($\n\s*\)\+\%$//]],
+    [[%s/\%^\n\+//]],
+    [[%s/\(\n\n\)\n\+/\1/]],
+  },
+})
 EOF

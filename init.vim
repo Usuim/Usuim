@@ -30,7 +30,7 @@ set guifont=Fira\ Code:h12
 set mouse=a
 set keymodel=startsel,stopsel
 set tabstop=2 shiftwidth=2 expandtab
-autocmd BufRead,BufNewFile,BufEnter * start
+autocmd BufRead,BufNewFile,BufEnter * set formatoptions-=cro | start
 
 " Themes
 colorscheme onedark

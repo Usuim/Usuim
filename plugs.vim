@@ -101,4 +101,7 @@ Plug 'SrWither/searchbox.nvim'
 " Todo-comment
 Plug 'folke/todo-comments.nvim'
 
+" Trim
+Plug 'cappyzawa/trim.nvim'
+
 call plug#end()
