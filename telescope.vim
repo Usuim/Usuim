@@ -55,16 +55,16 @@ local blue = "#5AA0D9"
 local green = "#98C379"
 local black = "#000000"
 
-function bg(group, col)
-   vim.cmd("au VimEnter * hi " .. group .. " guibg=" .. col)
+function bg(type, col)
+   vim.cmd("au VimEnter * hi " .. type .. " guibg=" .. col)
 end
 
-function fg(group, col)
-   vim.cmd("au VimEnter * hi " .. group .. " guifg=" .. col)
+function fg(type, col)
+   vim.cmd("au VimEnter * hi " .. type .. " guifg=" .. col)
 end
 
-function fg_bg(group, fg, bg)
-   vim.cmd("au VimEnter * hi " .. group .. " guifg=" .. fg .. " guibg=" .. bg)
+function fg_bg(type, fg, bg)
+   vim.cmd("au VimEnter * hi " .. type .. " guifg=" .. fg .. " guibg=" .. bg)
 end
 
 fg_bg("TelescopeBorder", darker_black, darker_black)
