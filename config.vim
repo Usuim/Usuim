@@ -73,7 +73,7 @@ function closeBuffer(bfname)
 
   local explorerWindow = treeView.get_winnr()
   local wasExplorerOpen = vim.api.nvim_win_is_valid(explorerWindow)
-  
+
   if currentBuffer == "Term" then
     vim.cmd 'exe "normal \\<C-W>k"'
   elseif currentBuffer == "NvimTree" then
@@ -83,7 +83,7 @@ function closeBuffer(bfname)
   end
 
   local bufferToDelete = vim.api.nvim_get_current_buf()
-   
+
   if (wasExplorerOpen) then
     if (bufferToDelete ~= bfname) then
       print("delete")
@@ -91,8 +91,8 @@ function closeBuffer(bfname)
       bufferline.cycle(-1)
     end
   end
-  
-  vim.cmd('bdelete! ' .. bfname)  
+
+  vim.cmd('bdelete! ' .. bfname)
 end
 
 function openBuffer(bfname)
@@ -117,7 +117,7 @@ require('bufferline').setup {
     close_icon = '',
     left_trunc_marker = '',
     right_trunc_marker = '',
-    name_formatter = function(buf)  
+    name_formatter = function(buf)
       if buf.name:match('%.md') then
         return vim.fn.fnamemodify(buf.name, ':t:r')
       end
@@ -138,11 +138,11 @@ require('bufferline').setup {
     end,
     offsets = {
       {
-        filetype = "NvimTree", 
+        filetype = "NvimTree",
         text = function()
           return vim.fn.fnamemodify(vim.fn.getcwd(), ":t")
-        end, 
-        highlight = "Directory", 
+        end,
+        highlight = "Directory",
         text_align = "center"
       }
     },
@@ -150,7 +150,7 @@ require('bufferline').setup {
     show_buffer_close_icons = true ,
     show_close_icon = true,
     show_tab_indicators = true,
-    persist_buffer_sort = true, 
+    persist_buffer_sort = true,
     separator_style = "thin",
     enforce_regular_tabs = true,
     always_show_bufferline = true,

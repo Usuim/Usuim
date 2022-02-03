@@ -97,7 +97,7 @@ local kind_icons = {
     },
     sources = cmp.config.sources({
       { name = 'nvim_lsp' },
-      { name = 'luasnip' }, 
+      { name = 'luasnip' },
     }, {
       { name = 'buffer' },
       { name = "crates" },
@@ -166,7 +166,7 @@ local kind_icons = {
   require('lspconfig')['cmake'].setup {
     capabilities = capabilities
   }
- 
+
   local capabilities = vim.lsp.protocol.make_client_capabilities()
   capabilities.textDocument.completion.completionItem.snippetSupport = true
 

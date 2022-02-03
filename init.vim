@@ -8,6 +8,7 @@ runtime mapping.vim
 runtime tree.vim
 runtime dashboard.vim
 runtime todo.vim
+runtime telescope.vim
 
 " Set Configuration
 
