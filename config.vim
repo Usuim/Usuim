@@ -19,6 +19,7 @@ let g:closetag_filetypes = 'html,xhtml,phtml,vue'
 lua <<EOF
 -- Treesitter
 require'nvim-treesitter.configs'.setup {
+  ignore_install = { "norg" },
   ensure_installed = "maintained",
   highlight = {
     enable = true,

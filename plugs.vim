@@ -43,6 +43,7 @@ Plug 'tpope/vim-surround'
 " LSP
 Plug 'neovim/nvim-lspconfig'
 Plug 'nvim-lua/lsp_extensions.nvim'
+Plug 'ray-x/lsp_signature.nvim'
 " LSP-AUTOCOMPLETION
 Plug 'hrsh7th/cmp-nvim-lsp'
 Plug 'hrsh7th/cmp-buffer'
