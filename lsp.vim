@@ -57,7 +57,7 @@ local configs = require'lspconfig.configs'
   shadow_blend = 36,
   shadow_guibg = 'Black',
   timer_interval = 200,
-  toggle_key = nil
+  toggle_key = '<LeftRelease>'
 }
 
 require'lsp_signature'.setup(cfg)
