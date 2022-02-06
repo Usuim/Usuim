@@ -32,7 +32,7 @@ require('telescope').setup{
          preview_cutoff = 120,
       },
       file_sorter = require("telescope.sorters").get_fuzzy_file,
-      file_ignore_patterns = { "node_modules", "lib", "lib64", "target", "bin" },
+      file_ignore_patterns = { "node_modules", "lib", "lib64", "target", "bin", "package%-lock.json", "Cargo.lock"},
       generic_sorter = require("telescope.sorters").get_generic_fuzzy_sorter,
       path_display = { "truncate" },
       winblend = 0,

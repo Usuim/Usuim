@@ -101,6 +101,7 @@ local kind_icons = {
     }, {
       { name = 'buffer' },
       { name = "crates" },
+      { name = 'nvim_lsp_signature_help' },
     })
   })
 

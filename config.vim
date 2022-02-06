@@ -183,4 +183,8 @@ require('trim').setup({
     [[%s/\(\n\n\)\n\+/\1/]],
   },
 })
+
+-- Workspaces
+require("workspaces").setup()
+require('telescope').load_extension("workspaces")
 EOF
