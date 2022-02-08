@@ -85,8 +85,13 @@ vnoremap <S-Tab> <gv
 inoremap <C-BS> <C-w>
 inoremap <C-h> <C-w>
 
+" Delete without save in clipboard
+nnoremap <c-k> "_dd
+vnoremap <c-k> "_d
+inoremap <c-k> <c-o>"_dd
+
 " Delete in visual mode
-vnoremap <BS> d
+vnoremap <BS> d "_d
 
 " Go to definition
 nnoremap <C-F12> :GoToDef<CR>
