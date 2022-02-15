@@ -91,7 +91,7 @@ vnoremap <c-k> "_d
 inoremap <c-k> <c-o>"_dd
 
 " Delete in visual mode
-vnoremap <BS> d "_d
+vnoremap <BS> "_d
 
 " Go to definition
 nnoremap <C-F12> :GoToDef<CR>
