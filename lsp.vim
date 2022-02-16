@@ -175,6 +175,11 @@ local kind_icons = {
   require('lspconfig')['jsonls'].setup {
     capabilities = capabilities
   }
+  -- Assembly
+  require('lspconfig')['asm_lsp'].setup {
+    capabilities = capabilities,
+    root_dir = require("lspconfig").util.root_pattern{"*"}
+  }
 
   local capabilities = vim.lsp.protocol.make_client_capabilities()
   capabilities.textDocument.completion.completionItem.snippetSupport = true

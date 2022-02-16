@@ -33,7 +33,7 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'akinsho/bufferline.nvim'
 
 " Tree
-Plug 'kyazdani42/nvim-tree.lua'
+Plug 'SrWither/nvim-tree.lua'
 
 " Typing
 Plug 'windwp/nvim-autopairs'
