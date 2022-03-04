@@ -10,11 +10,6 @@ set foldlevelstart=99
 " Termguicolors
 set termguicolors
 
-" CloseTag
-
-let g:closetag_filenames = '*.html,*.xhtml,*.phtml,*.vue'
-let g:closetag_filetypes = 'html,xhtml,phtml,vue'
-
 " Lua config
 lua <<EOF
 -- Treesitter
@@ -38,33 +33,8 @@ require("nvim_comment").setup({
   end,
 })
 
--- Transparent.nvim
-require("transparent").setup({
-  enable = false, -- boolean: enable transparent
-  extra_groups = { -- table/string: additional groups that should be clear
-    -- In particular, when you set it to 'all', that means all avaliable groups
-
-    -- example of akinsho/nvim-bufferline.lua
-    "BufferLineTabClose",
-    "BufferlineBufferSelected",
-    "BufferLineFill",
-    "BufferLineBackground",
-    "BufferLineSeparator",
-    "BufferLineIndicatorSelected",
-  },
-  exclude = {}, -- table: groups you don't want to clear
-})
-
 -- NvimComment Setup
 require('nvim_comment').setup()
-
--- Colorizer
-require 'colorizer'.setup {
-  css = { css = true; };
-  html = {
-    mode = 'background';
-  }
-}
 
 -- Bufferline
 function closeBuffer(bfname)
@@ -164,15 +134,6 @@ require('nvim-autopairs').setup{}
 -- Crates
 require('crates').setup()
 
--- Refactoring
-require('refactoring').setup({})
-require("telescope").load_extension("refactoring")
-vim.api.nvim_set_keymap(
-  "v",
-  "<C-r>",
-  "<Esc><cmd>lua require('telescope').extensions.refactoring.refactors()<CR>",
-  { noremap = true }
-)
 -- Trim
 require('trim').setup({
   disable = {},
@@ -180,11 +141,53 @@ require('trim').setup({
     [[%s/\s\+$//e]],
     [[%s/\($\n\s*\)\+\%$//]],
     [[%s/\%^\n\+//]],
-    [[%s/\(\n\n\)\n\+/\1/]],
+    -- [[%s/\(\n\n\)\n\+/\1/]],
   },
 })
 
 -- Workspaces
 require("workspaces").setup()
 require('telescope').load_extension("workspaces")
+
+-- Lualine
+require('lualine').setup {
+  options = {
+    icons_enabled = true,
+    theme = 'auto',
+    component_separators = { left = '', right = ''},
+    section_separators = { left = '', right = ''},
+    disabled_filetypes = {},
+    always_divide_middle = true,
+  },
+  sections = {
+    lualine_a = {'mode'},
+    lualine_b = {'branch', 'diff', 'diagnostics'},
+    lualine_c = {
+    {
+      'filename',
+      file_status = true,
+      path = 1,
+      shorting_target = 40,
+      symbols = {
+        modified = '[+]',
+        readonly = '[-]',
+        unnamed = '[No Name]',
+      }
+    }
+    },
+    lualine_x = {'encoding', 'fileformat', 'filetype'},
+    lualine_y = {'progress'},
+    lualine_z = {'location'}
+  },
+  inactive_sections = {
+    lualine_a = {},
+    lualine_b = {},
+    lualine_c = {'filename'},
+    lualine_x = {'location'},
+    lualine_y = {},
+    lualine_z = {}
+  },
+  tabline = {},
+  extensions = {'nvim-tree', 'toggleterm'}
+}
 EOF

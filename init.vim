@@ -3,7 +3,6 @@ runtime plugs.vim
 runtime config.vim
 runtime lsp.vim
 runtime functions.vim
-runtime commands.vim
 runtime mapping.vim
 runtime tree.vim
 runtime dashboard.vim
@@ -11,10 +10,10 @@ runtime todo.vim
 runtime telescope.vim
 
 " Set Configuration
+let HOME = system('echo $HOME')
 
 filetype plugin on
 set encoding=UTF-8
-set number
 set clipboard+=unnamedplus
 syntax enable
 set noswapfile
@@ -25,17 +24,15 @@ set shiftwidth=4
 set expandtab
 set autoindent
 set fileformat=unix
-set splitbelow
-set termguicolors
-set guifont=Fira\ Code:h12
 set mouse=a
 set keymodel=startsel,stopsel
 set tabstop=2 shiftwidth=2 expandtab
-autocmd BufRead,BufNewFile,BufEnter * set formatoptions-=cro | start
 
-" Themes
-colorscheme onedark
-let g:airline_theme='onedark'
+source $HOME/.config/vsvim/settings.vim
+source $HOME/.config/vsvim/config.vim
+source $HOME/.config/vsvim/lsp.vim
+source $HOME/.config/vsvim/commands.vim
+source $HOME/.config/vsvim/mapping.vim
 
 " AutoChangeMode
 autocmd BufEnter,BufNew,VimEnter NvimTree stopinsert

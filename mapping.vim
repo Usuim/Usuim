@@ -18,23 +18,6 @@ inoremap <C-_> <c-o>:CommentToggle<CR>
 nnoremap <C-_> :CommentToggle<CR>
 vnoremap <C-_> :'<,'>CommentToggle<CR>
 
-" Search
-inoremap <C-f> <ESC>:SearchBoxMatchAll title="Search"<cr>
-nnoremap <C-f> :SearchBoxMatchAll title="Search"<cr>
-xnoremap <C-f> :SearchBoxMatchAll title="Search" visual_mode=true <cr>
-
-" Replace
-inoremap <c-l> <ESC>:SearchBoxReplace confirm=menu<CR>
-nnoremap <c-l> :SearchBoxReplace confirm=menu<CR>
-vnoremap <c-l> :SearchBoxReplace confirm=menu<CR>
-
-" Telescope
-nnoremap <C-b> :Telescope find_files cwd=.<cr>
-inoremap <C-b> <ESC>:Telescope find_files cwd=.<cr>
-
-" Open dashboard
-nnoremap <F3> :Dashboard <CR>
-
 " Ctrl + X and Shift + Del for cut
 vnoremap <silent> <C-X> x:call ClipboardYank()<cr>
 vnoremap <silent> <S-Del> x:call ClipboardYank()<cr>
@@ -92,7 +75,3 @@ inoremap <c-k> <c-o>"_dd
 
 " Delete in visual mode
 vnoremap <BS> "_d
-
-" Go to definition
-nnoremap <C-F12> :GoToDef<CR>
-inoremap <C-F12> <ESC>:GoToDef<CR>

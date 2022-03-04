@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-VersionActual='1.5.11'
+VersionActual='1.6.0'
 
 getConfiguredClient()
 {
@@ -46,7 +46,6 @@ else
 fi
 
 if [[ "$UltimaVersion" != "$VersionActual" ]]; then
-	echo "VsVim '$UltimaVersion' available, Update with 'vsvupg'"
-	# ~/.local/bin/vsvupg # Update neovim when opening terminal
+  echo "VsVim '$UltimaVersion' available, Update with 'vsvupg'"
+  # ~/.local/bin/vsvupg # Update neovim when opening terminal
 fi
-

@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-VersionActual='1.5.11'
+VersionActual='1.6.0'
 repositorio="VsVim"
 usuario="SrWither"
 scripts="install.sh"
@@ -51,9 +51,9 @@ else
       chmod +x $scripts
       "./$scripts" || return 1
       cd ..
-      
+
       # Sed in diferent O.S
-      
+
       if [[ "$OSTYPE" == "linux-gnu"* ]]; then
             sed -i "2s/.*/VersionActual='$UltimaVersion'/" ~/.local/bin/vsvupg
             sed -i "2s/.*/VersionActual='$UltimaVersion'/" ~/.local/bin/checkupg
@@ -92,6 +92,6 @@ elif [[ "$OSTYPE" == "FreeBSD" ]]; then
     UltimaVersion=$(httpGet https://api.github.com/repos/$usuario/$repositorio/tags | /usr/local/bin/grep -Eo '"name":.*?[^\\]",'| head -1 | /usr/local/bin/grep -Eo "[0-9.]+" )
 else
     UltimaVersion=$(httpGet https://api.github.com/repos/$usuario/$repositorio/tags | grep -Eo '"name":.*?[^\\]",'| head -1 | grep -Eo "[0-9.]+" )
-fi 
+fi
 
 update || exit 1

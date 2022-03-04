@@ -21,9 +21,8 @@ Plug 'norcalli/nvim-colorizer.lua'
 Plug 'navarasu/onedark.nvim'
 Plug 'xiyaowong/nvim-transparent'
 
-" Airline
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+" Lualine
+Plug 'nvim-lualine/lualine.nvim'
 
 "Icons
 Plug 'kyazdani42/nvim-web-devicons'
@@ -107,5 +106,8 @@ Plug 'cappyzawa/trim.nvim'
 
 " Workspaces
 Plug 'natecraddock/workspaces.nvim'
+
+" External Plugins
+runtime ../vsvim/plugins.vim
 
 call plug#end()
