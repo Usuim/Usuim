@@ -76,22 +76,14 @@ local kind_icons = {
       ['<C-Space>'] = cmp.mapping(cmp.mapping.complete(), { 'i', 'c' }),
       ['<CR>'] = cmp.mapping.confirm({ select = true }),
       ['<Tab>'] = function(fallback)
-      if not cmp.select_next_item() then
-        if vim.bo.buftype ~= 'prompt' and has_words_before() then
-          cmp.complete()
-        else
+        if not cmp.select_next_item() then
           fallback()
         end
-      end
-    end,
+      end,
 
     ['<S-Tab>'] = function(fallback)
       if not cmp.select_prev_item() then
-        if vim.bo.buftype ~= 'prompt' and has_words_before() then
-          cmp.complete()
-        else
-          fallback()
-        end
+        fallback()
       end
     end,
 
