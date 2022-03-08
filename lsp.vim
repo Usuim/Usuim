@@ -94,6 +94,15 @@ local kind_icons = {
         end
       end
     end,
+
+    ['<ESC>'] = function(fallback)
+      if cmp.visible() then
+        cmp.close()
+      else
+        fallback()
+      end
+    end,
+
     },
     sources = cmp.config.sources({
       { name = 'nvim_lsp' },
@@ -179,6 +188,10 @@ local kind_icons = {
   require('lspconfig')['asm_lsp'].setup {
     capabilities = capabilities,
     root_dir = require("lspconfig").util.root_pattern{"*"}
+  }
+  -- Bash
+  require('lspconfig')['bashls'].setup {
+    capabilities = capabilities
   }
 
   local capabilities = vim.lsp.protocol.make_client_capabilities()

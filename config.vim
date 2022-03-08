@@ -71,6 +71,9 @@ function openBuffer(bfname)
   if currentBuffer == "Term" then
     vim.cmd 'exe "normal \\<C-W>k"'
     vim.cmd("buffer" .. bfname)
+  elseif currentBuffer == "NvimTree" then
+    vim.cmd 'exe "normal \\<C-W>l"'
+    vim.cmd("buffer" .. bfname)
   else
     vim.cmd("buffer" .. bfname)
   end
