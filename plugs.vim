@@ -23,6 +23,7 @@ Plug 'xiyaowong/nvim-transparent'
 
 " Lualine
 Plug 'nvim-lualine/lualine.nvim'
+Plug 'SmiteshP/nvim-gps'
 
 "Icons
 Plug 'kyazdani42/nvim-web-devicons'
@@ -42,6 +43,8 @@ Plug 'tpope/vim-surround'
 " LSP
 Plug 'neovim/nvim-lspconfig'
 Plug 'nvim-lua/lsp_extensions.nvim'
+Plug 'RishabhRD/popfix'
+Plug 'RishabhRD/nvim-lsputils'
 " LSP-AUTOCOMPLETION
 Plug 'hrsh7th/cmp-nvim-lsp'
 Plug 'hrsh7th/cmp-buffer'
@@ -50,6 +53,7 @@ Plug 'hrsh7th/cmp-cmdline'
 Plug 'hrsh7th/nvim-cmp'
 Plug 'onsails/lspkind-nvim'
 Plug 'hrsh7th/cmp-nvim-lsp-signature-help'
+Plug 'hrsh7th/cmp-nvim-lsp-document-symbol'
 " LUASNIP
 Plug 'L3MON4D3/LuaSnip'
 Plug 'saadparwaiz1/cmp_luasnip'
@@ -73,12 +77,12 @@ Plug 'tpope/vim-repeat'
 
 " Telescope
 Plug 'nvim-lua/plenary.nvim'
-Plug 'nvim-telescope/telescope.nvim'
+Plug 'nvim-telescope/telescope.nvim', { 'tag': 'nvim-0.6' }
 Plug 'nvim-telescope/telescope-file-browser.nvim'
 
 "CRATES
 Plug 'nvim-lua/plenary.nvim'
-Plug 'saecki/crates.nvim'
+Plug 'saecki/crates.nvim', { 'tag': 'v0.2.0' }
 Plug 'cespare/vim-toml'
 
 " Dashboard

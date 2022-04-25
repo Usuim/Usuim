@@ -84,3 +84,6 @@ inoremap <RightMouse> <c-o><LeftMouse><c-o>:Telescope lsp_code_actions<CR>
 
 nnoremap <C-Q> :Telescope lsp_code_actions<CR>
 inoremap <C-Q> <c-o>:Telescope lsp_code_actions<CR>
+
+" Hover
+" autocmd CursorHoldI * :lua HoverFixed()

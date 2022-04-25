@@ -2,6 +2,7 @@
 runtime plugs.vim
 runtime config.vim
 runtime lsp.vim
+runtime cmp.vim
 runtime functions.vim
 runtime mapping.vim
 runtime tree.vim
@@ -27,6 +28,7 @@ set fileformat=unix
 set mouse=a
 set keymodel=startsel,stopsel
 set tabstop=2 shiftwidth=2 expandtab
+set updatetime=2000
 
 source $HOME/.config/vsvim/settings.vim
 source $HOME/.config/vsvim/config.vim
