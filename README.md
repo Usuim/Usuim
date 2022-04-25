@@ -14,8 +14,17 @@ chmod +x install.sh
 ./install.sh
 ```
 # :recycle: Update VsVim
+Optional: You can add the following path to your path list:
+```
+~/.local/bin
+``` 
+and run:
 ```sh
 vsvupg
+```
+or you can also run:
+```
+~/.local/bin/vsvupg
 ```
 This command automatically downloads and applies the update
 
