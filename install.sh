@@ -33,15 +33,8 @@ install_vsvim() {
   cp plugs.vim ~/.config/nvim
   cp .IDVSVIM ~/.config/nvim
   cp autoload/*.vim ~/.config/nvim/autoload
-  echo 'PATH=$PATH:~/.local/bin' >> ~/.profile
-  echo 'PATH=$PATH:~/.local/bin' >> ~/.zshrc
-  echo 'PATH=$PATH:~/.local/bin' >> ~/.bashrc
   chmod +x resources/*
   cp resources/* ~/.local/bin
-  echo "~/.local/bin/checkupg" >> ~/.zshrc
-  echo "~/.local/bin/checkupg" >> ~/.shrc
-  echo "~/.local/bin/checkupg" >> ~/.bashrc
-  echo "~/.local/bin/checkupg" >> ~/.cshrc
   nvim -c ":PlugInstall | :qa!"
   cp *.vim ~/.config/nvim
   cp external/*.vim ~/.config/vsvim
