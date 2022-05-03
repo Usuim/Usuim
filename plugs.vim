@@ -18,6 +18,7 @@ Plug 'JoosepAlviste/nvim-ts-context-commentstring'
 Plug 'norcalli/nvim-colorizer.lua'
 
 " Themes
+Plug 'Mofiqul/vscode.nvim'
 Plug 'navarasu/onedark.nvim'
 Plug 'xiyaowong/nvim-transparent'
 
@@ -77,12 +78,12 @@ Plug 'tpope/vim-repeat'
 
 " Telescope
 Plug 'nvim-lua/plenary.nvim'
-Plug 'nvim-telescope/telescope.nvim', { 'tag': 'nvim-0.6' }
+Plug 'nvim-telescope/telescope.nvim', { 'tag' : 'nvim-0.6' }
 Plug 'nvim-telescope/telescope-file-browser.nvim'
 
 "CRATES
 Plug 'nvim-lua/plenary.nvim'
-Plug 'saecki/crates.nvim', { 'tag': 'v0.2.0' }
+Plug 'saecki/crates.nvim'
 Plug 'cespare/vim-toml'
 
 " Dashboard

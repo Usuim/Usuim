@@ -29,6 +29,8 @@ set mouse=a
 set keymodel=startsel,stopsel
 set tabstop=2 shiftwidth=2 expandtab
 set updatetime=2000
+let g:vscode_style = "dark"
+colorscheme vscode
 
 source $HOME/.config/vsvim/settings.vim
 source $HOME/.config/vsvim/config.vim

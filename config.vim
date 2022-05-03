@@ -85,7 +85,7 @@ require('bufferline').setup {
     right_mouse_command = "lua closeBuffer(%d)",
     left_mouse_command = "lua openBuffer(%d)",
     middle_mouse_command = nil,
-    indicator_icon = '▎',
+    indicator_icon = '',
     buffer_close_icon = '',
     modified_icon = '●',
     close_icon = '',
@@ -116,7 +116,7 @@ require('bufferline').setup {
         text = function()
           return vim.fn.fnamemodify(vim.fn.getcwd(), ":t")
         end,
-        highlight = "Directory",
+        -- highlight = "Directory",
         text_align = "center"
       }
     },
@@ -128,7 +128,7 @@ require('bufferline').setup {
     separator_style = "thin",
     enforce_regular_tabs = true,
     always_show_bufferline = true,
-  }
+  },
 }
 
 -- Autopairs
