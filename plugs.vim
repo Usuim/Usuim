@@ -83,7 +83,7 @@ Plug 'nvim-telescope/telescope-file-browser.nvim'
 
 "CRATES
 Plug 'nvim-lua/plenary.nvim'
-Plug 'saecki/crates.nvim'
+Plug 'saecki/crates.nvim', { 'tag': 'v0.2.0' }
 Plug 'cespare/vim-toml'
 
 " Dashboard
