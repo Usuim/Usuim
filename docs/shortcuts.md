@@ -27,11 +27,11 @@
 |       a       | Create files or folders |
 |       d       | Delete files or folders |
 |       r       | Rename files or folders |
-|   Shift + R   |    Reload filetree      |
 |       y       | Copy file or folder name|
 |       c       |   Copy file or folder   |
 |       x       |   Cut file or folder    |
 |       p       |   Paste file or folder  |
+|   Shift + R   |    Reload filetree      |
 |   Shift + I   |Toggle files hidden by `.gitignore`|
 |   Shift + H   |   Toggle hidden files `.files` |
 |      TAB      |       Preview file      |
