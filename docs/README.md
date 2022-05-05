@@ -2,6 +2,7 @@
 
 - [Dependencies](https://github.com/SrWither/VsVim/blob/main/docs/dependencies.md)
   - [General](https://github.com/SrWither/VsVim/blob/main/docs/dependencies.md#general)
+  - [Fonts](https://github.com/SrWither/VsVim/blob/main/docs/dependencies.md#fonts)
   - [FreeBSD](https://github.com/SrWither/VsVim/blob/main/docs/dependencies.md#freebsd)
   - [Python](https://github.com/SrWither/VsVim/blob/main/docs/dependencies.md#python)
   - [C/C++](https://github.com/SrWither/VsVim/blob/main/docs/dependencies.md#ccpp)
