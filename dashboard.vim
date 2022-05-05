@@ -21,6 +21,6 @@ g.dashboard_custom_section = {
     h = {description = {"  Exit"}, command = "exit"}
 }
 
-g.dashboard_custom_footer = {'VsVim 1.6.4'}
+g.dashboard_custom_footer = {'VsVim 1.6.4_1'}
 
 EOF
