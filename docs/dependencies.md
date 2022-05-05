@@ -4,6 +4,10 @@
 ```
  xclip - xsel - python3.8 - ripgrep
 ```
+## Fonts
+`NerdFonts:` <a href="https://www.nerdfonts.com/font-downloads">Download</a>
+
+`Codicons:` <a href="https://github.com/microsoft/vscode-codicons/raw/main/dist/codicon.ttf">Download</a>
 
 ## FreeBSD
 ```
