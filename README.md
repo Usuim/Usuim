@@ -36,7 +36,7 @@ This command automatically downloads and applies the update
 
 > Click to expand
 
-<details>
+<details open>
   <summary>VsCode Theme</summary>
 
   #### Dashboard
