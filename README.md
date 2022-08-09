@@ -9,7 +9,7 @@ before installing check the [dependencies](https://github.com/SrWither/VsVim/blo
 if you use FreeBSD you must install the following [dependencies](https://github.com/SrWither/VsVim/blob/main/docs/dependencies.md#freebsd)
 ```sh
 git clone https://github.com/Usuim/Usuim
-cd VsVim
+cd Usuim
 chmod +x install.sh
 ./install.sh
 ```
@@ -20,7 +20,7 @@ Optional: You can add the following path to your path list:
 ``` 
 and run:
 ```sh
-vsvupg
+usuupg
 ```
 or you can also run:
 ```
