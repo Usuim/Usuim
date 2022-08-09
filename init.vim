@@ -32,11 +32,11 @@ set updatetime=2000
 let g:vscode_style = "dark"
 colorscheme vscode
 
-source $HOME/.config/vsvim/settings.vim
-source $HOME/.config/vsvim/config.vim
-source $HOME/.config/vsvim/lsp.vim
-source $HOME/.config/vsvim/commands.vim
-source $HOME/.config/vsvim/mapping.vim
+source $HOME/.config/usuim/settings.vim
+source $HOME/.config/usuim/config.vim
+source $HOME/.config/usuim/lsp.vim
+source $HOME/.config/usuim/commands.vim
+source $HOME/.config/usuim/mapping.vim
 
 " AutoChangeMode
 autocmd BufEnter,BufNew,VimEnter NvimTree stopinsert
