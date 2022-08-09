@@ -5,8 +5,7 @@ let g:dashboard_custom_header = [
 \'██║   ██║╚════██║██║   ██║██║██║╚██╔╝██║',
 \'╚██████╔╝███████║╚██████╔╝██║██║ ╚═╝ ██║',
 \' ╚═════╝ ╚══════╝ ╚═════╝ ╚═╝╚═╝     ╚═╝',
-\                                        
-]
+\ ]
 
 lua <<EOF
 local g = vim.g
@@ -22,6 +21,6 @@ g.dashboard_custom_section = {
     h = {description = {"  Exit"}, command = "exit"}
 }
 
-g.dashboard_custom_footer = {'VsVim 1.6.6'}
+g.dashboard_custom_footer = {'Usuim 1.6.6'}
 
 EOF
