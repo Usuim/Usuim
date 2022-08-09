@@ -15,7 +15,6 @@ update(){
   mkdir -p ~/.config/nvim/autoload
   cp autoload/*.vim ~/.config/nvim/autoload
   cp resources/* ~/.local/bin
-  mv ~/.config/vsvim ~/.config/usuim
   ExternalConfig
   nvim -c ":PlugClean | :PlugUpdate | :qa!"
   echo "Successful upgrade!"
