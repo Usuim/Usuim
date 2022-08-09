@@ -5,7 +5,7 @@ backup() {
   sleep 2
   mv ~/.config/nvim ~/.config/NeovimBackupVS
   echo "Done!"
-  install_vsvim
+  install_usuim
 }
 
 update(){
@@ -14,12 +14,14 @@ update(){
   cp *.vim ~/.config/nvim
   mkdir -p ~/.config/nvim/autoload
   cp autoload/*.vim ~/.config/nvim/autoload
+  cp resources/* ~/.local/bin
+  mv ~/.config/vsvim ~/.config/usuim
   ExternalConfig
   nvim -c ":PlugClean | :PlugUpdate | :qa!"
   echo "Successful upgrade!"
 }
 
-install_vsvim() {
+install_usuim() {
   echo "Installing configuration..."
   LCLDIR="$HOME/.local/bin"
   if [[ ! -d $LCLDIR ]]; then
@@ -27,28 +29,28 @@ install_vsvim() {
   fi
   sleep 3
   mkdir ~/.config/nvim
-  mkdir ~/.config/vsvim
+  mkdir ~/.config/usuim
   mkdir -p ~/.config/nvim/autoload
   cp init.vim ~/.config/nvim
   cp plugs.vim ~/.config/nvim
-  cp .IDVSVIM ~/.config/nvim
+  cp .IDUSUIM ~/.config/nvim
   cp autoload/*.vim ~/.config/nvim/autoload
   chmod +x resources/*
   cp resources/* ~/.local/bin
   nvim -c ":PlugInstall | :qa!"
   cp *.vim ~/.config/nvim
-  cp external/*.vim ~/.config/vsvim
+  cp external/*.vim ~/.config/usuim
   echo "instalación exitosa"
 }
 
 CheckExistConfig() {
 
   DIRECTORY="$HOME/.config/nvim"
-  ID="$HOME/.config/nvim/.IDVSVIM"
+  ID="$HOME/.config/nvim/.IDUSUIM"
 
   if [[ ! -f $ID ]]; then
     if [[ ! -d $DIRECTORY ]]; then
-      install_vsvim
+      install_usuim
     else
 
             while true; do
@@ -57,8 +59,8 @@ CheckExistConfig() {
             case $OPTION in
           y ) backup; break;;
               Y ) backup; break;;
-              n ) install_vsvim; break;;
-          N ) install_vsvim; break;;
+              n ) install_usuim; break;;
+          N ) install_usuim; break;;
             esac
       done
     fi
@@ -67,12 +69,12 @@ CheckExistConfig() {
     update
 
   else
-    install_vsvim
+    install_usuim
   fi
 }
 
 ExternalConfig() {
-  DIRPATH="$HOME/.config/vsvim"
+  DIRPATH="$HOME/.config/usuim"
   SETTINGS="$DIRPATH/settings.vim"
   PLUGINS="$DIRPATH/plugins.vim"
   CONFIG="$DIRPATH/config.vim"
@@ -82,37 +84,37 @@ ExternalConfig() {
 
   if [[ ! -d $DIRPATH ]]; then
     echo "+ $DIRPATH"
-    mkdir ~/.config/vsvim
+    mkdir ~/.config/usuim
   fi
 
   if [[ ! -f $SETTINGS ]]; then
     echo "+ $SETTINGS"
-    cp external/settings.vim ~/.config/vsvim
+    cp external/settings.vim ~/.config/usuim
   fi
 
   if [[ ! -f $PLUGINS ]]; then
     echo "+ $PLUGINS"
-    cp external/plugins.vim ~/.config/vsvim
+    cp external/plugins.vim ~/.config/usuim
   fi
 
   if [[ ! -f $CONFIG ]]; then
     echo "+ $CONFIG"
-    cp external/config.vim ~/.config/vsvim
+    cp external/config.vim ~/.config/usuim
   fi
 
   if [[ ! -f $MAPPING ]]; then
     echo "+ $MAPPING"
-    cp external/mapping.vim ~/.config/vsvim
+    cp external/mapping.vim ~/.config/usuim
   fi
 
   if [[ ! -f $LSP ]]; then
     echo "+ $LSP"
-    cp external/lsp.vim ~/.config/vsvim
+    cp external/lsp.vim ~/.config/usuim
   fi
 
   if [[ ! -f $COMMANDS ]]; then
     echo "+ $COMMANDS"
-    cp external/commands.vim ~/.config/vsvim
+    cp external/commands.vim ~/.config/usuim
   fi
 
 }
