@@ -44,17 +44,17 @@ This command automatically downloads and applies the update
 
   #### Dashboard
    <kbd>
-    <img src="https://user-images.githubusercontent.com/59105868/167044841-5c700fc0-d7f4-4829-8e16-87349248b518.png">
+    <img src="https://user-images.githubusercontent.com/59105868/183558788-e23c9dc2-2922-44f6-b289-84267667080d.png">
   </kbd>
 
   #### Code, Filetree and Terminal
    <kbd>
-    <img src="https://user-images.githubusercontent.com/59105868/167045068-57c16958-dfe3-4b5d-8dcc-0ad8b46f7024.png">
+    <img src="https://user-images.githubusercontent.com/59105868/183558789-9ced6f2a-b697-4ff5-b7ef-4aa335137135.png">
   </kbd>
 
   #### Autocomplete
    <kbd>
-    <img src="https://user-images.githubusercontent.com/59105868/167045230-9b647787-6b50-4477-b3d2-a4aebc14fd0a.png">
+    <img src="https://user-images.githubusercontent.com/59105868/183558791-3dd9daf8-35cb-4870-b45b-b4f6df1ad096.png">
   </kbd>
 
 </details>
@@ -64,17 +64,17 @@ This command automatically downloads and applies the update
 
   #### Dashboard
    <kbd>
-    <img src="https://user-images.githubusercontent.com/59105868/167044828-a1cea735-4039-4aa7-8fc6-067edc9a9803.png">
+    <img src="https://user-images.githubusercontent.com/59105868/183558916-6a808985-f7a6-4b70-b91a-6da220af403c.png">
   </kbd>
 
   #### Code, Filetree and Terminal
    <kbd>
-    <img src="https://user-images.githubusercontent.com/59105868/167045057-802c4715-171b-422a-8496-6e205f785d5f.png">
+    <img src="https://user-images.githubusercontent.com/59105868/183558920-27643bdd-3e7c-4d42-aad1-c5c99e568574.png">
   </kbd>
 
   #### Autocomplete
    <kbd>
-    <img src="https://user-images.githubusercontent.com/59105868/167045243-1cab2673-8278-4b75-8dc0-557275823db2.png">
+    <img src="https://user-images.githubusercontent.com/59105868/183558923-87f38204-463d-4d3f-9c54-5db31db3923e.png">
   </kbd>
 
 </details>
