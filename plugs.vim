@@ -113,6 +113,6 @@ Plug 'cappyzawa/trim.nvim'
 Plug 'natecraddock/workspaces.nvim'
 
 " External Plugins
-runtime ../vsvim/plugins.vim
+runtime ../usuim/plugins.vim
 
 call plug#end()
