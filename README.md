@@ -13,7 +13,7 @@ cd Usuim
 chmod +x install.sh
 ./install.sh
 ```
-##### :warning: if you have VsVim installed. you must run in your terminal `vsvupg`, or you can also clone the repository and run the `install.sh` script
+##### :warning: if you have VsVim installed. you must run in your terminal `vsvupg` or you can also clone the repository and run the `install.sh` script
 
 # :recycle: Update Usuim
 Optional: You can add the following path to your path list:
