@@ -8,12 +8,12 @@ before installing check the [dependencies](https://github.com/SrWither/VsVim/blo
 
 if you use FreeBSD you must install the following [dependencies](https://github.com/SrWither/VsVim/blob/main/docs/dependencies.md#freebsd)
 ```sh
-git clone https://github.com/SrWither/VsVim
+git clone https://github.com/Usuim/Usuim
 cd VsVim
 chmod +x install.sh
 ./install.sh
 ```
-# :recycle: Update VsVim
+# :recycle: Update Usuim
 Optional: You can add the following path to your path list:
 ```
 ~/.local/bin
