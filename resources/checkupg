@@ -46,6 +46,6 @@ else
 fi
 
 if [[ "$UltimaVersion" != "$VersionActual" ]]; then
-  echo "VsVim '$UltimaVersion' available, Update with 'vsvupg'"
+  echo "VsVim '$UltimaVersion' available, Update with 'usuupg'"
   # ~/.local/bin/vsvupg # Update neovim when opening terminal
 fi
