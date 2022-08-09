@@ -13,6 +13,8 @@ cd Usuim
 chmod +x install.sh
 ./install.sh
 ```
+##### :warning: if you have VsVim installed. you must clone the repository and run the `install.sh` script
+
 # :recycle: Update Usuim
 Optional: You can add the following path to your path list:
 ```
@@ -32,6 +34,7 @@ This command automatically downloads and applies the update
 ```
 :TSInstall all
 ```
+
 # :camera: Preview
 
 > Click to expand
