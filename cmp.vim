@@ -67,13 +67,11 @@ local kind_icons = {
       ['<C-ScrollWheelDown>'] = cmp.mapping(cmp.mapping.scroll_docs(4), {'i', 'c'}),
       ['<C-Space>'] = cmp.mapping(cmp.mapping.complete(), { 'i', 'c' }),
       ['<CR>'] = cmp.mapping.confirm({ select = true }),
-      
       ['<Tab>'] = function(fallback)
         if not cmp.select_next_item() then
           fallback()
         end
       end,
-      
       ['<Down>'] = function(fallback)
         if not cmp.select_next_item() then
           fallback()
@@ -98,11 +96,13 @@ local kind_icons = {
       end
     end,
 
+
     ['<Up>'] = function(fallback)
       if not cmp.select_prev_item() then
         fallback()
       end
     end,
+
 
     ['<ESC>'] = function(fallback)
       if cmp.visible() then
@@ -161,8 +161,8 @@ local kind_icons = {
     init_options = {
       hostInfo = "neovim"
     },
-    root_dir = require("lspconfig").util.root_pattern("*")
-    -- root_dir = require("lspconfig").util.root_pattern("package.json", "tsconfig.json", "jsconfig.json", ".git")
+    single_file_support = true,
+    root_dir = require("lspconfig").util.root_pattern("package.json", "tsconfig.json", "jsconfig.json", ".git")
   }
   -- Vue
   require('lspconfig')['vuels'].setup {
@@ -180,7 +180,7 @@ local kind_icons = {
   require('lspconfig')['gopls'].setup {
     cmd = { "gopls" },
     filetypes = { "go", "gomod", "gotmpl" },
-    root_dir = require("lspconfig").util.root_pattern{"*"},
+    single_file_support = true
   }
   -- CMake
   require('lspconfig')['cmake'].setup {

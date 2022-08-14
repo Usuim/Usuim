@@ -31,7 +31,7 @@ Plug 'kyazdani42/nvim-web-devicons'
 Plug 'ryanoasis/vim-devicons'
 
 " Navbar
-Plug 'akinsho/bufferline.nvim'
+Plug 'akinsho/bufferline.nvim', { 'tag': 'v2.5.1'}
 
 " Tree
 Plug 'SrWither/nvim-tree.lua'
@@ -78,12 +78,12 @@ Plug 'tpope/vim-repeat'
 
 " Telescope
 Plug 'nvim-lua/plenary.nvim'
-Plug 'nvim-telescope/telescope.nvim', { 'tag' : 'nvim-0.6' }
+Plug 'nvim-telescope/telescope.nvim'
 Plug 'nvim-telescope/telescope-file-browser.nvim'
 
 "CRATES
 Plug 'nvim-lua/plenary.nvim'
-Plug 'saecki/crates.nvim', { 'tag': 'v0.2.0' }
+Plug 'saecki/crates.nvim'
 Plug 'cespare/vim-toml'
 
 " Dashboard
