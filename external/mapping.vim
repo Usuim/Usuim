@@ -14,7 +14,3 @@ inoremap <C-b> <ESC>:Telescope find_files cwd=.<cr>
 
 " Open dashboard
 nnoremap <F3> :Dashboard <CR>
-
-" Go to definition
-nnoremap <C-F12> :GoToDef<CR>
-inoremap <C-F12> <ESC>:GoToDef<CR>
