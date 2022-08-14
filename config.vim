@@ -137,6 +137,9 @@ require('nvim-autopairs').setup{}
 -- Crates
 require('crates').setup()
 
+-- Renamer
+require('renamer').setup()
+
 -- Trim
 require('trim').setup({
   disable = {},

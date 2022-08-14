@@ -87,3 +87,7 @@ inoremap <C-Q> <c-o>:Telescope lsp_code_actions<CR>
 
 " Hover
 " autocmd CursorHoldI * :lua HoverFixed()
+
+" Renamer
+nnoremap <C-R> :lua require('renamer').rename()<CR>
+inoremap <C-R> <c-o>:lua require('renamer').rename()<CR>
