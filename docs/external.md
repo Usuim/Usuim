@@ -144,3 +144,17 @@ set splitbelow
 " set relativenumber
 ```
 </details>
+
+   
+## Example
+   
+#### if you like the relative number in neovim you can activate it here
+`settings.vim`
+ 
+```vim
+" Editor Settings
+set relativenumber " add/uncomment this line
+```
+<kbd>
+  <img src="https://user-images.githubusercontent.com/59105868/184548218-0ac11ec5-47bb-4488-b3fa-e8b82b1832a1.png">
+</kbd>
