@@ -63,6 +63,8 @@ local kind_icons = {
       end,
     },
     mapping = {
+      ['<C-ScrollWheelUp>'] = cmp.mapping(cmp.mapping.scroll_docs(-4), {'i', 'c'}),
+      ['<C-ScrollWheelDown>'] = cmp.mapping(cmp.mapping.scroll_docs(4), {'i', 'c'}),
       ['<C-Space>'] = cmp.mapping(cmp.mapping.complete(), { 'i', 'c' }),
       ['<CR>'] = cmp.mapping.confirm({ select = true }),
       ['<Tab>'] = function(fallback)
@@ -76,17 +78,31 @@ local kind_icons = {
         end
       end,
 
+      ['<ScrollWheelDown>'] = function(fallback)
+        if not cmp.select_next_item() then
+          fallback()
+        end
+      end,
+
     ['<S-Tab>'] = function(fallback)
       if not cmp.select_prev_item() then
         fallback()
       end
     end,
 
+    ['<ScrollWheelUp>'] = function(fallback)
+      if not cmp.select_prev_item() then
+        fallback()
+      end
+    end,
+
+
     ['<Up>'] = function(fallback)
       if not cmp.select_prev_item() then
         fallback()
       end
     end,
+
 
     ['<ESC>'] = function(fallback)
       if cmp.visible() then
