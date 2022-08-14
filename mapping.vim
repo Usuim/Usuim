@@ -13,10 +13,15 @@ inoremap <c-s> <c-o>:retab \| :w!<cr>
 inoremap <F2> <c-o>:NvimTreeToggle<CR>
 nnoremap <F2> :NvimTreeToggle<CR>
 
-" Commenter
+" Commenter (alacritty - gnome-terminal)
 inoremap <C-_> <c-o>:CommentToggle<CR>
 nnoremap <C-_> :CommentToggle<CR>
 vnoremap <C-_> :'<,'>CommentToggle<CR>
+
+" Commenter (kitty - xterm)
+inoremap <C-7> <c-o>:CommentToggle<CR>
+nnoremap <C-7> :CommentToggle<CR>
+vnoremap <C-7> :'<,'>CommentToggle<CR>
 
 " Ctrl + X and Shift + Del for cut
 vnoremap <silent> <C-X> x:call ClipboardYank()<cr>
