@@ -79,7 +79,7 @@ Plug 'tpope/vim-repeat'
 
 " Telescope
 Plug 'nvim-lua/plenary.nvim'
-Plug 'nvim-telescope/telescope.nvim'
+Plug 'nvim-telescope/telescope.nvim', { 'tag': 'nvim-0.6' }
 Plug 'nvim-telescope/telescope-file-browser.nvim'
 
 "CRATES
