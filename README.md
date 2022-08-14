@@ -4,9 +4,9 @@
 <h4 align="center">Neovim configured to look like Visual Studio Code</h1>
 
 # :clipboard: Instalation
-before installing check the [dependencies](https://github.com/SrWither/VsVim/blob/main/docs/dependencies.md#general) in the documentation
+before installing check the [dependencies](https://github.com/Usuim/Usuim/blob/main/docs/dependencies.md#general) in the documentation
 
-if you use FreeBSD you must install the following [dependencies](https://github.com/SrWither/VsVim/blob/main/docs/dependencies.md#freebsd)
+if you use FreeBSD you must install the following [dependencies](https://github.com/Usuim/Usuim/blob/main/docs/dependencies.md#freebsd)
 ```sh
 git clone https://github.com/Usuim/Usuim
 cd Usuim
@@ -80,5 +80,5 @@ This command automatically downloads and applies the update
 </details>
 
 <h4 align="center">
-  For more information read the <a href="https://github.com/SrWither/VsVim/tree/main/docs#blue_book-index">Documentation</a>
+  For more information read the <a href="https://github.com/Usuim/Usuim/tree/main/docs#blue_book-index">Documentation</a>
 </h4>
