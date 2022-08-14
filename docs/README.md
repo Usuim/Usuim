@@ -17,3 +17,4 @@
   - [Filetree](https://github.com/SrWither/VsVim/blob/main/docs/shortcuts.md#evergreen_tree-filetree-shortcuts)
   - [Commands](https://github.com/SrWither/VsVim/blob/main/docs/shortcuts.md#computer-commands)
 - [Python VirtualEnv](https://github.com/SrWither/VsVim/blob/main/docs/venv.md)
+- [External Configuration](https://github.com/Usuim/Usuim/blob/main/docs/external.md)
