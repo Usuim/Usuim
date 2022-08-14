@@ -2,7 +2,7 @@
 " to disable any parameter you must comment the line
 
 " To import files:
-" source $HOME/.config/vsvim/file.vim
+" source $HOME/.config/usuim/file.vim
 
 " Autoinsert mode
 autocmd BufRead,BufNewFile,BufEnter * set formatoptions-=cro | start
