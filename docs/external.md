@@ -165,3 +165,5 @@ Plug 'Usuim/presence.nvim'
 <kbd>
   <img src="https://user-images.githubusercontent.com/59105868/184581978-6232addc-69fb-46b0-aebd-ff98805095d9.png">
 </kbd>
+   
+#### ⚠️ Usuim Rich Presence is currently in beta. _Some programming languages may not have icons._
