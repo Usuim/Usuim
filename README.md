@@ -4,7 +4,7 @@
 <h4 align="center">Neovim configured to look like Visual Studio Code</h1>
 
 # :clipboard: Instalation
-before installing check the [dependencies](https://github.com/Usuim/Usuim/blob/main/docs/dependencies.md#general) in the documentation
+**before installing** check the [dependencies](https://github.com/Usuim/Usuim/blob/main/docs/dependencies.md#general) and read the **<a href="https://github.com/Usuim/Usuim/tree/main/docs#blue_book-index">Documentation</a>**
 
 if you use FreeBSD you must install the following [dependencies](https://github.com/Usuim/Usuim/blob/main/docs/dependencies.md#freebsd)
 ```sh
