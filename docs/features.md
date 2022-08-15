@@ -15,3 +15,17 @@
 ## Double and triple click
 
 ![Double-Triple-Click](https://user-images.githubusercontent.com/59105868/184708163-7b252295-9c8b-4942-b31b-480d165df05d.gif)
+
+## Telescope (using nvchad style)
+
+<kbd>
+  <img src="https://user-images.githubusercontent.com/59105868/184721519-2c65246f-9f04-4145-805b-a3acf220c2b2.png">
+</kbd>
+
+<kbd>
+  <img src="https://user-images.githubusercontent.com/59105868/184721781-13df096d-792f-4fee-b2e7-9118349c506d.png">
+</kbd>
+
+## Rename definitions
+
+![Rename](https://user-images.githubusercontent.com/59105868/184722409-af1f70e8-0761-4c73-bcda-827de26a1421.gif)
