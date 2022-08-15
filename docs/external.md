@@ -152,7 +152,7 @@ set relativenumber " add/uncomment this line
   <img src="https://user-images.githubusercontent.com/59105868/184548218-0ac11ec5-47bb-4488-b3fa-e8b82b1832a1.png">
 </kbd>
    
-## Discord Rich Presence
+## Discord Rich Presence (Beta)
 
 ### if you want it to appear on discord that you are using Usuim. you must add:
 `plugins.vim`
