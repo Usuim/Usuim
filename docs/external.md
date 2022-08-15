@@ -141,7 +141,7 @@ set splitbelow
    
 ## Example
    
-#### if you like the relative number in neovim you can activate it here
+### for example if you like the relative number in neovim you can activate it here
 `settings.vim`
  
 ```vim
@@ -150,4 +150,18 @@ set relativenumber " add/uncomment this line
 ```
 <kbd>
   <img src="https://user-images.githubusercontent.com/59105868/184548218-0ac11ec5-47bb-4488-b3fa-e8b82b1832a1.png">
+</kbd>
+   
+## Discord Rich Presence
+
+### if you want it to appear on discord that you are using Usuim. you must add:
+`plugins.vim`
+
+```vim
+Plug 'Usuim/presence.nvim'
+```
+#### And then run on the neovim command line: `:PlugInstall`
+
+<kbd>
+  <img src="https://user-images.githubusercontent.com/59105868/184581495-6c4fef82-fd02-4070-b542-f4ad324440fc.png">
 </kbd>
