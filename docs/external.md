@@ -163,5 +163,5 @@ Plug 'Usuim/presence.nvim'
 #### And then run on the neovim command line: `:PlugInstall`
 
 <kbd>
-  <img src="https://user-images.githubusercontent.com/59105868/184581495-6c4fef82-fd02-4070-b542-f4ad324440fc.png">
+  <img src="https://user-images.githubusercontent.com/59105868/184581978-6232addc-69fb-46b0-aebd-ff98805095d9.png">
 </kbd>
