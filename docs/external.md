@@ -167,3 +167,24 @@ Plug 'Usuim/presence.nvim'
 </kbd>
    
 #### ⚠️ Usuim Rich Presence is currently in beta. _Some programming languages may not have icons._
+   
+## Add language server
+
+##### For example if I want autocomplete in **Dart**
+
+##### I must add this:
+
+`lsp.vim`
+   
+```lua
+-- Dart
+require('lspconfig')['dartls'].setup {
+  capabilities = capabilities
+}
+```
+
+<kbd>
+  <img src="https://user-images.githubusercontent.com/59105868/184723805-29101317-a8ce-46ef-bf59-faccd4364f52.png">
+</kbd>
+
+#### look <a href="https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md">here</a> for more information
