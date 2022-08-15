@@ -1,5 +1,6 @@
 <h1 align="center">:blue_book: Index</h1>
 
+- [Features](https://github.com/Usuim/Usuim/blob/main/docs/features.md#-features)
 - [Dependencies](https://github.com/Usuim/Usuim/blob/main/docs/dependencies.md)
   - [General](https://github.com/Usuim/Usuim/blob/main/docs/dependencies.md#general)
   - [Fonts](https://github.com/Usuim/Usuim/blob/main/docs/dependencies.md#fonts)
