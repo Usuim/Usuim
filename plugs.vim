@@ -34,7 +34,7 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'akinsho/bufferline.nvim', { 'tag': 'v2.5.1'}
 
 " Tree
-Plug 'SrWither/nvim-tree.lua'
+Plug 'Usuim/nvim-tree.lua'
 
 " Typing
 Plug 'windwp/nvim-autopairs'
@@ -61,7 +61,7 @@ Plug 'L3MON4D3/LuaSnip'
 Plug 'saadparwaiz1/cmp_luasnip'
 
 "Terminal
-Plug 'SrWither/toggleterm.nvim'
+Plug 'Usuim/toggleterm.nvim'
 
 " Test
 Plug 'tyewang/vimux-jest-test'
@@ -88,7 +88,7 @@ Plug 'saecki/crates.nvim'
 Plug 'cespare/vim-toml'
 
 " Dashboard
-Plug 'SrWither/dashboard-nvim'
+Plug 'Usuim/dashboard-nvim'
 Plug 'liuchengxu/vim-clap'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 
@@ -102,7 +102,7 @@ Plug 'ThePrimeagen/refactoring.nvim'
 
 " Search/Replace
 Plug 'MunifTanjim/nui.nvim'
-Plug 'SrWither/searchbox.nvim'
+Plug 'Usuim/searchbox.nvim'
 
 " Todo-comment
 Plug 'folke/todo-comments.nvim'
