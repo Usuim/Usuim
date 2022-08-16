@@ -15,14 +15,26 @@
 | Ctrl + 7 | Comment Code |
 | Ctrl + B | Search files |
 | Ctrl + R | Rename definitions |
-| Ctrl + Space | Open code completion |
 | F2 | Toggle Filetree |
 | F3 | Open Dashboard |
 | Ctrl + F12 | Go to definition |
+| Ctrl + PageUp | Switch to tab right |
+| Ctrl + PageDown | Switch to tab left |
+| Ctrl + ScrollUp | Move tab right |
+| Ctrl + ScrollDown | Move tab left |
+
+## 🔧 Autocomplete Shortcuts
+
+
+| Shortcuts  | Action |
+| ------------- | ------------- |
+| Ctrl + Space | Open code completion |
+| Esc | Close code completion |
 | Tab/Down/ScrollDown | Go down in the autocomplete |
 | Shift + Tab/Up/ScrollUp | Go up in the autocomplete |
 | Ctrl + ScrollUp | Go up in the autocomplete documentation |
 | Ctrl + ScrollDown | Go down in the autocomplete documentation |
+| Enter | Confirm selection |
 
 ## :evergreen_tree: Filetree Shortcuts
 | Shortcuts  | Action |
