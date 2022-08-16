@@ -103,3 +103,10 @@ inoremap <C-PageUp> <c-o>:BufferLineCycleNext<CR>
 
 nnoremap <C-PageDown> :BufferLineCyclePrev<CR>
 inoremap <C-PageDown> <c-o>:BufferLineCyclePrev<CR>
+
+" Bufferline move tab
+nnoremap <C-ScrollWheelUp> :BufferLineMoveNext<CR>
+inoremap <C-ScrollWheelUp> <c-o>:BufferLineMoveNext<CR>
+
+nnoremap <C-ScrollWheelDown> :BufferLineMovePrev<CR>
+inoremap <C-ScrollWheelDown> <c-o>:BufferLineMovePrev<CR>
