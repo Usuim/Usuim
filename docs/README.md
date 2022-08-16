@@ -15,6 +15,7 @@
   - [Go](https://github.com/Usuim/Usuim/blob/main/docs/dependencies.md#go)
 - [Shortcuts/Commands](https://github.com/Usuim/Usuim/blob/main/docs/shortcuts.md)
   - [Standar](https://github.com/Usuim/Usuim/blob/main/docs/shortcuts.md#hash-standar-shortcuts)
+  - [Autocomplete](https://github.com/Usuim/Usuim/blob/main/docs/shortcuts.md#-autocomplete-shortcuts)
   - [Filetree](https://github.com/Usuim/Usuim/blob/main/docs/shortcuts.md#evergreen_tree-filetree-shortcuts)
   - [Commands](https://github.com/Usuim/Usuim/blob/main/docs/shortcuts.md#computer-commands)
 - [Python VirtualEnv](https://github.com/Usuim/Usuim/blob/main/docs/venv.md)
