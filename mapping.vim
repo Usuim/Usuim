@@ -98,11 +98,11 @@ nnoremap <C-R> :lua require('renamer').rename()<CR>
 inoremap <C-R> <c-o>:lua require('renamer').rename()<CR>
 
 " Bufferline next/prev
-nnoremap <C-PageUp> :BufferLineCycleNext<CR>
-inoremap <C-PageUp> <c-o>:BufferLineCycleNext<CR>
+nnoremap <C-PageDown> :BufferLineCycleNext<CR>
+inoremap <C-PageDown> <c-o>:BufferLineCycleNext<CR>
 
-nnoremap <C-PageDown> :BufferLineCyclePrev<CR>
-inoremap <C-PageDown> <c-o>:BufferLineCyclePrev<CR>
+nnoremap <C-PageUp> :BufferLineCyclePrev<CR>
+inoremap <C-PageUp> <c-o>:BufferLineCyclePrev<CR>
 
 " Bufferline move tab
 nnoremap <C-ScrollWheelUp> :BufferLineMoveNext<CR>
