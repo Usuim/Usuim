@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-VersionActual='1.6.11'
+VersionActual='1.6.12'
 repositorio="Usuim"
 usuario="Usuim"
 scripts="install.sh"
