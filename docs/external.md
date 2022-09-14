@@ -161,11 +161,32 @@ set relativenumber " add/uncomment this line
 Plug 'Usuim/presence.nvim'
 ```
 #### And then run on the neovim command line: `:PlugInstall`
-
+   
 <kbd>
   <img src="https://user-images.githubusercontent.com/59105868/184581978-6232addc-69fb-46b0-aebd-ff98805095d9.png">
 </kbd>
    
+#### in the rich presence it will also show the name of the project you are working on if you are using git
+#### if you want it to show in any project with or without git you must add the following: 
+   
+`~/.config/usuim/config.vim`
+
+```lua
+require("presence"):setup({
+    workspace_text = function(git_project_name, buffer)
+        local project_name = git_project_name
+        if not git_project_name then
+            project_name = vim.fn.fnamemodify(vim.fn.getcwd(), ":t")
+        end
+
+        return string.format("Working on %s", project_name)
+    end,
+})
+``` 
+<kbd>
+  <img src="https://user-images.githubusercontent.com/59105868/190280716-17e25a99-a415-4f65-af75-0a9e6cbecc25.png">
+</kbd>
+
 #### ⚠️ Usuim Rich Presence is currently in beta. _Some programming languages may not have icons._
    
 ## Add language server
