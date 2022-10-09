@@ -55,13 +55,13 @@ else
       # Sed in diferent O.S
 
       if [[ "$OSTYPE" == "linux-gnu"* ]]; then
-            sed -i "2s/.*/VersionActual='$UltimaVersion'/" ~/.local/bin/vsvupg
+            sed -i "2s/.*/VersionActual='$UltimaVersion'/" ~/.local/bin/usuupg
             sed -i "2s/.*/VersionActual='$UltimaVersion'/" ~/.local/bin/checkupg
       elif [[ "$OSTYPE" == "freebsd"* ]]; then
-            gsed -i "2s/.*/VersionActual='$UltimaVersion'/" ~/.local/bin/vsvupg
+            gsed -i "2s/.*/VersionActual='$UltimaVersion'/" ~/.local/bin/usuupg
             gsed -i "2s/.*/VersionActual='$UltimaVersion'/" ~/.local/bin/checkupg
       else
-            sed -i "2s/.*/VersionActual='$UltimaVersion'/" ~/.local/bin/vsvupg
+            sed -i "2s/.*/VersionActual='$UltimaVersion'/" ~/.local/bin/usuupg
             sed -i "2s/.*/VersionActual='$UltimaVersion'/" ~/.local/bin/checkupg
       fi
 
