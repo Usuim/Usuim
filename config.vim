@@ -85,7 +85,10 @@ require('bufferline').setup {
     right_mouse_command = "lua closeBuffer(%d)",
     left_mouse_command = "lua openBuffer(%d)",
     middle_mouse_command = nil,
-    indicator_icon = '',
+    indicator = {
+      style = 'icon',
+      icon = '',
+    },
     buffer_close_icon = '',
     modified_icon = '●',
     close_icon = '',

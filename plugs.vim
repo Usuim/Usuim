@@ -31,7 +31,7 @@ Plug 'kyazdani42/nvim-web-devicons'
 Plug 'ryanoasis/vim-devicons'
 
 " Navbar
-Plug 'akinsho/bufferline.nvim', { 'tag': 'v2.5.1'}
+Plug 'akinsho/bufferline.nvim'
 
 " Tree
 Plug 'Usuim/nvim-tree.lua'
