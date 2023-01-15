@@ -27,9 +27,16 @@ vnoremap <C-7> :'<,'>CommentToggle<CR>
 vnoremap <silent> <C-X> x:call ClipboardYank()<cr>
 vnoremap <silent> <S-Del> x:call ClipboardYank()<cr>
 
+nnoremap <silent> <C-X> dd:call ClipboardYank()<cr>
+inoremap <silent> <C-X> <c-o>dd<c-o>:call ClipboardYank()<cr>
+
 " Ctrl + C and Ctrl + Insert for Copy
 vnoremap <silent> <C-C> y:call ClipboardYank()<cr>gv
 vnoremap <silent> <C-Insert> y:call ClipboardYank()<cr>
+
+nnoremap <silent> <C-C> yy:call ClipboardYank()<cr>
+inoremap <silent> <C-C> <c-o>yy<c-o>:call ClipboardYank()<cr>
+
 
 " Ctrl + V and Shift + Insert for Paste
 map <silent> <C-V> :call ClipboardPaste()<cr>p

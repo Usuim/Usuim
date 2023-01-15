@@ -1,6 +1,9 @@
 lua <<EOF
 
 require('telescope').setup{
+  extensions = {
+    ["telescope-code-actions"] = {},
+  },
   defaults = {
     vimgrep_arguments = {
          "rg",
