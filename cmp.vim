@@ -42,9 +42,10 @@ local kind_icons = {
 
   cmp.setup({
     formatting = {
+      fields = { "kind", "abbr", "menu" },
       format = function(entry, vim_item)
         -- Kind icons
-        vim_item.kind = string.format('%s %s', kind_icons[vim_item.kind], vim_item.kind)
+        vim_item.kind = string.format('%s', kind_icons[vim_item.kind])
         -- Source
         vim_item.menu = ({
           buffer = "",
@@ -67,13 +68,14 @@ local kind_icons = {
       ['<C-ScrollWheelDown>'] = cmp.mapping(cmp.mapping.scroll_docs(4), {'i', 'c'}),
       ['<C-Space>'] = cmp.mapping(cmp.mapping.complete(), { 'i', 'c' }),
       ['<CR>'] = cmp.mapping.confirm({ select = true }),
-      
+      ['<LeftMouse>'] = cmp.mapping.confirm({ select = true }),
+
       ['<Tab>'] = function(fallback)
         if not cmp.select_next_item() then
           fallback()
         end
       end,
-      
+
       ['<Down>'] = function(fallback)
         if not cmp.select_next_item() then
           fallback()
@@ -152,7 +154,7 @@ local kind_icons = {
   }
   -- C/C++
   require('lspconfig')['clangd'].setup {
-    capabilities = capabilities
+    capabilities = capabilities,
   }
   -- Tsserver
   require('lspconfig')['tsserver'].setup {
@@ -170,6 +172,10 @@ local kind_icons = {
   }
   -- Html
   require('lspconfig')['html'].setup {
+    capabilities = capabilities
+  }
+  -- Emmet
+  require('lspconfig')['emmet_ls'].setup {
     capabilities = capabilities
   }
   -- Css
@@ -204,38 +210,7 @@ local kind_icons = {
     capabilities = capabilities
   }
 
-  local capabilities = vim.lsp.protocol.make_client_capabilities()
-  capabilities.textDocument.completion.completionItem.snippetSupport = true
+  -- Setup vscode snippets
+  require("luasnip.loaders.from_vscode").lazy_load()
 
-  if not configs.ls_emmet then
-    configs.ls_emmet = {
-      default_config = {
-        cmd = { 'ls_emmet', '--stdio' };
-        filetypes = {
-          'html',
-          'css',
-          'scss',
-          'javascriptreact',
-          'typescriptreact',
-          'haml',
-          'xml',
-          'xsl',
-          'pug',
-          'slim',
-          'sass',
-          'stylus',
-          'less',
-          'sss',
-          'hbs',
-          'handlebars',
-        };
-        root_dir = function(fname)
-          return vim.loop.cwd()
-        end;
-        settings = {};
-      };
-    }
-  end
-
-  lspconfig.ls_emmet.setup { capabilities = capabilities }
 EOF

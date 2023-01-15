@@ -59,6 +59,7 @@ Plug 'hrsh7th/cmp-nvim-lsp-document-symbol'
 " LUASNIP
 Plug 'L3MON4D3/LuaSnip'
 Plug 'saadparwaiz1/cmp_luasnip'
+Plug 'rafamadriz/friendly-snippets'
 
 "Terminal
 Plug 'Usuim/toggleterm.nvim'
