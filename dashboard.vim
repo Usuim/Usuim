@@ -28,11 +28,11 @@ g.dashboard_custom_section = {
     c = {description = {"  Workspaces"}, command = "Telescope workspaces"},
     d = {description = {"  Find File"}, command = "Telescope find_files cwd=."},
     e = {description = {"  Color Scheme"}, command = "Telescope colorscheme"},
-    f = {description = {"  Update Plugins"}, command = "lua notify()"},
+    f = {description = {"  Update Plugins"}, command = "PlugUpdate"},
     g = {description = {"  Settings"}, command = "edit $MYVIMRC"},
     h = {description = {"  Exit"}, command = "exit"}
 }
 
-g.dashboard_custom_footer = {'Usuim 1.7.0'}
+g.dashboard_custom_footer = {'Usuim 1.7.1'}
 
 EOF
