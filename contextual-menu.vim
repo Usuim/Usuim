@@ -1,7 +1,7 @@
 " Normal - Insert
 :amenu 90.100 Usuim.Go\ To\ Definition <cmd>:GoToDef<CR>
 :amenu 90.100 Usuim.Rename\ Definition <cmd>:lua require('renamer').rename()<CR>
-:amenu 90.100 Usuim.Code\ Actions <cmd>:Telescope lsp_code_actions<CR>
+:amenu 90.100 Usuim.Code\ Actions <cmd>:lua require('telescope').extensions.code_actions.code_actions()<CR>
 :amenu 90.100 Usuim.-1- *
 
 " Paste
