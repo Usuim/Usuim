@@ -1,14 +1,22 @@
 " Normal - Insert
-:amenu 90.100 Usuim.Go\ To\ Definition <cmd>:GoToDef<CR>
+:amenu 90.100 Usuim.Go\ to\ Definition <cmd>:GoToDef<CR>
+:amenu 90.100 Usuim.Go\ to\ Type\ Definition <cmd>:lua vim.lsp.buf.type_definition()<CR>
+:amenu 90.100 Usuim.Go\ to\ Implementations <cmd>:Telescope lsp_implementations<CR>
+:amenu 90.100 Usuim.Go\ to\ References <cmd>:Telescope lsp_references<CR>
+:amenu 90.100 Usuim.-1- *
 :amenu 90.100 Usuim.Rename\ Definition <cmd>:lua require('renamer').rename()<CR>
 :amenu 90.100 Usuim.Code\ Actions <cmd>:lua require('telescope').extensions.code_actions.code_actions()<CR>
-:amenu 90.100 Usuim.-1- *
+:amenu 90.100 Usuim.-2- *
 
-" Paste
+" Copy/Cut/Paste
+:imenu 90.100 Usuim.Copy <C-C>
+:nmenu 90.100 Usuim.Copy <C-C>
+:imenu 90.100 Usuim.Cut <C-X>
+:nmenu 90.100 Usuim.Cut <C-X>
 :imenu 90.100 Usuim.Paste <C-V>
 :nmenu 90.100 Usuim.Paste <C-V>
 
-:amenu 90.100 Usuim.-2- *
+:amenu 90.100 Usuim.-3- *
 " Format Document
 :amenu 90.100 Usuim.Format\ Document <cmd>:Neoformat<CR>
 
