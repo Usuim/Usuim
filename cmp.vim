@@ -68,7 +68,6 @@ local kind_icons = {
       ['<C-ScrollWheelDown>'] = cmp.mapping(cmp.mapping.scroll_docs(4), {'i', 'c'}),
       ['<C-Space>'] = cmp.mapping(cmp.mapping.complete(), { 'i', 'c' }),
       ['<CR>'] = cmp.mapping.confirm({ select = true }),
-      ['<LeftMouse>'] = cmp.mapping.confirm({ select = true }),
 
       ['<Tab>'] = function(fallback)
         if not cmp.select_next_item() then
