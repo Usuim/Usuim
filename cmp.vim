@@ -154,7 +154,7 @@ local kind_icons = {
   }
   -- C/C++
   require('lspconfig')['clangd'].setup {
-    capabilities = capabilities,
+    capabilities = capabilities
   }
   -- Tsserver
   require('lspconfig')['tsserver'].setup {
