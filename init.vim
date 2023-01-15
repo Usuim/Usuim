@@ -9,6 +9,7 @@ runtime tree.vim
 runtime dashboard.vim
 runtime todo.vim
 runtime telescope.vim
+runtime contextual-menu.vim
 
 " Set Configuration
 let HOME = system('echo $HOME')
@@ -37,6 +38,8 @@ source $HOME/.config/usuim/config.vim
 source $HOME/.config/usuim/lsp.vim
 source $HOME/.config/usuim/commands.vim
 source $HOME/.config/usuim/mapping.vim
+
+aunmenu PopUp
 
 " AutoChangeMode
 autocmd BufEnter,BufNew,VimEnter NvimTree stopinsert

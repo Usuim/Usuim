@@ -83,9 +83,10 @@ inoremap <c-k> <c-o>"_dd
 " Delete in visual mode
 vnoremap <BS> "_d
 
-" Code Actions
-nnoremap <RightMouse> <LeftMouse> :Telescope lsp_code_actions<CR>
-inoremap <RightMouse> <c-o><LeftMouse><c-o>:Telescope lsp_code_actions<CR>
+" Contextual Menu
+nnoremap <RightMouse> <cmd>:popup Usuim<CR>
+inoremap <RightMouse> <cmd>:popup Usuim<CR>
+vnoremap <RightMouse> <cmd>:popup VUsuim<CR>
 
 nnoremap <C-Q> :Telescope lsp_code_actions<CR>
 inoremap <C-Q> <c-o>:Telescope lsp_code_actions<CR>
