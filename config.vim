@@ -200,4 +200,7 @@ require('lualine').setup {
   extensions = {'nvim-tree', 'toggleterm'}
 }
 
+-- Go To Preview
+require('goto-preview').setup()
+
 EOF

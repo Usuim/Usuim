@@ -95,8 +95,8 @@ nnoremap <RightMouse> <cmd>:popup Usuim<CR>
 inoremap <RightMouse> <cmd>:popup Usuim<CR>
 vnoremap <RightMouse> <cmd>:popup VUsuim<CR>
 
-nnoremap <C-Q> :Telescope lsp_code_actions<CR>
-inoremap <C-Q> <c-o>:Telescope lsp_code_actions<CR>
+nnoremap <C-Q> <cmd>:lua closeBuffer(vim.api.nvim_get_current_buf())<CR>
+inoremap <C-Q> <cmd>:lua closeBuffer(vim.api.nvim_get_current_buf())<CR>
 
 " Hover
 " autocmd CursorHoldI * :lua HoverFixed()
