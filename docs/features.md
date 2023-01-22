@@ -26,6 +26,11 @@
   <img src="https://user-images.githubusercontent.com/59105868/184721781-13df096d-792f-4fee-b2e7-9118349c506d.png">
 </kbd>
 
+
 ## Rename definitions
 
 ![Rename](https://user-images.githubusercontent.com/59105868/184722409-af1f70e8-0761-4c73-bcda-827de26a1421.gif)
+
+## Contextual menu
+
+![Usuim](https://user-images.githubusercontent.com/59105868/213896300-14c16584-2de7-4479-b7b8-b83193244e04.gif)
