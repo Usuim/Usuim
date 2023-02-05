@@ -43,7 +43,12 @@ function closeBuffer(bfname)
   local currentBuffer = vim.fn.expand('%')
 
   local explorerWindow = treeView.get_winnr()
-  local wasExplorerOpen = vim.api.nvim_win_is_valid(explorerWindow)
+
+  local wasExplorerOpen = false
+
+  if explorerWindow ~= nil then
+    wasExplorerOpen = vim.api.nvim_win_is_valid(explorerWindow)
+  end
 
   if currentBuffer == "Term" then
     vim.cmd 'exe "normal \\<C-W>k"'
@@ -199,5 +204,8 @@ require('lualine').setup {
   tabline = {},
   extensions = {'nvim-tree', 'toggleterm'}
 }
+
+-- Go To Preview
+require('goto-preview').setup()
 
 EOF

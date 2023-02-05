@@ -18,7 +18,7 @@ g.dashboard_custom_section = {
     d = {description = {"  Find File"}, command = "Telescope find_files cwd=."},
     e = {description = {"  Color Scheme"}, command = "Telescope colorscheme"},
     f = {description = {"  Update Plugins"}, command = "PlugUpdate"},
-    g = {description = {"  Settings"}, command = "edit $MYVIMRC"},
+    g = {description = {"  Settings"}, command = "edit $HOME/.config/usuim/settings.vim"},
     h = {description = {"  Exit"}, command = "exit"}
 }
 

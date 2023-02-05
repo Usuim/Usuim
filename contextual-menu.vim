@@ -3,6 +3,7 @@
 :amenu 90.100 Usuim.Go\ to\ Type\ Definition <cmd>:lua vim.lsp.buf.type_definition()<CR>
 :amenu 90.100 Usuim.Go\ to\ Implementations <cmd>:Telescope lsp_implementations<CR>
 :amenu 90.100 Usuim.Go\ to\ References <cmd>:Telescope lsp_references<CR>
+:amenu 90.100 Usuim.View\ > <cmd>:popup ViewMenu<CR>
 :amenu 90.100 Usuim.-1- *
 :amenu 90.100 Usuim.Rename\ Definition <cmd>:lua require('renamer').rename()<CR>
 :amenu 90.100 Usuim.Code\ Actions <cmd>:lua require('telescope').extensions.code_actions.code_actions()<CR>
@@ -31,3 +32,9 @@
 :imenu 90.110 VUsuim.Cut "+x
 :imenu 90.110 VUsuim.Paste <C-V>
 :imenu 90.110 VUsuim.Delete "_dd
+
+" View Menu
+:amenu 100.100 ViewMenu.Go\ to\ Preview\ Definition <cmd>:lua require('goto-preview').goto_preview_definition()<CR>
+:amenu 100.100 ViewMenu.Go\ to\ Preview\ Type\ Definition <cmd>:lua require('goto-preview').goto_preview_type_definition()<CR>
+:amenu 100.100 ViewMenu.Go\ to\ Preview\ Implementations <cmd>:lua require('goto-preview').goto_preview_implementation()<CR>
+:amenu 100.100 ViewMenu.Go\ to\ Preview\ References <cmd>:lua require('goto-preview').goto_preview_references()<CR>
