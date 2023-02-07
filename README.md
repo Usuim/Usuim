@@ -26,7 +26,7 @@ usuupg
 ```
 or you can also run:
 ```
-~/.local/bin/vsvupg
+~/.local/bin/usuupg
 ```
 This command automatically downloads and applies the update
 
