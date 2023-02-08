@@ -1,5 +1,3 @@
-lua <<EOF
-
 require('telescope').setup{
   extensions = {
     ["telescope-code-actions"] = {},
@@ -76,11 +74,6 @@ function fg_bg(type, fg, bg)
    vim.cmd("au VimEnter * hi " .. type .. " guifg=" .. fg .. " guibg=" .. bg)
 end
 
--- fg_bg("TelescopeBorder", darker_black, darker_black)
--- fg_bg("TelescopePromptBorder", black2, black2)
--- fg_bg("TelescopePreviewBorder", darker_black, darker_black)
--- fg_bg("TelescopeResultsBorder", darker_black, darker_black)
-
 link_bg("TelescopeBorder", darker_black2)
 link_bg("TelescopePromptBorder", "Conceal")
 link_bg("TelescopePreviewBorder", darker_black2)
@@ -96,5 +89,3 @@ fg_bg("TelescopePromptTitle", black, blue)
 link_bg("TelescopeResultsTitle", darker_black2)
 
 link_bg("TelescopeSelection", "StatusLine")
-
-EOF

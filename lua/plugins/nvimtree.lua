@@ -1,21 +1,7 @@
-let g:nvim_tree_disable_window_picker = 1
-let g:nvim_tree_root_folder_modifier = ':t'
-let g:nvim_tree_window_picker_exclude = {
-    \   'filetype': [
-    \     'notify',
-    \     'packer',
-    \     'qf'
-    \   ],
-    \   'buftype': [
-    \     'terminal'
-    \   ]
-    \ }
-
-lua << EOF
 require'nvim-tree'.setup {
   disable_netrw       = true,
   hijack_netrw        = true,
-  open_on_setup       = true,
+  open_on_setup       = false,
   ignore_ft_on_setup  = {},
   auto_close          = false,
   open_on_tab         = false,
@@ -69,6 +55,22 @@ require'nvim-tree'.setup {
   trash = {
     cmd = "trash",
     require_confirm = true
+  },
+  actions = {
+    change_dir = {
+      enable = true,
+      global = false,
+    },
+    open_file = {
+      quit_on_open = false,
+      window_picker = {
+        enable = true,
+        chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890",
+        exclude = {
+          filetype = { "notify", "packer", "qf", "diff", "fugitive", "fugitiveblame", "lazy" },
+          buftype  = { "nofile", "terminal", "help", },
+        }
+      }
+    }
   }
 }
-EOF
