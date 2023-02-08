@@ -99,3 +99,17 @@ map("v", "<C-_>", ":'<,'>CommentToggle<CR>")
 map("n", "<C-7>", ":CommentToggle<CR>")
 map("i", "<C-7>", "<c-o>:CommentToggle<CR>")
 map("v", "<C-7>", ":'<,'>CommentToggle<CR>")
+
+-- Search
+map("n", "<C-f>", [[:SearchBoxMatchAll title="Search"<cr>]])
+map("i", "<C-f>", [[<ESC>:SearchBoxMatchAll title="Search"<cr>]])
+map("x", "<C-f>", [[:SearchBoxMatchAll title="Search" visual_mode=true <cr>]])
+
+-- Replace
+map("i", "<c-l>", "<ESC>:SearchBoxReplace confirm=native<CR>")
+map("n", "<c-l>", ":SearchBoxReplace confirm=native<CR>")
+map("v", "<c-l>", ":SearchBoxReplace confirm=native<CR>")
+
+-- Search files
+map("n", "<C-b>", ":Telescope find_files cwd=.<cr>")
+map("i", "<C-b>", "<ESC>:Telescope find_files cwd=.<cr>")

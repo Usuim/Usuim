@@ -25,22 +25,12 @@ end
 
 -- Plugins
 local plugins = {
-  -- Onedark theme
-  {
-    "navarasu/onedark.nvim",
-    lazy = false,
-    priority = 1000,
-    config = function()
-      require('onedark').setup {
-          style = 'dark'
-      }
-      require('onedark').load()
-    end,
-  },
-
   -- Nvim Transparent
   {
-    "xiyaowong/nvim-transparent"
+    "xiyaowong/nvim-transparent",
+    config = function ()
+      require('plugins.transparent')
+    end
   },
 
   -- NvimTree
@@ -69,6 +59,9 @@ local plugins = {
   -- Colorizer
   {
     "norcalli/nvim-colorizer.lua",
+    config = function ()
+      require('plugins.colorizer')
+    end
   },
 
   -- Dashboard
@@ -166,7 +159,10 @@ local plugins = {
     dependencies = {
       "nvim-lua/plenary.nvim",
       "nvim-treesitter/nvim-treesitter"
-    }
+    },
+    config = function ()
+      require('plugins.refactoring')
+    end
   },
 
   -- Telescope
@@ -243,6 +239,9 @@ local plugins = {
   },
   {
     "tpope/vim-repeat"
+  },
+  {
+    "mhinz/vim-signify"
   },
 
   -- ToDo
