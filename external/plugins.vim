@@ -1,2 +1,7 @@
-" Nord Theme
-Plug 'shaunsingh/nord.nvim'
+lua << EOF
+UserPlugins = {
+  {
+    'shaunsingh/nord.nvim'
+  }
+}
+EOF
