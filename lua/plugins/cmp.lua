@@ -58,7 +58,6 @@ cmp.setup({
   },
   snippet = {
     expand = function(args)
-      -- vim.fn["vsnip#anonymous"](args.body)
       require('luasnip').lsp_expand(args.body)
     end,
   },
@@ -118,6 +117,7 @@ cmp.setup({
     { name = 'luasnip' },
   }, {
     { name = 'buffer' },
+    { name = "crates" },
     { name = 'nvim_lsp_signature_help' },
   })
 })

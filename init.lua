@@ -1,5 +1,4 @@
 require('options')
-require('autoinsert')
 require('plugin')
 require('mapping')
 require('colors')
@@ -11,3 +10,6 @@ vim.cmd("source " .. vim.fn.expand("~/.config/usuim/config.vim"))
 vim.cmd("source " .. vim.fn.expand("~/.config/usuim/lsp.vim"))
 vim.cmd("source " .. vim.fn.expand("~/.config/usuim/commands.vim"))
 vim.cmd("source " .. vim.fn.expand("~/.config/usuim/mapping.vim"))
+
+-- Autoinsert
+require('autoinsert')

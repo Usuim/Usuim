@@ -132,6 +132,17 @@ local plugins = {
     end
   },
 
+  -- Crates
+  {
+    "saecki/crates.nvim",
+    config = function ()
+      require('crates').setup()
+    end
+  },
+  {
+    "cespare/vim-toml"
+  },
+
   --Snippets
   {
     "L3MON4D3/LuaSnip",
@@ -187,6 +198,14 @@ local plugins = {
     "sbdchd/neoformat"
   },
 
+  -- Search and Replace
+  {
+    "Usuim/searchbox.nvim",
+    dependencies = {
+      "MunifTanjim/nui.nvim"
+    }
+  },
+
   -- Trim on save
   {
     "cappyzawa/trim.nvim",
@@ -212,6 +231,43 @@ local plugins = {
       require('nvim-autopairs').setup()
     end
   },
+
+  -- Identline
+  {
+    "yggdroot/indentline"
+  },
+
+  -- Git
+  {
+    "tpope/vim-fugitive"
+  },
+  {
+    "tpope/vim-repeat"
+  },
+
+  -- ToDo
+  {
+    "folke/todo-comments.nvim"
+  },
+
+  -- Workspaces
+  {
+    "natecraddock/workspaces.nvim",
+    config = function ()
+      require('plugins.workspaces')
+    end
+  },
+
+  -- Clap
+  {
+    "liuchengxu/vim-clap"
+  },
+
+  -- Fzf
+  {
+    'junegunn/fzf',
+    run = ":call fzf#install()"
+  }
 }
 
 local allPlugins = TableConcat(plugins, UserPlugins)
