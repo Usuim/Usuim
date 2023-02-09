@@ -21,3 +21,8 @@ vim.opt.termguicolors=true
 vim.opt.guifont="DroidSansMono Nerd Font:h11"
 vim.opt.number = true
 vim.opt.splitbelow = true
+
+vim.opt.foldmethod = "expr"
+vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
+vim.opt.foldenable = false
+vim.opt.foldlevelstart= 99
