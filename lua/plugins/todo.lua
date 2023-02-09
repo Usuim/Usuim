@@ -1,7 +1,6 @@
-lua << EOF
 require("todo-comments").setup {
   signs = true,
-  sign_priority = 8, 
+  sign_priority = 8,
   keywords = {
     FIX = {
       icon = " ",
@@ -17,12 +16,12 @@ require("todo-comments").setup {
   merge_keywords = true,
   highlight = {
     before = "",
-    keyword = "wide", 
-    after = "fg", 
-    pattern = [[.*<(KEYWORDS)\s*:]], 
-    comments_only = true, 
-    max_line_len = 400, 
-    exclude = {}, 
+    keyword = "wide",
+    after = "fg",
+    pattern = [[.*<(KEYWORDS)\s*:]],
+    comments_only = true,
+    max_line_len = 400,
+    exclude = {},
   },
   colors = {
     error = { "DiagnosticError", "ErrorMsg", "#DC2626" },
@@ -46,4 +45,3 @@ require("todo-comments").setup {
     pattern = [[\b(KEYWORDS):]],
   },
 }
-EOF

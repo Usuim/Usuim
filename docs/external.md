@@ -15,54 +15,6 @@ command! GoToDef lua vim.lsp.buf.definition()
 </details>
 
 <details>
-  <summary>config.vim</summary>
-
-```vim
-" CloseTag
-
-let g:closetag_filenames = '*.html,*.xhtml,*.phtml,*.vue'
-let g:closetag_filetypes = 'html,xhtml,phtml,vue'
-
-lua<<EOF
-
--- Transparent.nvim
-require("transparent").setup({
-  enable = false,
-  extra_groups = {
-
-    "BufferLineTabClose",
-    "BufferlineBufferSelected",
-    "BufferLineFill",
-    "BufferLineBackground",
-    "BufferLineSeparator",
-    "BufferLineIndicatorSelected",
-  },
-  exclude = {},
-})
-
--- Colorizer
-require 'colorizer'.setup {
-  css = { css = true; };
-  html = {
-    mode = 'background';
-  }
-}
-
--- Refactoring
-require('refactoring').setup({})
-require("telescope").load_extension("refactoring")
-vim.api.nvim_set_keymap(
-  "v",
-  "<C-r>",
-  "<Esc><cmd>lua require('telescope').extensions.refactoring.refactors()<CR>",
-  { noremap = true }
-)
-
-EOF
-```
- </details>
-
-<details>
   <summary>lsp.vim</summary>
   
 ```vim
@@ -85,31 +37,71 @@ EOF
    <summary>mapping.vim</summary>
 
 ```vim
-" Search
-inoremap <C-f> <ESC>:SearchBoxMatchAll title="Search"<cr>
-nnoremap <C-f> :SearchBoxMatchAll title="Search"<cr>
-xnoremap <C-f> :SearchBoxMatchAll title="Search" visual_mode=true <cr>
-
-" Replace
-inoremap <c-l> <ESC>:SearchBoxReplace confirm=native<CR>
-nnoremap <c-l> :SearchBoxReplace confirm=native<CR>
-vnoremap <c-l> :SearchBoxReplace confirm=native<CR>
-
-" Telescope
-nnoremap <C-b> :Telescope find_files cwd=.<cr>
-inoremap <C-b> <ESC>:Telescope find_files cwd=.<cr>
-
-" Open dashboard
-nnoremap <F3> :Dashboard <CR>
+" Example:
+"nnoremap <C-b> :Telescope find_files cwd=.<cr>
+"inoremap <C-b> <ESC>:Telescope find_files cwd=.<cr>
 ```
 </details>
    
 <details>
    <summary>plugins.vim</summary>
 
-```vim
-" Nord Theme
-Plug 'shaunsingh/nord.nvim'
+```lua
+lua << EOF
+-- Use lazy to add plugins
+
+UserPlugins = {
+  -- Discord RPC
+  -- {
+  --   'Usuim/presence.nvim',
+  --   config = function ()
+  --     vim.cmd('source $HOME/.config/usuim/plugins/presence.vim')
+  --   end
+  -- },
+  -- VsCode theme
+  {
+    "Mofiqul/vscode.nvim",
+    lazy = false,
+    priority = 1000,
+    config = function()
+      vim.o.background = 'dark'
+    end,
+  },
+  -- One Dark
+  {
+    "navarasu/onedark.nvim",
+    lazy = false,
+    priority = 1000,
+    config = function()
+      require('onedark').setup {
+          style = 'dark'
+      }
+    end,
+  },
+}
+
+EOF
+```
+</details>
+  
+<details>
+   <summary>plugins/presence.vim</summary>
+  
+```lua
+
+lua << EOF
+-- RPC
+require("presence"):setup({
+    workspace_text = function(git_project_name, buffer)
+        local project_name = git_project_name
+        if not git_project_name then
+            project_name = vim.fn.fnamemodify(vim.fn.getcwd(), ":t")
+        end
+
+        return string.format("Workspace: %s", project_name)
+    end,
+})
+EOF
 ```
 </details>
    
@@ -127,14 +119,17 @@ Plug 'shaunsingh/nord.nvim'
 autocmd BufRead,BufNewFile,BufEnter * set formatoptions-=cro | start
 
 " Themes
-colorscheme onedark
+colorscheme vscode
 
 " Editor Settings
 set termguicolors
 set guifont=Fira\ Code:h12
 set number
 set splitbelow
-" set relativenumber
+
+" CloseTag
+let g:closetag_filenames = '*.html,*.xhtml,*.phtml,*.vue'
+let g:closetag_filetypes = 'html,xhtml,phtml,vue'
 ```
 </details>
 
@@ -154,37 +149,22 @@ set relativenumber " add/uncomment this line
    
 ## Discord Rich Presence (Beta)
 
-### if you want it to appear on discord that you are using Usuim. you must add:
+### if you want it to appear on discord that you are using Usuim. you must uncomment:
 `plugins.vim`
 
-```vim
-Plug 'Usuim/presence.nvim'
-```
-#### And then run on the neovim command line: `:PlugInstall`
-   
-<kbd>
-  <img src="https://user-images.githubusercontent.com/59105868/184581978-6232addc-69fb-46b0-aebd-ff98805095d9.png">
-</kbd>
-   
-#### in the rich presence it will also show the name of the project you are working on if you are using git
-#### if you want it to show in any project with or without git you must add the following: 
-   
-`~/.config/usuim/config.vim`
-
 ```lua
-require("presence"):setup({
-    workspace_text = function(git_project_name, buffer)
-        local project_name = git_project_name
-        if not git_project_name then
-            project_name = vim.fn.fnamemodify(vim.fn.getcwd(), ":t")
-        end
-
-        return string.format("Working on %s", project_name)
-    end,
-})
-``` 
+-- Discord RPC
+{
+ 'Usuim/presence.nvim',
+  config = function ()
+    vim.cmd('source $HOME/.config/usuim/plugins/presence.vim')
+  end
+},
+```
+#### And then run on the neovim command line: `:Lazy sync`
+   
 <kbd>
-  <img src="https://user-images.githubusercontent.com/59105868/190280716-17e25a99-a415-4f65-af75-0a9e6cbecc25.png">
+  <img src="https://user-images.githubusercontent.com/59105868/217693003-db65362b-b48d-4929-a0f1-01dc4d93b724.png">
 </kbd>
 
 #### ⚠️ Usuim Rich Presence is currently in beta. _Some programming languages may not have icons._

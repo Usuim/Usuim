@@ -8,11 +8,14 @@
 autocmd BufRead,BufNewFile,BufEnter * set formatoptions-=cro | start
 
 " Themes
-colorscheme onedark
+colorscheme vscode
 
 " Editor Settings
 set termguicolors
 set guifont=Fira\ Code:h12
 set number
 set splitbelow
-" set relativenumber
+
+" CloseTag
+let g:closetag_filenames = '*.html,*.xhtml,*.phtml,*.vue'
+let g:closetag_filetypes = 'html,xhtml,phtml,vue'
