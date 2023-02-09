@@ -31,7 +31,7 @@ map("n", "<C-C>", "yy:lua ClipboardYank()<cr>", {silent = true})
 map("i", "<C-C>", "<c-o>yy<c-o>:lua ClipboardYank()<cr>", {silent = true})
 
 -- Clipboard Cut
-map("v", "<C-X>", "x:lua ClipboardYank()<cr>gv", {silent = true} )
+map("v", "<C-X>", "x:lua ClipboardYank()<cr>", {silent = true} )
 map("n", "<C-X>", "dd:lua ClipboardYank()<cr>", {silent = true})
 map("i", "<C-X>", "<c-o>dd<c-o>:lua ClipboardYank()<cr>", {silent = true})
 
