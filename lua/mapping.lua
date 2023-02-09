@@ -113,3 +113,13 @@ map("v", "<c-l>", ":SearchBoxReplace confirm=native<CR>")
 -- Search files
 map("n", "<C-b>", ":Telescope find_files cwd=.<cr>")
 map("i", "<C-b>", "<ESC>:Telescope find_files cwd=.<cr>")
+
+-- Move lines
+map("n", "<C-Down>", ":m .+1<CR>==")
+map("n", "<C-Up>", ":m .-2<CR>==")
+
+map("i", "<C-Down>", "<Esc>:m .+1<CR>==gi")
+map("i", "<C-Up>", "<Esc>:m .-2<CR>==gi")
+
+map("v", "<C-Down>", ":m '>+1<CR>gv=gv")
+map("v", "<C-Up>", ":m '<-2<CR>gv=gv")

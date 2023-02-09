@@ -246,7 +246,10 @@ local plugins = {
 
   -- ToDo
   {
-    "folke/todo-comments.nvim"
+    "folke/todo-comments.nvim",
+    config = function ()
+      require('plugins.todo')
+    end
   },
 
   -- Workspaces

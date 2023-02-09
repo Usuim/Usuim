@@ -11,12 +11,23 @@ backup() {
 update(){
   echo "Updating..."
   sleep 3
-  cp *.vim ~/.config/nvim
+
+  rm ~/.config/nvim/*.vim
+  rm -rf ~/.config/nvim/autoload
+
+  cp init.lua ~/.config/nvim
+
   mkdir -p ~/.config/nvim/autoload
+  mkdir -p ~/.config/nvim/lua
+
   cp autoload/*.vim ~/.config/nvim/autoload
+  cp -r lua/* ~/.config/nvim/lua
   cp resources/* ~/.local/bin
+
   ExternalConfig
-  nvim -c ":PlugClean | :PlugUpdate | :qa!"
+
+  cp -r external/* ~/.config/usuim
+
   echo "Successful upgrade!"
 }
 
@@ -27,18 +38,18 @@ install_usuim() {
     mkdir -p ~/.local/bin
   fi
   sleep 3
-  mkdir ~/.config/nvim
-  mkdir ~/.config/usuim
+  mkdir -p ~/.config/nvim
+  mkdir -p ~/.config/nvim/lua
   mkdir -p ~/.config/nvim/autoload
-  cp init.vim ~/.config/nvim
-  cp plugs.vim ~/.config/nvim
+  mkdir -p ~/.config/usuim
+
+  cp init.lua ~/.config/nvim
+  cp -r lua/* ~/.config/nvim/lua
   cp .IDUSUIM ~/.config/nvim
   cp autoload/*.vim ~/.config/nvim/autoload
   chmod +x resources/*
   cp resources/* ~/.local/bin
-  nvim -c ":PlugInstall | :qa!"
-  cp *.vim ~/.config/nvim
-  cp external/*.vim ~/.config/usuim
+  cp -r external/* ~/.config/usuim
   echo "instalación exitosa"
 }
 
@@ -76,7 +87,6 @@ ExternalConfig() {
   DIRPATH="$HOME/.config/usuim"
   SETTINGS="$DIRPATH/settings.vim"
   PLUGINS="$DIRPATH/plugins.vim"
-  CONFIG="$DIRPATH/config.vim"
   MAPPING="$DIRPATH/mapping.vim"
   LSP="$DIRPATH/lsp.vim"
   COMMANDS="$DIRPATH/commands.vim"
@@ -94,11 +104,6 @@ ExternalConfig() {
   if [[ ! -f $PLUGINS ]]; then
     echo "+ $PLUGINS"
     cp external/plugins.vim ~/.config/usuim
-  fi
-
-  if [[ ! -f $CONFIG ]]; then
-    echo "+ $CONFIG"
-    cp external/config.vim ~/.config/usuim
   fi
 
   if [[ ! -f $MAPPING ]]; then
