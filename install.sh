@@ -12,9 +12,6 @@ update(){
   echo "Updating..."
   sleep 3
 
-  rm ~/.config/nvim/*.vim
-  rm -rf ~/.config/nvim/autoload
-
   cp init.lua ~/.config/nvim
 
   mkdir -p ~/.config/nvim/autoload
@@ -25,8 +22,6 @@ update(){
   cp resources/* ~/.local/bin
 
   ExternalConfig
-
-  cp -r external/* ~/.config/usuim
 
   echo "Successful upgrade!"
 }
