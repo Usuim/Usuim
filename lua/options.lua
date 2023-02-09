@@ -4,7 +4,7 @@ vim.api.nvim_command("syntax enable")
 vim.opt.encoding = "UTF-8"
 vim.opt.clipboard="unnamedplus"
 vim.opt.swapfile = false
-vim.opt.scrolloff = 12
+vim.opt.scrolloff = 0
 vim.opt.tabstop=4
 vim.opt.softtabstop=4
 vim.opt.shiftwidth=4
