@@ -230,7 +230,10 @@ local plugins = {
 
   -- Identline
   {
-    "yggdroot/indentline"
+    "lukas-reineke/indent-blankline.nvim",
+    config = function ()
+     require('plugins.ident')
+    end
   },
 
   -- Git
