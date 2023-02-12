@@ -20,6 +20,8 @@ update(){
   cp autoload/*.vim ~/.config/nvim/autoload
   cp -r lua/* ~/.config/nvim/lua
   cp resources/* ~/.local/bin
+  
+  rm ~/.config/usuim/lsp.vim
 
   ExternalConfig
 
