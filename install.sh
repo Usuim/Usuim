@@ -21,7 +21,7 @@ update(){
   cp -r lua/* ~/.config/nvim/lua
   cp resources/* ~/.local/bin
   
-  rm ~/.config/usuim/lsp.vim
+  sed -i "s/sumneko_lua/lua_ls/g"  ~/.config/usuim/lsp.vim
 
   ExternalConfig
 
