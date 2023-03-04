@@ -271,6 +271,14 @@ local plugins = {
   {
     'junegunn/fzf',
     run = ":call fzf#install()"
+  },
+  
+  -- Fidget
+  {
+    "j-hui/fidget.nvim",
+    config = function ()
+      require("fidget").setup()
+    end
   }
 }
 
