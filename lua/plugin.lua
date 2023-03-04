@@ -207,7 +207,6 @@ local plugins = {
     "cappyzawa/trim.nvim",
     config = function ()
       require('trim').setup({
-        disable = {},
         patterns = {
           [[%s/\s\+$//e]],
           [[%s/\($\n\s*\)\+\%$//]],
