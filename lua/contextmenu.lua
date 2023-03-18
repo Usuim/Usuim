@@ -10,6 +10,11 @@ vim.cmd([[:amenu 90.100 Usuim.Rename\ Definition <cmd>:lua require('renamer').re
 vim.cmd([[:amenu 90.100 Usuim.Code\ Actions <cmd>:lua require('telescope').extensions.code_actions.code_actions()<CR>]])
 vim.cmd([[:amenu 90.100 Usuim.-2- *]])
 
+-- Colorpicker
+vim.cmd([[:amenu 90.100 Usuim.Color\ Picker <cmd>:CccPick<CR>]])
+vim.cmd([[:amenu 90.100 Usuim.Change\ Color\ Format <cmd>:CccConvert<CR>]])
+vim.cmd([[:amenu 90.100 Usuim.-3- *]])
+
 -- Copy/Cut/Paste
 vim.cmd([[:imenu 90.100 Usuim.Copy <C-C>]])
 vim.cmd([[:nmenu 90.100 Usuim.Copy <C-C>]])
