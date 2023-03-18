@@ -56,14 +56,6 @@ local plugins = {
     end
   },
 
-  -- Colorizer
-  {
-    "norcalli/nvim-colorizer.lua",
-    config = function ()
-      require('plugins.colorizer')
-    end
-  },
-
   -- Dashboard
   {
     "Usuim/dashboard-nvim",
@@ -272,12 +264,20 @@ local plugins = {
     'junegunn/fzf',
     run = ":call fzf#install()"
   },
-  
+
   -- Fidget
   {
     "j-hui/fidget.nvim",
     config = function ()
       require("fidget").setup()
+    end
+  },
+
+  -- CCC
+  {
+    "Usuim/ccc.nvim",
+    config = function ()
+      require("plugins.ccc")
     end
   }
 }
