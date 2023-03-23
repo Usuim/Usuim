@@ -1,6 +1,5 @@
 -- Transparent.nvim
 require("transparent").setup({
-  enable = false,
   extra_groups = {
 
     "BufferLineTabClose",
@@ -17,5 +16,5 @@ require("transparent").setup({
     "BufferLineCloseButtonVisible",
     "BufferLineCloseButtonSelected",
   },
-  exclude = {},
+  exclude_groups = {},
 })
