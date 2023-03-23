@@ -21,4 +21,4 @@ g.dashboard_custom_section = {
     h = {description = {"  Exit"}, command = "exit"}
 }
 
-g.dashboard_custom_footer = {'Usuim 1.8.4'}
+g.dashboard_custom_footer = {'Usuim 1.8.5'}
