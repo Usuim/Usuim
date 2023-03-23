@@ -23,7 +23,7 @@ vim.cmd([[:nmenu 90.100 Usuim.Cut <C-X>]])
 vim.cmd([[:imenu 90.100 Usuim.Paste <C-V>]])
 vim.cmd([[:nmenu 90.100 Usuim.Paste <C-V>]])
 
-vim.cmd([[:amenu 90.100 Usuim.-3- *]])
+vim.cmd([[:amenu 90.100 Usuim.-4- *]])
 -- Format Document
 vim.cmd([[:amenu 90.100 Usuim.Format\ Document <cmd>:Neoformat<CR>]])
 
