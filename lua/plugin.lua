@@ -253,12 +253,7 @@ local plugins = {
       require('plugins.workspaces')
     end
   },
-
-  -- Clap
-  {
-    "liuchengxu/vim-clap"
-  },
-
+  
   -- Fzf
   {
     'junegunn/fzf',
