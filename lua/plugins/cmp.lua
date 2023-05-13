@@ -35,7 +35,9 @@ local kind_icons = {
   Struct = '  ',
   Event = '  ',
   Operator = '  ',
-  TypeParameter = '  ',}
+  TypeParameter = '  ',
+  TabNine = "󰹻"
+}
 
 -- Setup CMP
 
@@ -51,6 +53,7 @@ cmp.setup({
         nvim_lsp = "",
         luasnip = "",
         nvim_lua = "",
+        cmp_tabnine = "",
         latex_symbols = "",
      })[entry.source.name]
       return vim_item
@@ -119,6 +122,7 @@ cmp.setup({
     { name = 'buffer' },
     { name = "crates" },
     { name = 'nvim_lsp_signature_help' },
+    { name = 'cmp_tabnine' },
   })
 })
 
