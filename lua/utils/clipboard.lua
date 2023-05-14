@@ -1,5 +1,5 @@
 function ClipboardYank()
-  vim.cmd("call system('echo'. @@,'| xsel -i -b')")
+  vim.cmd("call system(\"echo'\". @@,\"' | xsel -i -b\")")
 end
 
 function ClipboardPaste()
