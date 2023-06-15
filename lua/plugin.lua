@@ -253,7 +253,7 @@ local plugins = {
       require('plugins.workspaces')
     end
   },
-  
+
   -- Fzf
   {
     'junegunn/fzf',
@@ -263,6 +263,7 @@ local plugins = {
   -- Fidget
   {
     "j-hui/fidget.nvim",
+    tag = "legacy",
     config = function ()
       require("fidget").setup()
     end
