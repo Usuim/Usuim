@@ -222,6 +222,7 @@ local plugins = {
   -- Identline
   {
     "lukas-reineke/indent-blankline.nvim",
+    version = "2.20.7",
     config = function ()
      require('plugins.ident')
     end
