@@ -22,6 +22,7 @@ update(){
   cp resources/* ~/.local/bin
   
   sed -i "s/sumneko_lua/lua_ls/g"  ~/.config/usuim/lsp.vim
+  sed -i '/autocmd BufRead,BufNewFile,BufEnter \* set formatoptions-=cro | start/d' ~/.config/usuim/settings.vim
 
   ExternalConfig
 
