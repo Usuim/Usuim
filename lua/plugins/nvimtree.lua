@@ -1,16 +1,9 @@
-require'nvim-tree'.setup {
+require'nvim-tree'.setup( {
   disable_netrw       = true,
   hijack_netrw        = true,
-  open_on_setup       = false,
-  ignore_ft_on_setup  = {},
-  auto_close          = false,
   open_on_tab         = false,
   hijack_cursor       = false,
   update_cwd          = true,
-  update_to_buf_dir   = {
-    enable = true,
-    auto_open = true,
-  },
   diagnostics = {
     enable = true,
     icons = {
@@ -40,17 +33,41 @@ require'nvim-tree'.setup {
   },
   view = {
     width = 30,
-    height = 30,
-    hide_root_folder = true,
     side = 'left',
-    auto_resize = true,
-    mappings = {
-      custom_only = false,
-      list = {}
-    },
     number = false,
     relativenumber = false,
     signcolumn = "yes"
+  },
+  renderer = {
+    highlight_git = true,
+    root_folder_label = false,
+    icons = {
+      glyphs = {
+        default = '',
+        symlink = '',
+        bookmark = '◉',
+        git = {
+          unstaged = '',
+          staged = '',
+          unmerged = '',
+          renamed = '',
+          deleted = '',
+          untracked = '',
+          ignored = '',
+        },
+        folder = {
+          default = '',
+          open = '',
+          symlink = '',
+        },
+      },
+      show = {
+        git = false,
+        file = true,
+        folder = true,
+        folder_arrow = true,
+      },
+    },
   },
   trash = {
     cmd = "trash",
@@ -73,4 +90,4 @@ require'nvim-tree'.setup {
       }
     }
   }
-}
+})
