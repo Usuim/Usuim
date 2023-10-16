@@ -44,9 +44,7 @@ local plugins = {
 
   -- Terminal
   {
-    'akinsho/toggleterm.nvim',
-    version = "*",
-    config = true
+    'Usuim/toggleterm.nvim'
   },
 
   -- Treesitter
