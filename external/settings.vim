@@ -4,9 +4,6 @@
 " To import files:
 " source $HOME/.config/usuim/file.vim
 
-" Autoinsert mode
-autocmd BufRead,BufNewFile,BufEnter * set formatoptions-=cro | start
-
 " Themes
 colorscheme vscode
 
