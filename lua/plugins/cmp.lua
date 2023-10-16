@@ -145,10 +145,36 @@ cmp.setup.cmdline(':', {
 
 -- Setup lspconfig.
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
+-- The attach function I use in require('mason-lspconfig').setup_handlers
+local on_attach = function(client, buf)
+    -- Enable inlay hints if the client supports it.
+    if client.server_capabilities.inlayHintProvider then
+        local inlay_hints_group = vim.api.nvim_create_augroup('InlayHints', { clear = true })
 
+        -- Initial inlay hint display.
+        local mode = vim.api.nvim_get_mode().mode
+        vim.lsp.inlay_hint(buf, mode == 'n' or mode == 'v')
+
+        vim.api.nvim_create_autocmd('InsertEnter', {
+            group = inlay_hints_group,
+            buffer = buf,
+            callback = function()
+                vim.lsp.inlay_hint(buf, true)
+            end,
+        })
+        vim.api.nvim_create_autocmd('InsertLeave', {
+            group = inlay_hints_group,
+            buffer = buf,
+            callback = function()
+                -- vim.lsp.inlay_hint(buf, true)
+            end,
+        })
+    end
+end
 -- Rust
 require('lspconfig')['rust_analyzer'].setup {
-  capabilities = capabilities
+  capabilities = capabilities,
+  on_attach = on_attach
 }
 -- Python
 require('lspconfig')['pyright'].setup {
@@ -156,7 +182,7 @@ require('lspconfig')['pyright'].setup {
 }
 -- C/C++
 require('lspconfig')['clangd'].setup {
-  capabilities = capabilities
+  capabilities = capabilities,
 }
 -- Tsserver
 require('lspconfig')['tsserver'].setup {
@@ -165,8 +191,33 @@ require('lspconfig')['tsserver'].setup {
   init_options = {
     hostInfo = "neovim"
   },
+  settings = {
+    javascript = {
+      inlayHints = {
+        includeInlayEnumMemberValueHints = true,
+        includeInlayFunctionLikeReturnTypeHints = true,
+        includeInlayFunctionParameterTypeHints = true,
+        includeInlayParameterNameHints = "all", -- 'none' | 'literals' | 'all';
+        includeInlayParameterNameHintsWhenArgumentMatchesName = true,
+        includeInlayPropertyDeclarationTypeHints = true,
+        includeInlayVariableTypeHints = true,
+      },
+    },
+    typescript = {
+      inlayHints = {
+        includeInlayEnumMemberValueHints = true,
+        includeInlayFunctionLikeReturnTypeHints = true,
+        includeInlayFunctionParameterTypeHints = true,
+        includeInlayParameterNameHints = "all", -- 'none' | 'literals' | 'all';
+        includeInlayParameterNameHintsWhenArgumentMatchesName = true,
+        includeInlayPropertyDeclarationTypeHints = true,
+        includeInlayVariableTypeHints = true,
+      },
+    },
+  },
   single_file_support = true,
-  root_dir = require("lspconfig").util.root_pattern("package.json", "tsconfig.json", "jsconfig.json", ".git")
+  root_dir = require("lspconfig").util.root_pattern("package.json", "tsconfig.json", "jsconfig.json", ".git"),
+  on_attach = on_attach
 }
 -- Vue
 require('lspconfig')['vuels'].setup {

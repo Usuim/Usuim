@@ -35,7 +35,7 @@ local plugins = {
 
   -- NvimTree
   {
-    'Usuim/nvim-tree.lua',
+    'nvim-tree/nvim-tree.lua',
     dependencies = { "nvim-tree/nvim-web-devicons"},
     config = function()
       require('plugins.nvimtree')
@@ -44,7 +44,9 @@ local plugins = {
 
   -- Terminal
   {
-    "Usuim/toggleterm.nvim",
+    'akinsho/toggleterm.nvim',
+    version = "*",
+    config = true
   },
 
   -- Treesitter
@@ -58,10 +60,12 @@ local plugins = {
 
   -- Dashboard
   {
-    "Usuim/dashboard-nvim",
-    config = function ()
+    'nvimdev/dashboard-nvim',
+    event = 'VimEnter',
+    config = function()
       require("plugins.dashboard")
-    end
+    end,
+    dependencies = { {'nvim-tree/nvim-web-devicons'}}
   },
 
   -- Bufferline
@@ -159,7 +163,7 @@ local plugins = {
 
   -- Telescope
   {
-    "Usuim/telescope.nvim",
+    "nvim-telescope/telescope.nvim",
     dependencies = {
       "nvim-lua/plenary.nvim",
       "nvim-telescope/telescope-file-browser.nvim",
@@ -272,11 +276,11 @@ local plugins = {
 
   -- CCC
   {
-    "Usuim/ccc.nvim",
+    "uga-rosa/ccc.nvim",
     config = function ()
       require("plugins.ccc")
     end
-  }
+  },
 }
 
 local allPlugins = TableConcat(plugins, UserPlugins)
