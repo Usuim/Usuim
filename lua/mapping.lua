@@ -22,6 +22,15 @@ map('n', '<Leader>s', ':lua vim.lsp.buf.signature_help()<CR>', { noremap = true,
 -- Signature Help
 map('n', '<Leader>l', ':noh<CR>', { noremap = true, silent = true })
 
+-- Code actions
+map('n', '<Leader>c', ":lua require('telescope').extensions.code_actions.code_actions()<CR>", { noremap = true, silent = true })
+
+-- Renamer
+map('n', '<Leader>r', ":lua require('renamer').rename()<CR>", { noremap = true, silent = true })
+
+-- Format document
+map('n', '<Leader>f', ":Neoformat<CR>", { noremap = true, silent = true })
+
 -- Terminal
 map("n", "<c-t>", ":<C-u>silent! :ToggleTerm size=10<CR>", { silent = true })
 map("i", "<c-t>", "<c-o>:<C-u>silent! :ToggleTerm size=10<CR>", { silent = true })
