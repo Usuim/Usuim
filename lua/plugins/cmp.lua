@@ -59,6 +59,11 @@ cmp.setup({
       return vim_item
     end
   },
+  window = {
+    documentation = {
+      max_height = 20
+    }
+  },
   snippet = {
     expand = function(args)
       require('luasnip').lsp_expand(args.body)
@@ -125,6 +130,9 @@ cmp.setup({
     { name = 'cmp_tabnine' },
   })
 })
+
+-- Height
+vim.opt.pumheight = 15
 
 -- Use buffer source for `/` (if you enabled `native_menu`, this won't work anymore).
 cmp.setup.cmdline('/', {
