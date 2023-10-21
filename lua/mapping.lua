@@ -6,8 +6,21 @@ local function map(mode, lhs, rhs, opts)
     vim.api.nvim_set_keymap(mode, lhs, rhs, options)
 end
 
+-- Leader Key
+vim.g.mapleader = " "
+
+
 -- Clipboard functions
 require("utils.clipboard")
+
+-- Hover
+map('n', '<Leader>h', ':lua vim.lsp.buf.hover()<CR>', { noremap = true, silent = true })
+
+-- Signature Help
+map('n', '<Leader>s', ':lua vim.lsp.buf.signature_help()<CR>', { noremap = true, silent = true })
+
+-- Signature Help
+map('n', '<Leader>l', ':noh<CR>', { noremap = true, silent = true })
 
 -- Terminal
 map("n", "<c-t>", ":<C-u>silent! :ToggleTerm size=10<CR>", { silent = true })
