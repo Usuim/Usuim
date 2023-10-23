@@ -74,7 +74,7 @@ require('dashboard').setup {
     footer = {
       '',
       '',
-      'Usuim 1.9.0'
+      'Usuim 1.9.1'
     }
   }
 }
